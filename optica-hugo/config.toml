@@ -1,0 +1,67 @@
+baseURL = "http://localhost/optica/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "opticaTheme"
+
+############################# Plugins ##############################
+[params.plugins]
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "plugins/bootstrap/bootstrap.min.css"  
+  [[params.plugins.css]]
+  URL = "fonts/font-awesome/css/font-awesome.min.css" 
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/bootstrap/bootstrap.min.js" 
+
+#################### navigation ################################
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "home"
+    url = ""
+    weight = 1
+  [[menu.main]]
+    name = "Products"
+    pre = "pen-tool"
+    url = "product"
+    weight = 2
+  [[menu.main]]
+    name = "Services"
+    pre = "tag"
+    url = "service"
+    weight = 3
+  [[menu.main]]
+    name = "Resources"
+    pre = "tag"
+    url = "resource"
+    weight = 4
+  [[menu.main]]
+    name = "Partnership"
+    pre = "tag"
+    url = "partner"
+    weight = 5
+  [[menu.main]]
+    name = "Company"
+    pre = "tag"
+    url = "company"
+    weight = 6
+
+
+#################### default parameters ################################
+[params]
+logo = "images/optica-logo.png"
+home = "Home"
+# Meta data
+description = "This is meta description"
+author = "Themefisher"
+# Google Analitycs
+googleAnalitycsID = "" # Your ID
+# copyright
+copyright = "Copyright &copy; 2020 [Resecure](https://resecure.com.au) All Rights Reserved"
+# Navigation get start button
+[params.navButton]
+enable = true

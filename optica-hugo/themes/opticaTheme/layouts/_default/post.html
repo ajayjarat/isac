@@ -1,0 +1,14 @@
+<!--   <div class="card"> -->
+    <div class=" blog-wrap">
+      <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" style="width: 100%">
+      <div class="blog-content">
+        <div class="col-12 text-center p-3">
+          <h2 class="mt-4">{{ .Title }}</h2>
+          <p class="mt-3 mb-5">{{ .Params.description | markdownify }}</p>
+          <a href="{{ .Permalink }}" class="text-center">
+            <h5 class="">VIEW MORE</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->

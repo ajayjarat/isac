@@ -1,0 +1,11 @@
+<div class="resource-wrap">
+  <div class="stories-wrap mb-4">
+    <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="img-fluid text-center" >
+  </div>
+  <div class="stories-content">
+    <h4 class="text-uppercase mb-2">{{ .Title }}</h4>
+    <h6 class="mb-3">{{ .Params.category }}</h6>
+    <p>{{ .Summary | truncate 300  }}</p>
+    <button type="button" class="btn theme-btn-orange">READ IT</button>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+@mixin button-block($bg-color, $text-color, $border, $border-color, $weight){
+  background-color: $bg-color !important;
+  color: $text-color !important;
+  border: $border !important;
+  border-color: $border-color !important;
+  font-weight: $weight;
+}
