@@ -8377,6 +8377,7 @@ textarea.form-control-lg {
     .topbar .social-media-wrap span {
       width: 32px;
       height: 32px;
+      background-color: #012395;
       padding: 20px;
       border-radius: 5px;
       margin-right: 10px;
@@ -8412,7 +8413,7 @@ textarea.form-control-lg {
   border-color: #012395 !important;
   font-weight: 700; }
 
-.dark-btn {
+.black-btn {
   background-color: #000 !important;
   color: #fff !important;
   border: 1px solid !important;
@@ -8522,7 +8523,7 @@ section {
   font-weight: 700; }
 
 .cyber-experts {
-  background-image: url("../../assets/images/wave-3.png");
+  background-image: url("../../assets/images/orange-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 5rem;
@@ -8554,7 +8555,7 @@ section {
       font-family: "Inter", "sans-serif" !important; }
 
 .blog-container {
-  background-image: url("../../assets/images/blog-bg2.png");
+  background-image: url("../../assets/images/blog-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 5rem;
@@ -8718,7 +8719,7 @@ footer #copyright {
   background-color: #012395;
   padding-top: 2rem;
   padding-bottom: 2rem; }
-  .call-action-container .dark-btn {
+  .call-action-container .black-btn {
     padding: 12px 20px;
     margin: 1rem;
     border-radius: 0; }
@@ -8791,4 +8792,4 @@ footer #copyright {
   font-family: 'InterBolder';
   src: url("../../assets/fonts/Inter-bold/Inter-VariableFont_slnt.ttf") format("truetype-variations"); }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=bootstrap.css.map */
