@@ -8436,7 +8436,7 @@ section {
   padding: .5rem 3rem;
   border-bottom: 3px solid #012395; }
   #main-menu.navbar .navbar-brand img {
-    max-width: 170px; }
+    max-width: 70px; }
 
 #homeSlider .banner-wrap {
   position: relative; }
@@ -8594,7 +8594,7 @@ footer .footer-wrap {
       font-weight: 700;
       font-size: .875rem !important; }
   footer .footer-wrap .footer-logo img {
-    max-width: 145px; }
+    max-width: 70px; }
   footer .footer-wrap .about-desc {
     text-align: left;
     width: 90%;
