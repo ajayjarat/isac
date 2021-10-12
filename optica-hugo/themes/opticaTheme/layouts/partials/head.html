@@ -1,0 +1,15 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ $title := print .Site.Title " | " .Title }}
+  {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+  <title>{{ $title }}</title>
+
+  {{ range .Site.Params.plugins.css }}
+    <link rel="stylesheet" href="{{ .URL | absURL }} ">      
+  {{ end }}
+
+  {{ "<!-- Main Stylesheet -->" | safeHTML }} 
+  {{ $styles := resources.Get "scss/style.scss" | toCSS }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">  
+</head>

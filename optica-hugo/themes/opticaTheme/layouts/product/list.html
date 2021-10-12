@@ -1,0 +1,96 @@
+{{ define "main" }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+<!-- banner -->
+<section class="home-header mb-0 mt-0" id="homeSlider">
+  <div class="banner-wrap">
+    {{ with .Params.image }}
+    <img class="banner-bg" src="{{ . | relURL }}" alt="product banner">
+    {{ end }}   
+    <div class="banner-content" style="height: 300px;">
+      <a class="mb-2" href="#">
+        <img src="{{ .Params.titleImage | relURL }}" alt="product banner title" class="img-fluid" style="max-width: 250px;">
+      </a>                     
+      <h3 class="banner-text text-white mt-2" style="">{{ .Params.description | markdownify }}</h3>                
+    </div>
+  </div>  
+</section >
+<!-- /banner -->
+<!-- Product Offered -->
+<section id="productOffer" class="product-offer">
+  <div class="layout-container">
+    <h1 class="text-center text-orange text-uppercase mb-4">
+      We offers scalable solutions no matter how big or small the task
+    </h1>
+  </div>
+  <!-- Desktop Layout Start -->
+  <div class="container-fluid product-desktop">
+    <div class="row p-3">
+      {{ range first 5 (where site.RegularPages "Type" "product")}}
+      <div class="col">        
+        {{ .Render "product" }}
+      </div>
+      {{ end }}
+    </div>
+    <div class="row mt-5">
+      <div class="col-12 text-center">
+        <a href="#"><button type="button" class="theme-btn-white">REQUEST A DEMO CALL</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Product Offered -->
+<!-- about -->
+<section>
+  <div class="video-container">
+    <img src="{{ .Params.videoImage | relURL }}" class="img-responsive"> 
+    <img class="play-btn" src="../images/video-btn.png" class="img-responsive" width="100">              
+  </div>
+</section>
+{{ if .Site.Data.homepage.testimonials.enable }}
+{{ with .Site.Data.homepage.testimonials }}
+<section class="" id="productTestimonialSlider">
+  <h1 class="text-center text-uppercase mb-4">Customers Success</h1>
+  <div id="productTestimonials" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      {{ range $index, $data := ( .review ) }} 
+      <div class="carousel-item {{ if (eq $index 0) }} active {{ end }}">
+        <div class="product-testimonial-wrap">
+          <p class="banner-text text-white mb-4" style="">{{ .content | markdownify }}</p>
+          <img class="mb-3" src="../images/user-img.png" >
+          <h6 class="text-uppercase text-orange mb-2">{{ .firstName }} {{ .lastName }}</h6>
+          <p class="text-white">{{ .designation }}, {{ .company }}</p>
+        </div>
+      </div> 
+      {{ end }}                  
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#productTestimonials" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#productTestimonials" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section > 
+{{ end }}
+{{ end }}
+
+{{ if .Site.Data.homepage.callAction.enable }}
+{{ with .Site.Data.homepage.callAction }}
+<section class="call-action-container mb-0">
+  <div class="layout-container">
+    <div class="w-70 text-center me-auto ms-auto">
+      <h2 class="text-white mb-3">{{ .title | markdownify }}</h2>
+      <p class="text-white mb-3 " style="font-size:1.5rem">{{ .content | markdownify }}</p>
+      <button class="btn black-btn btn-medium">JOIN OUR TEAM</button> 
+    </div>      
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ end }}

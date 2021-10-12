@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+<!-- banner -->
+<section class="home-header mb-0 mt-0" id="homeSlider">
+  <div class="banner-wrap">
+    {{ with .Params.image }}
+    <img class="banner-bg" src="{{ . | relURL }}" alt="product banner">
+    {{ end }}   
+    <div class="banner-content" style="height: 300px;">
+      <a class="mb-2" href="#">
+        <img src="{{ .Params.titleImage | relURL }}" alt="product banner title" class="img-fluid" style="max-width: 400px;">
+      </a>                     
+      <h3 class="banner-text text-white mt-2" style="">{{ .Params.description | markdownify }}</h3>                
+    </div>
+  </div>  
+</section >
+<!-- /banner -->
+<!-- Product Offered -->
+<section class="services-container mt-0 mb-0">
+  <div class="layout-container ps-5 pe-5">
+    <div class="row g-5 services-wrapper ">
+      {{ range $index, $data := ( .Data.Pages ) }}
+      <div class="col-lg-6 col-md-6 col-sm-6 {{ if (eq $index 2) }} me-auto ms-auto {{ end }}">        
+        {{ .Render "service" }}
+      </div>
+      {{ end }}             
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</section>
+{{ end }}

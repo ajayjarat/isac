@@ -1,0 +1,488 @@
+.topbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: .5rem 3rem;
+  background-color: $gray-800;
+  .social-media-wrap{
+    display: flex;    
+    align-items: center;    
+    justify-content: space-evenly;
+    align-items: center;
+    span{
+      width: 32px;
+      height: 32px;
+      background-color: $theme-orange;
+      padding:  20px;
+      border-radius: 5px;
+      margin-right: 10px; 
+      padding: 2px;
+      border-radius: 5px;
+      margin-right: 10px;
+      display: inline-block;
+      text-align: center;     
+      i{
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+  }
+  .search-wrap{   
+    button{
+      background-color:transparent;
+      border:none;
+      i{
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+  }
+  .top-menu{    
+    .nav-link{
+      color: #fff;
+    }
+  }
+}
+.nav-link{
+  font-family: $font-family-montserrat-bold !important;
+  font-size: .875rem !important;
+  text-transform: uppercase;
+}
+.navbar-nav{
+  .request-demo-btn{
+    margin-left: 2rem;
+  }
+}
+.request-demo-btn{
+  @include button-block($theme-orange, $white, $border-light, $theme-orange, $font-weight-bold);
+}
+.black-btn{
+  @include button-block($black, $white, $border-light, $black, $font-weight-bold);
+}
+.text-white{
+  color: $white;
+}
+.text-orange{
+  color: $theme-orange;
+}
+section{ 
+  margin-top: 5rem; 
+  margin-bottom: 3rem;
+}
+#main-menu.navbar{
+  width: 100%;
+  justify-content: space-between !important;
+  align-items: center;
+  padding: .5rem 3rem;
+  border-bottom:3px solid $theme-orange;
+  .navbar-brand{
+    img{
+      max-width: 170px;
+    }
+  }
+}
+#homeSlider{  
+  .banner-wrap{
+    .banner-bg{
+      height: 650px;
+      width: 100%;
+    }
+    position: relative;
+    .banner-content{
+      position: absolute;
+      width: 600px;
+      height: 400px;
+      left: 150px;
+      top: 0;
+      bottom:0;
+      margin: auto;
+      .banner-text{
+        font-family: $font-family-montserrat-regular !important;
+        font-weight: 400 !important;
+      }
+    }
+  }
+}
+.multi-button-wrap{
+  display: flex;
+  .btn{   
+    text-transform: uppercase;    
+  }
+  .btn-small{
+    min-width: auto;
+    margin: 12px 15px 0 0;
+    padding: 8px;
+    text-transform: uppercase;
+  }
+  .btn-medium{
+    min-width: auto;
+    margin: 12px 15px 0 0;
+    padding: 10px 12px;
+    text-transform: uppercase;
+  }
+  
+}
+
+.large-heading{
+  h1{
+    font-family: $font-family-montserrat-bold !important;
+    letter-spacing: .02em;
+    font-size: 3rem !important;
+  }
+}
+.layout-container{
+  margin:0px 150px
+}
+.list-wrap{
+  .img-icon{
+    width: 45px;
+  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  div:nth-child(2){
+    margin-left: 12px;
+  }
+}
+.video-container{
+  position: relative;
+  .play-btn{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+.theme-btn-white{
+  @include button-block($white, $theme-orange, $border-bold, $theme-orange, $font-weight-bold);
+  padding:12px 30px;
+}
+.theme-btn-orange{
+  @include button-block($theme-orange, $white, $border-bold, $theme-orange, $font-weight-bold);
+  padding:12px 30px;
+}
+
+.btn-white{
+  @include button-block($white, $theme-orange, $border-bold, $theme-orange, $font-weight-bold);
+}
+
+.cyber-experts{
+  background-image: url('./../images/orange-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  .expert-heading{
+    // margin-top: 3rem;
+  }
+  .expert-warp{
+    padding:20px;
+    background-color: #fff;
+    a{
+      text-transform: uppercase;
+      color: $theme-orange;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+}
+.testimonials{  
+  .banner-wrap{
+    .banner-bg{
+      height: 600px;
+      width: 100%;
+    }
+    position: relative;
+    .banner-content{
+      position: absolute;
+      height: 200px;
+      right: 150px;
+      top: 0;
+      bottom:0;
+      margin: auto;
+      .name{
+        font-weight: bold;
+      }
+      h2.desc{
+        font-family:$font-family-Inter !important;
+      }
+    }
+  }
+}
+.blog-container{
+  background-image: url('./../images/blog-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  .blog-wrap{
+    position: relative;
+    .blog-content{
+      background-color: rgba(243, 243, 243, .70);      
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left:0;
+      padding:20px;
+      p{
+        font-size:1.2rem;
+      }
+      a{
+        text-decoration: none;
+        font-weight: bold;
+        color: $black;
+      }
+    }
+  }
+}
+.partener-wrap{
+  img{
+    max-width: 200px;
+  }
+}
+.contact-bg{
+  background-image: url('./../images/contact-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  // padding-top: 5rem;
+  // padding-bottom: 5rem;
+}
+footer{
+  // .container{
+  //   max-width: 95.75% !important;
+  // }
+  .footer-wrap{
+    background-color: #f8f8f8;
+    border-top: 1px solid $theme-orange;
+    padding: 30px 0 20px;
+    .address{
+      p{
+        font-weight: 700;
+        font-size: .875rem !important;
+      }
+      margin: 10px 0;     
+    }
+    .footer-logo{
+      img{
+        max-width: 145px;
+      }
+    }
+    .about-desc{
+      text-align: left;
+      width: 90%;
+      margin-left: auto;
+    }
+    .social-wrap{
+      .icons{       
+        // max-width: 150px;
+        display: flex;
+        align-items:center; 
+        justify-content: flex-end;
+        padding:0 10px;                      
+        .fi-wrap{
+          width: 35px;
+          height: 35px;
+          background-color: $theme-orange;
+          padding:  20px;
+          border-radius: 5px;
+          margin-right: 10px; 
+          padding: 5px;
+          border-radius: 5px;
+          margin-right: 10px;
+          margin-bottom: 10px;
+          display: inline-block;
+          text-align: center;     
+          i{
+            color: #fff;
+            font-size: 24px;
+          }          
+        } 
+      }
+    }
+    a.footer-link{
+      color: $theme-orange !important;
+      text-decoration: none !important;
+    }
+  }
+  #copyright{
+    background-color: #343a40;
+    padding: 15px 0 0;
+    p.rights-text{
+      color: #fff;
+      margin-bottom: 15px !important;     
+      span{
+        color: #fff;
+        margin-right: 2.5rem;
+      }
+      span a{
+        color: #fff;
+        text-decoration: none !important;
+      }     
+    }
+  }
+}
+.contact-form{
+  padding: 30px 0;
+  width: 100%;  
+  h5{
+    font-family: $font-family-montserrat-regular !important;
+    font-size: 1.2rem !important;
+  }  
+  input.contact-text-field::focus{
+    &::after{
+      content:'';
+    }
+  }
+  input.contact-text-field,select, input.contact-date-field{
+    background-color: #e2e2e2;
+    height: 42px;
+    padding:10px !important;
+    font-family: $font-family-montserrat-regular !important;
+      font-size: .875rem;
+      &:focus{
+        background-color: #fff;       
+      }
+  }
+  input.contact-date-field:focus .cal-icon{
+    display: none;
+  }
+  input, select, textarea{    
+    width: 100%;
+    &:hover, &:focus{
+      outline: none;
+    }
+  }
+  textarea{
+    min-height: 150px;
+    padding:10px !important;
+    font-size: .875rem;
+    &:focus{
+      background-color: #fff;       
+    }
+  }
+  .custom-form-send-button .custom-form-submit{
+    @include button-block($theme-orange, $white, $border-light, $theme-orange, $font-weight-bold);
+    padding: 10px;
+    width: 100%;
+  }
+  .wpcf7-response-output{
+    margin: 0 auto !important;
+  }
+}
+.services-container{
+  background-image: url('./../images/services-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  .services-wrapper{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .service-wrap{
+    background-color:$black;
+    padding: 15px;
+    .service-title{
+      border-bottom: 2px solid $theme-orange;
+    }
+  }
+}
+.resource-wrap{
+  .theme-btn-orange{
+    padding: 10px !important;
+  }
+}
+.partners-container{
+  background-color: $black;
+  .partner-img-wrap{
+    background-color: $white;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;    
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      max-width: 300px;
+    }
+  }
+}
+.about-team{
+  .member-desc{
+    margin-top: 1.5rem;
+    h3, h5{
+      font-family: $font-family-Inter !important;
+      font-weight: normal !important;
+    }
+  }
+}
+.call-action-container{
+  background-color:$theme-orange;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  .black-btn{
+    padding: 12px 20px;
+    margin: 1rem;
+    border-radius:0;
+  }
+}
+.w-70{
+  width: 70%;
+}
+.product-offer{
+  h3, h5{
+    font-family: $font-family-Inter !important;
+    font-weight: normal;
+  }
+  .product-desc{
+    img{
+      margin-bottom: 1rem;
+    }
+    padding: 10px;
+    text-align: center;
+    border-left: 1px solid $gray-300; 
+    .features-height{
+      margin-bottom: 2.5rem;
+      min-height: 250px;
+    }
+    .benefits-height{
+      min-height: 200px;
+      margin-bottom: 2.5rem;
+    }  
+  }
+  .product-desktop .row .product-desc:nth-child(1){
+    border-left: 0; 
+  }
+  .btn-white{
+    padding:10px 15px;
+  }
+  .theme-btn-white{
+    padding: 1rem 5rem !important;
+  }
+}
+#productTestimonials{
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  .product-testimonial-wrap{
+    background-color: $black;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding:2rem;
+  }
+  .carousel-control-prev-icon {
+    background-image: url('../images/left-arrow.png') !important;   
+  }
+  .carousel-control-next-icon {
+    background-image: url('../images/right-arrow.png') !important;    
+  }
+}
