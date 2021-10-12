@@ -3,8 +3,8 @@ banner:
   enable : true
   writter : ""
   title : "ISAC"
-  image : "images/banner-img.png"
-  titleImage : "images/isac-text-img.png"
+  image : "images/curve-4.png"
+  titleImage : "images/isac-text-img2.png"
   content : "Optica has worked hard to develop the cyber industry’s most thorough network monitoring software, ISAC."
   # button
   button1:

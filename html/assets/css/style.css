@@ -8522,10 +8522,10 @@ section {
   font-weight: 700; }
 
 .cyber-experts {
-  background-image: url("../../assets/images/wave-3.png");
+  background-image: url("../../assets/images/wave-4.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 5rem;
+  padding-top: 6rem;
   padding-bottom: 5rem; }
   .cyber-experts .expert-warp {
     padding: 20px;
@@ -8554,11 +8554,12 @@ section {
       font-family: "Inter", "sans-serif" !important; }
 
 .blog-container {
-  background-image: url("../../assets/images/blog-bg2.png");
+  background-image: url("../../assets/images/curve-9.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 5rem;
-  padding-bottom: 5rem; }
+  padding-bottom: 5rem;
+  background-color: #ecf1f5; }
   .blog-container .blog-wrap {
     position: relative; }
     .blog-container .blog-wrap .blog-content {
