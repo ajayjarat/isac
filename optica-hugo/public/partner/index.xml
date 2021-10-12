@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Partnership on ISAC</title>
-    <link>http://localhost/optica/partner/</link>
+    <link>https://isac-8oxfp.ondigitalocean.app/partner/</link>
     <description>Recent content in Partnership on ISAC</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://localhost/optica/partner/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://isac-8oxfp.ondigitalocean.app/partner/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

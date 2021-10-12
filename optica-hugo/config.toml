@@ -1,4 +1,4 @@
-baseURL = "http://localhost/optica/"
+baseURL = "https://isac-8oxfp.ondigitalocean.app/"
 languageCode = "en-us"
 title = "ISAC"
 theme = "opticaTheme"

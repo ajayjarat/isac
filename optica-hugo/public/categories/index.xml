@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on ISAC</title>
-    <link>http://localhost/optica/categories/</link>
+    <link>https://isac-8oxfp.ondigitalocean.app/categories/</link>
     <description>Recent content in Categories on ISAC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost/optica/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://isac-8oxfp.ondigitalocean.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creative</title>
-      <link>http://localhost/optica/categories/creative/</link>
+      <link>https://isac-8oxfp.ondigitalocean.app/categories/creative/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/optica/categories/creative/</guid>
+      <guid>https://isac-8oxfp.ondigitalocean.app/categories/creative/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go Language</title>
-      <link>http://localhost/optica/categories/go-language/</link>
+      <link>https://isac-8oxfp.ondigitalocean.app/categories/go-language/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/optica/categories/go-language/</guid>
+      <guid>https://isac-8oxfp.ondigitalocean.app/categories/go-language/</guid>
       <description></description>
     </item>
     
     <item>
       <title>New Book</title>
-      <link>http://localhost/optica/categories/new-book/</link>
+      <link>https://isac-8oxfp.ondigitalocean.app/categories/new-book/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/optica/categories/new-book/</guid>
+      <guid>https://isac-8oxfp.ondigitalocean.app/categories/new-book/</guid>
       <description></description>
     </item>
     

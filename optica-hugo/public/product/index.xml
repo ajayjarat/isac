@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Product on ISAC</title>
-    <link>http://localhost/optica/product/</link>
+    <link>https://isac-8oxfp.ondigitalocean.app/product/</link>
     <description>Recent content in Product on ISAC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost/optica/product/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://isac-8oxfp.ondigitalocean.app/product/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lorem Ispum</title>
-      <link>http://localhost/optica/product/isac/</link>
+      <link>https://isac-8oxfp.ondigitalocean.app/product/isac/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/optica/product/isac/</guid>
+      <guid>https://isac-8oxfp.ondigitalocean.app/product/isac/</guid>
       <description>  Features
  Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit amet    Benefits
  Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit amet    </description>
@@ -20,37 +20,37 @@
     
     <item>
       <title>Lorem Ispum</title>
-      <link>http://localhost/optica/product/product2/</link>
+      <link>https://isac-8oxfp.ondigitalocean.app/product/product2/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/optica/product/product2/</guid>
+      <guid>https://isac-8oxfp.ondigitalocean.app/product/product2/</guid>
       <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
     </item>
     
     <item>
       <title>Lorem Ispum</title>
-      <link>http://localhost/optica/product/product3/</link>
+      <link>https://isac-8oxfp.ondigitalocean.app/product/product3/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/optica/product/product3/</guid>
+      <guid>https://isac-8oxfp.ondigitalocean.app/product/product3/</guid>
       <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
     </item>
     
     <item>
       <title>Lorem Ispum</title>
-      <link>http://localhost/optica/product/product4/</link>
+      <link>https://isac-8oxfp.ondigitalocean.app/product/product4/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/optica/product/product4/</guid>
+      <guid>https://isac-8oxfp.ondigitalocean.app/product/product4/</guid>
       <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
     </item>
     
     <item>
       <title>Lorem Ispum</title>
-      <link>http://localhost/optica/product/product5/</link>
+      <link>https://isac-8oxfp.ondigitalocean.app/product/product5/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/optica/product/product5/</guid>
+      <guid>https://isac-8oxfp.ondigitalocean.app/product/product5/</guid>
       <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
     </item>
     
