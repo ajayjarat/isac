@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on My New Hugo Site</title>
+    <title>Python on ISAC</title>
     <link>http://localhost/optica/tags/python/</link>
-    <description>Recent content in Python on My New Hugo Site</description>
+    <description>Recent content in Python on ISAC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 30 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost/optica/tags/python/index.xml" rel="self" type="application/rss+xml" />

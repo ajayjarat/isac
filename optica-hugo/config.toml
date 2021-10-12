@@ -1,6 +1,6 @@
 baseURL = "http://localhost/optica/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "ISAC"
 theme = "opticaTheme"
 
 ############################# Plugins ##############################
