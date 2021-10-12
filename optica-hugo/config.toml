@@ -53,7 +53,7 @@ theme = "opticaTheme"
 
 #################### default parameters ################################
 [params]
-logo = "images/optica-logo.png"
+logo = "images/Cyber-security Logo1.png"
 home = "Home"
 # Meta data
 description = "This is meta description"
