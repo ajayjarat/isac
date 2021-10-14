@@ -5,17 +5,22 @@ banner:
   title : "ISAC"
   image : "images/curve-4.png"
   titleImage : "images/isac-text-img2.png"
-  content : "Optica has worked hard to develop the cyber industry’s most thorough network monitoring software, ISAC."
+  content : "Cyber industry’s most thorough network monitoring software"  
   # button
-  button1:
-    enable : true
+  url: "product"
+  button1:    
     label : "Find More"
-    link : "#"
+    link : "product"
+  button2:  
+  label : "Request Demo"
+  link : "#contactUs"
 
-  button2:
-  enable : true
-  label : "Request A Demo"
-  link : "#"
+opticaSolutions:
+  enable : true  
+  title : "OptICA Solutions"
+  content : "OptICA Solutions – Optimal Intelligent Cyber Automation Solutions – is a specialized cyber security company that focuses exclusively on hyper-automating the rigorous work of continuous compliance of Information Systems’ Networks with US DOD and Civilian Agency Standards."
+  url: "company"
+
 
 productPortfolio:
   enable : true  
@@ -23,12 +28,14 @@ productPortfolio:
   image : "images/product-video-img.png"
   videoUrl: ""
   content : "Optica has worked hard to develop the cyber industry’s most thorough network monitoring software, ISAC."
+  url1: "product"
+  urlRequestDemo: "#contactUS"
   list:
-    - listItem : "Lorem ispum dollar sit amet"
-    - listItem : "Lorem ispum dollar sit amet"
-    - listItem : "Lorem ispum dollar sit amet"
-    - listItem : "Lorem ispum dollar sit amet"
-    - listItem : "Lorem ispum dollar sit amet" 
+    - listItem : "Automatically deploy for your entire systems fleet – proven for large US Army Enterprise with 1000s of servers"
+    - listItem : "Achieve 100% Compliance for DISA STIG/SCAP Standards"
+    - listItem : "Ensure ongoing “continuous compliance” from one, powerful, simple, central platform"
+    - listItem : "Enjoy the speed of hyper-automation – Generates 5+ million entries in 6 seconds"
+    - listItem : "Easily pass audits - attach documents, historic results, trends, and compliance analysis" 
 
 cyberSecurity:
   enable : true
@@ -36,24 +43,21 @@ cyberSecurity:
   securityItem:
     # security item loop
     - title : "Network Security Engineer"      
-      content : "Lorem ispum dollar sit amet.lorem ispum dollar sit amet."
+      content : "Lorem ispum dollar sit amet.lorem ispum dollar sit amet.Lorem ispum dollar sit amet.lorem ispum dollar sit amet.
+      Lorem ispum dollar sit amet.lorem ispum dollar sit amet."
       link: "#"
     # security item loop
     - title : "Network Security Engineer"      
-      content : "Lorem ispum dollar sit amet.lorem ispum dollar sit amet."      
+      content : "Lorem ispum dollar sit amet.lorem ispum dollar sit amet.Lorem ispum dollar sit amet.lorem ispum dollar sit amet.
+      Lorem ispum dollar sit amet.lorem ispum dollar sit amet."      
     # security item loop
     - title : "Network Security Engineer"
-      content : "Lorem ispum dollar sit amet.lorem ispum dollar sit amet."
-    # security item loop
-    - title : "Network Security Engineer"
-      content : "Lorem ispum dollar sit amet.lorem ispum dollar sit amet."
-    # security item loop
-    - title : "Network Security Engineer"
-      content : "Lorem ispum dollar sit amet.lorem ispum dollar sit amet."  
+      content : "Lorem ispum dollar sit amet.lorem ispum dollar sit amet.Lorem ispum dollar sit amet.lorem ispum dollar sit amet.
+      Lorem ispum dollar sit amet.lorem ispum dollar sit amet."     
 
 testimonials:
   enable : true
-  title : "What people are saying"
+  title : "What ISAC Customers are Saying"
   subtitle : "Amazing reviews illo tenetur laboriosam excepturi velit in, temporibus ab rem dicta sint obcaecati!"
   review:
     # review item loop
@@ -100,7 +104,7 @@ partners:
       
     # partner item loop
     - title : "Insystech"
-      image : "images/insystech-logo.png"
+      image : "images/partner-img-1.png"
 
     # partner item loop
     - title : "Partner ABC"
@@ -108,7 +112,7 @@ partners:
       
     # partner item loop
     - title : "Insystech"
-      image : "images/insystech-logo.png"
+      image : "images/partner-img-1.png"
 
     # partner item loop
     - title : "Partner ABC"
@@ -116,7 +120,7 @@ partners:
       
     # partner item loop
     - title : "Insystech"
-      image : "images/insystech-logo.png"
+      image : "images/partner-img-1.png"
 
 contact:
   enable : true

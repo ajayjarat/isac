@@ -2,7 +2,7 @@
 title: "WHO IS OPTICA"
 draft: false
 image: "images/company-banner.png"
-description : "Joorem ispum dollar sit amet lorem ispum dollar sit amet lorem ispum dollar sit amet."
+description : "OptICA Solutions is a group of Professionals passionate about protecting our Nation’s IT systems."
 ---
 
 

@@ -9,109 +9,80 @@
     <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://isac-8oxfp.ondigitalocean.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Audit Support Service</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/service/audit-support/</link>
+      <link>https://isac-8oxfp.ondigitalocean.app/services/audit-support/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/service/audit-support/</guid>
+      <guid>https://isac-8oxfp.ondigitalocean.app/services/audit-support/</guid>
       <description>This is to hold the customer’s hands during an audit. \
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</description>
     </item>
     
     <item>
       <title>Compilance Training Service</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/service/compilance_training/</link>
+      <link>https://isac-8oxfp.ondigitalocean.app/services/compilance_training/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/service/compilance_training/</guid>
+      <guid>https://isac-8oxfp.ondigitalocean.app/services/compilance_training/</guid>
       <description>We offer training to customers on how to be continuously complaint for STIG, SCAP. \
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</description>
     </item>
     
     <item>
       <title>ISAC User Training Service</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/service/isac-user-training/</link>
+      <link>https://isac-8oxfp.ondigitalocean.app/services/isac-user-training/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/service/isac-user-training/</guid>
+      <guid>https://isac-8oxfp.ondigitalocean.app/services/isac-user-training/</guid>
       <description>We offer training to customers on how to be continuously complaint for STIG, SCAP. \
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</description>
     </item>
     
     <item>
-      <title>LOREM IPSUM DOLOR SIT AMET</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/resource/respurc-1/</link>
+      <title> Who ISAC Serves?</title>
+      <link>https://isac-8oxfp.ondigitalocean.app/products/product4/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/resource/respurc-1/</guid>
+      <guid>https://isac-8oxfp.ondigitalocean.app/products/product4/</guid>
+      <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
+    </item>
+    
+    <item>
+      <title>HOW ISAC Does It?</title>
+      <link>https://isac-8oxfp.ondigitalocean.app/products/product5/</link>
+      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://isac-8oxfp.ondigitalocean.app/products/product5/</guid>
+      <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
+    </item>
+    
+    <item>
+      <title>LOREM IPSUM DOLOR SIT AMET</title>
+      <link>https://isac-8oxfp.ondigitalocean.app/resources/respurc-1/</link>
+      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://isac-8oxfp.ondigitalocean.app/resources/respurc-1/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
     </item>
     
     <item>
       <title>LOREM IPSUM DOLOR SIT AMET</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/resource/respurce-2/</link>
+      <link>https://isac-8oxfp.ondigitalocean.app/resources/respurce-2/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/resource/respurce-2/</guid>
+      <guid>https://isac-8oxfp.ondigitalocean.app/resources/respurce-2/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
     </item>
     
     <item>
       <title>LOREM IPSUM DOLOR SIT AMET</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/resource/respurce-3/</link>
+      <link>https://isac-8oxfp.ondigitalocean.app/resources/respurce-3/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/resource/respurce-3/</guid>
+      <guid>https://isac-8oxfp.ondigitalocean.app/resources/respurce-3/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
-    </item>
-    
-    <item>
-      <title>Lorem Ispum</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/product/isac/</link>
-      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://isac-8oxfp.ondigitalocean.app/product/isac/</guid>
-      <description>  Features
- Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit amet    Benefits
- Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit amet    </description>
-    </item>
-    
-    <item>
-      <title>Lorem Ispum</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/product/product2/</link>
-      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://isac-8oxfp.ondigitalocean.app/product/product2/</guid>
-      <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
-    </item>
-    
-    <item>
-      <title>Lorem Ispum</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/product/product3/</link>
-      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://isac-8oxfp.ondigitalocean.app/product/product3/</guid>
-      <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
-    </item>
-    
-    <item>
-      <title>Lorem Ispum</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/product/product4/</link>
-      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://isac-8oxfp.ondigitalocean.app/product/product4/</guid>
-      <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
-    </item>
-    
-    <item>
-      <title>Lorem Ispum</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/product/product5/</link>
-      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://isac-8oxfp.ondigitalocean.app/product/product5/</guid>
-      <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
     </item>
     
     <item>
@@ -152,6 +123,35 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspi
       <guid>https://isac-8oxfp.ondigitalocean.app/blog/blog-post-2/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
+    </item>
+    
+    <item>
+      <title>What is ISAC?</title>
+      <link>https://isac-8oxfp.ondigitalocean.app/products/isac/</link>
+      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://isac-8oxfp.ondigitalocean.app/products/isac/</guid>
+      <description>  Features
+ Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit amet    Benefits
+ Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit amet    </description>
+    </item>
+    
+    <item>
+      <title>What ISAC does?</title>
+      <link>https://isac-8oxfp.ondigitalocean.app/products/product2/</link>
+      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://isac-8oxfp.ondigitalocean.app/products/product2/</guid>
+      <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
+    </item>
+    
+    <item>
+      <title>Why do you need ISAC?</title>
+      <link>https://isac-8oxfp.ondigitalocean.app/products/product3/</link>
+      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://isac-8oxfp.ondigitalocean.app/products/product3/</guid>
+      <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
     </item>
     
     <item>

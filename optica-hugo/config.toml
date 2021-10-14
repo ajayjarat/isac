@@ -15,7 +15,9 @@ theme = "opticaTheme"
   [[params.plugins.js]]
   URL = "plugins/jQuery/jquery.min.js"
   [[params.plugins.js]]
-  URL = "plugins/bootstrap/bootstrap.min.js" 
+  URL = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/jQuery/custom.js"  
 
 #################### navigation ################################
 [menu]
@@ -27,22 +29,22 @@ theme = "opticaTheme"
   [[menu.main]]
     name = "Products"
     pre = "pen-tool"
-    url = "product"
+    url = "products"
     weight = 2
   [[menu.main]]
     name = "Services"
     pre = "tag"
-    url = "service"
+    url = "services"
     weight = 3
   [[menu.main]]
     name = "Resources"
     pre = "tag"
-    url = "resource"
+    url = "resources"
     weight = 4
   [[menu.main]]
-    name = "Partnership"
+    name = "Partnerships"
     pre = "tag"
-    url = "partner"
+    url = "partnerships"
     weight = 5
   [[menu.main]]
     name = "Company"
@@ -53,7 +55,7 @@ theme = "opticaTheme"
 
 #################### default parameters ################################
 [params]
-logo = "images/Cyber-security Logo1.png"
+logo = "images/optica-logo-2.png"
 home = "Home"
 # Meta data
 description = "This is meta description"

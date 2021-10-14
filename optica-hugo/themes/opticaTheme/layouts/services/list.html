@@ -1,0 +1,50 @@
+{{ define "main" }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+<!-- banner -->
+<section class="home-header mb-0 mt-0" id="homeSlider">
+  <div class="banner-wrap">
+    {{ with .Params.image }}
+    <img class="banner-bg" src="{{ . | relURL }}" alt="product banner">
+    {{ end }}   
+    <div class="banner-content" style="height: 200px;">
+      <a class="mb-2" href="#">
+      <!--   <img src="{{ .Params.titleImage | relURL }}" alt="product banner title" class="img-fluid" style="max-width: 400px;"> -->
+      </a>                     
+      <h3 class="banner-text  mt-2" style="">{{ .Params.description | markdownify }}</h3>                
+    </div>
+  </div>  
+</section >
+<!-- /banner -->
+<!-- Product Offered -->
+<section>
+  <div class="layout-container">
+    <h3 class="text-center" style="">Our team of ISAC product experts and Cybersecurity Compliance experts train our partners extensively to support their ISAC Customers</h3>
+    <p class="text-center mt-4">The following services are typically offered by our partners to ensure that the ISAC system is not only successfully implemented but, the client’s team is fully supported through compliance and audit processes.</p>
+  </div>
+</section>
+<section class="services-container mt-0 mb-0">
+  <div class="layout-container ps-5 pe-5">
+    <div class="row g-5 services-wrapper ">
+      {{ range $index, $data := ( .Data.Pages ) }}
+      <div class="service col-lg-6 col-md-6 col-sm-6 me-auto ms-auto">        
+        {{ .Render "service" }}
+      </div>
+      {{ end }}             
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="row mt-5">
+    <div class="col-12 text-center mb-5">
+     <!--  <a href="#"><button type="button" class="theme-btn-white">Download Product Fact Sheet</button></a> -->
+      <button type="button" class="theme-btn-white download-fact-sheet" data-file="Request a Demo" data-bs-toggle="modal" data-bs-target="#downloadFactModal">Download Product Fact Sheet</button>
+    </div>
+    <div class="col-12 text-center">
+      <button type="button" class="theme-btn-white request-demo" data-option="Request a Demo" data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button>
+    </div>
+  </div>
+</section>
+{{ end }}
