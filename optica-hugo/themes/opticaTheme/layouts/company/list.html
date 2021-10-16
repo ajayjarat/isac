@@ -6,7 +6,7 @@
     {{ with .Params.image }}
     <img class="banner-bg" src="{{ . | relURL }}" alt="product banner">
     {{ end }}   
-    <div class="banner-content" style="height: 200px;">
+    <div class="banner-content" style="height: 200px; width: 700px;">
       <div class="mb-4 large-heading">
         <h1 class="text-white text-uppercase">{{ .Params.title | markdownify }}</h1>
       </div>                           
@@ -15,6 +15,11 @@
   </div>  
 </section >
 <!-- /banner -->
+<section>
+  <div class="layout-container text-center">
+    <h5>Our team of highly experience, high caliber Cybersecurity Professionals, Data Security Professionals, IT Professionals and Government Contracting specialists are hear to help you attain and maintain compliance with DISA and other agency’s standards</h5>
+  </div>  
+</section>
 <section class="">
   <div class="layout-container">
     <div class="row mb-5 g-5 about-team">
@@ -50,7 +55,7 @@
     <div class="w-70 text-center me-auto ms-auto">
       <h2 class="text-white mb-3">{{ .title | markdownify }}</h2>
       <p class="text-white mb-3 " style="font-size:1.5rem">{{ .content | markdownify }}</p>
-      <button class="btn black-btn btn-medium">JOIN OUR TEAM</button> 
+      <button class="btn dark-btn btn-medium">JOIN OUR TEAM</button> 
     </div>      
   </div>
 </section>

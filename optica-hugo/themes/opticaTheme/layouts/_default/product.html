@@ -1,6 +1,6 @@
 <div class="product-desc">        
   <img src="{{ .Params.icon | relURL }}" alt="icon" width="80" />
-  <h3 class="text-orange text-uppercase mb-4">{{ .Title }}</h3>
+  <h4 class="text-orange text-uppercase mb-4">{{ .Title }}</h4>
  <!--  {{ .Summary }} -->
   <h5 class="text-uppercase">Features</h5>
   <div class="features-height">
@@ -8,13 +8,13 @@
       <p>{{ .feature }}</p>    
     {{ end }}
   </div>
-  <h5 class="text-uppercase">Benefits</h5>
+ <!--  <h5 class="text-uppercase">Benefits</h5>
   <div class="benefits-height">
     {{ range .Params.benefits }}
       <p>{{ .benefit }}</p>    
     {{ end }}              
-  </div>
-  <a href="{{ .Permalink }}">
+  </div> -->
+  <!-- <a href="{{ .Permalink }}">
     <button type="button" class="btn btn-white">Learn More</button>
-  </a>
+  </a> -->
 </div>

@@ -2,47 +2,83 @@
 	<div class="footer-wrap">
     <div class="container">
       <div class="row">
-        <div class="col-lg-2 col-md-2 col-sm-12">
-          <div class="footer-logo">
-            <a href="{{ $.Site.BaseURL }}">
-              {{ if .Site.Params.logo }}
-  		    	  <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" class="img-fluid">
-  		        {{ else }}
-  		      	<h2 class="mb-0 text-color">{{ .Site.Title }}</h2>
-  		        {{ end }}
-            </a>
+        <!-- <div class="col-lg-4 col-md-2 col-sm-12">
+          
+        </div> -->
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="col-lg-12 text-start">
+            <h5 style="font-size:1rem;">
+              <span><a class="footer-link" href="{{ $.Site.BaseURL }}products">PRODUCTS </a>&nbsp;|&nbsp; </span>
+              <span><a class="footer-link" href="{{ $.Site.BaseURL }}services">SERVICES </a>&nbsp;|&nbsp; </span>
+              <span><a class="footer-link" href="{{ $.Site.BaseURL }}resources">RESOURCES </a>&nbsp;|&nbsp; </span>
+              <span><a class="footer-link" href="{{ $.Site.BaseURL }}partnerships">PARTNERSHIPS </a>&nbsp;|&nbsp; </span>
+              <span><a class="footer-link" href="{{ $.Site.BaseURL }}company">COMPANY </a></span>
+            </h5>
           </div>
-          <div class="address">
-            <h6>Company test address 1234, lorem ispum dollarsit amet.</h6>
-          </div>
+          <!-- <div class="row ">
+            <div class="col-6">
+              <li>
+                <a class="footer-link" href="{{ $.Site.BaseURL }}product">PRODUCTS </a>
+              </li>
+              <li>
+                <a class="footer-link" href="{{ $.Site.BaseURL }}service">SERVICES </a>
+              </li>
+              <li>
+                <a class="footer-link" href="{{ $.Site.BaseURL }}resource">RESOURCES </a>
+              </li>
+            </div>
+            <div class="col-6">     
+              <li>
+                <a class="footer-link" href="{{ $.Site.BaseURL }}partner">PARTNERSHIP </a>
+              </li>
+              <li>
+                <a class="footer-link" href="{{ $.Site.BaseURL }}company">COMPANY </a>
+              </li>
+            </div>
+          </div> -->
+          <!-- <ul>
+            <li><a class="footer-link" href="{{ $.Site.BaseURL }}products">PRODUCTS </a></li>
+            <li><a class="footer-link" href="{{ $.Site.BaseURL }}services">SERVICES </a></li>
+            <li><a class="footer-link" href="{{ $.Site.BaseURL }}resources">RESOURCES </a></li>
+            <li><a class="footer-link" href="{{ $.Site.BaseURL }}partnerships">PARTNERSHIPS </a></li>
+            <li><a class="footer-link" href="{{ $.Site.BaseURL }}company">COMPANY </a></li>
+          </ul> -->
         </div>
-        <div class="col-lg-8 col-md-8 col-sm-12">
-          <p class="about-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="social-wrap">
             <div class="icons">
               <a href="#" class="fi-wrap"><span><i class="fa fa-facebook"></i></span></a>
               <a href="#" class="fi-wrap"><span><i class="fa fa-twitter"></i></span></a>
-            </div>
-            <div class="icons">
               <a href="#" class="fi-wrap"><span><i class="fa fa-youtube"></i></span></a>
-              <a href="#" class="fi-wrap"><span><i class="fa fa-linkedin"></i></span></a>                 
+              <a href="#" class="fi-wrap"><span><i class="fa fa-linkedin"></i></span></a>
             </div>
+            <!-- <div class="footer-logo">
+              <a href="{{ $.Site.BaseURL }}">
+                {{ if .Site.Params.logo }}
+                <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" class="img-fluid">
+                {{ else }}
+                <h2 class="mb-0 text-color">{{ .Site.Title }}</h2>
+                {{ end }}
+              </a>
+            </div> -->            
+            <!-- <div class="icons">
+              <a href="#" class="fi-wrap"><span><i class="fa fa-youtube"></i></span></a>
+              <a href="#" class="fi-wrap"><span><i class="fa fa-linkedin"></i></span></a>
+            </div> -->
           </div>
         </div>
       </div>
-      <div class="row">
+     <!--  <div class="row">
         <div class="col-lg-12 text-center">
           <h5 style="font-size:1rem;">
-            <span><a class="footer-link" href="{{ $.Site.BaseURL }}product">PRODUCTS </a>&nbsp;|&nbsp; </span>
-            <span><a class="footer-link" href="{{ $.Site.BaseURL }}service">SERVICES </a>&nbsp;|&nbsp; </span>
-            <span><a class="footer-link" href="{{ $.Site.BaseURL }}resource">RESOURCES </a>&nbsp;|&nbsp; </span>
-            <span><a class="footer-link" href="{{ $.Site.BaseURL }}partner">PARTNERSHIP </a>&nbsp;|&nbsp; </span>
+            <span><a class="footer-link" href="{{ $.Site.BaseURL }}products">PRODUCTS </a>&nbsp;|&nbsp; </span>
+            <span><a class="footer-link" href="{{ $.Site.BaseURL }}services">SERVICES </a>&nbsp;|&nbsp; </span>
+            <span><a class="footer-link" href="{{ $.Site.BaseURL }}resources">RESOURCES </a>&nbsp;|&nbsp; </span>
+            <span><a class="footer-link" href="{{ $.Site.BaseURL }}partnerships">PARTNERSHIPS </a>&nbsp;|&nbsp; </span>
             <span><a class="footer-link" href="{{ $.Site.BaseURL }}company">COMPANY </a></span>
           </h5>
         </div>
-      </div>        
+      </div>   -->      
     </div>
 	</div>
 	<div id="copyright">
@@ -57,6 +93,83 @@
     </div>
 	</div>
 </footer>
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="conatctModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="contactForm" class="contact-form">  
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mb-3">
+              <input type="text" name="yourName" class="contact-text-field" placeholder="Name" >
+            </div>
+            <div class="col-lg-6 col-md-12 mb-3">
+              <input type="text" name="companyName" class="contact-text-field" placeholder="Company" >
+            </div>
+            <div class="col-lg-6 col-md-12 mb-3 " >
+              <input type="email" name="yourEmail" class="contact-text-field" placeholder="Email" >
+            </div>
+            <div class="col-lg-6 col-md-12 mb-3">
+              <input type="text" name="yourContact" class="contact-text-field" placeholder="Phone" >
+            </div>
+            <div class="col-lg-12 col-md-12 mb-3 ">
+              <select id="purpose" name="yourPurpose">
+                  <option value="">Purpose</option>
+                  <option value="Request a Demo">Request a Demo</option>
+                  <option value="Request Meeting">Request Meeting</option>
+                  <option value="Request Call back">Request Call back</option>
+                  <option value="Partnership Inquiry">Partnership Inquiry</option>
+              </select>     
+            </div>         
+            <div class="col-lg-12 col-md-12 mb-3">
+              <textarea name="description" class="contact-text-field" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class=" custom-form-send-button mb-2 text-center">
+                <button type="submit" class="btn custom-form-submit ">SEND</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>      
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="downloadFactModal" tabindex="-1" aria-labelledby="downloadFactLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Download Product Fact Sheet</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <form id="download-fact-form" class="contact-form">  
+          <div class="row">
+            <div class="col-lg-12 col-md-12 mb-3">
+              <input type="text" name="yourName" class="contact-text-field" placeholder="Name" >
+            </div>          
+            <div class="col-lg-12 col-md-12 mb-3 " >
+              <input type="email" name="yourEmail" class="contact-text-field" placeholder="Email" >
+            </div>
+          </div>        
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class=" custom-form-send-button mb-2 text-center">
+                <button type="submit" class="btn custom-form-submit ">SEND</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>      
+    </div>
+  </div>
+</div>
 {{ "<!-- JS Plugins -->" | safeHTML }}
 {{ range .Site.Params.plugins.js}}
 <script src="{{ .URL | absURL }}"></script>

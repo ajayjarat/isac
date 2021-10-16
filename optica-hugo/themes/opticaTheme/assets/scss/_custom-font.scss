@@ -16,9 +16,13 @@
 }
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter/Inter-VariableFont_slnt-wght.ttf') format("truetype-variations");
+  src: url('../fonts/Inter/static/Inter-Regular.ttf') format("truetype-variations");
 }
 @font-face {
-  font-family: 'InterBolder';
-  src: url('../fonts/Inter-bold/Inter-VariableFont_slnt.ttf') format("truetype-variations");
+  font-family: 'Inter Bolder';
+  src: url('../fonts/Inter/static/Inter-ExtraBold.ttf') format("truetype-variations");
+}
+@font-face {
+  font-family: 'Inter Bold';
+  src: url('../fonts/Inter/static/Inter-Bold.ttf') format("truetype-variations");
 }

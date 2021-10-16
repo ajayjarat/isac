@@ -8,16 +8,20 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="banner-wrap">
-          <img class="banner-bg" src="{{ .image | relURL }}" alt="{{ .title | markdownify }}">
+          <img class="banner-bg" src="{{ .image | relURL }}" alt="{{ .title | markdownify }}">          
           <div class="banner-content">
             <a class="mb-2" href="#">
             	<!-- <h1>{{ .title | markdownify }}</h1> -->
-            	<img src="{{ .titleImage | relURL }}" class="img-fluid" style="max-width: 250px;">
+            	<!-- <img src="{{ .titleImage | relURL }}" class="img-fluid" style="max-width: 250px;"> -->
+              <h1 class="text-white large-heading">OptICA Solutions Launches</h1>
+              <h2 class="text-white heading-xl">ISAC&trade; </h2>
             </a>
+            <h6 class="text-white"><span class="text-orange">I</span>nformation <span class="text-orange">S</span>ecurity <span class="text-orange">A</span>ll-in-one <span class="text-orange">C</span>onsole with Continuous Compliance Technology</h6>
             <h3 class="text-white">{{ .content | markdownify }}</h3>
             <div class="multi-button-wrap mt-4">
-              <button class="black-btn btn-medium me-3">Find More</button>
-              <button class="black-btn btn-medium">Request A Demo</button>
+              <!-- <a id="read-more" href="{{ $.Site.BaseURL }}{{ .url }}" ><button class="dark-btn btn-medium me-3">Read More</button></a> -->
+              <a href="{{ $.Site.BaseURL }}{{ .url1 }}"><button class="dark-btn btn-medium ms-3">Read More</button></a>
+              <button type="button" class="dark-btn btn-medium request-demo" data-option="Request a Demo" data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button>
             </div>
           </div>
         </div>
@@ -41,6 +45,16 @@
 {{ end }}
 {{ end }}
 
+{{ if .Site.Data.homepage.opticaSolutions.enable }}
+{{ with .Site.Data.homepage.opticaSolutions }}
+  <section id="" class="mt-0">
+    <div class="layout-container text-center">
+      <h5 class="mb-5">{{ .content | markdownify }}</h5>
+      <a href="{{ $.Site.BaseURL }}{{ .url }}"><button class="theme-btn btn-medium ms-3">Read More</button></a>
+    </div>
+  </section>
+{{ end }}
+{{ end }}
 {{ if .Site.Data.homepage.productPortfolio.enable }}
 {{ with .Site.Data.homepage.productPortfolio }}
 <section id="productPortfolio" class="product-portfolio">
@@ -48,48 +62,30 @@
     <h1 class="text-center text-uppercase">{{ .title | markdownify }}</h1>
     <div class="row mt-5">
       <div class="col-lg-6 col-md-6 col-sm-6">
-        <h3>5 Reasons why you will live ISAC</h3>
+        <h3>5 Reasons why you will love ISAC</h3>
         <div class="mt-3">
         	{{range .list}}
         		<div class="list-wrap">
 	            <img src="images/small-arrow.png" class="img-fluid">
 	            <h5>{{ .listItem }} </h5>
 	          </div>
-          {{end}}
-          <!-- <div class="list-wrap">
-            <img src="images/small-arrow.png" class="img-fluid">
-            <h5>Lorem ispum dollar sit amet </h5>
-          </div>
-          <div class="list-wrap">
-            <img src="images/small-arrow.png" class="img-fluid">
-            <h5>Lorem ispum dollar sit amet </h5>
-          </div>
-          <div class="list-wrap">
-            <img src="images/small-arrow.png" class="img-fluid">
-            <h5>Lorem ispum dollar sit amet </h5>
-          </div>
-          <div class="list-wrap">
-            <img src="images/small-arrow.png" class="img-fluid">
-            <h5>Lorem ispum dollar sit amet </h5>
-          </div>
-          <div class="list-wrap">
-            <img src="images/small-arrow.png" class="img-fluid">
-            <h5>Lorem ispum dollar sit amet </h5>
-          </div> -->
+          {{end}}         
+        </div>
+        <div class="text-center">
+          <a href="{{ $.Site.BaseURL }}{{ .url1 }}"><button class="theme-btn btn-medium ms-3">Read More</button></a>
         </div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6">
         <div class="video-container">
         	<img src="{{ .image | relURL }}" class="img-fluid">
-          <!-- <img src="images/product-video-img.png" class="img-fluid"> -->
-         
-          <img class="play-btn" src="images/video-btn.png" class="img-fluid" width="100">              
+          <img class="play-btn" src="images/video-btn.png" class="img-fluid" width="100">
         </div>
       </div>
     </div>
-    <div class="row mt-5">
+    <div class="row mt-5 pt-5">
       <div class="col-lg-12 text-center btn-wrap">
-        <button class="theme-btn-white text-uppercase btn-medium">Request A Demo</button>
+        <!-- <a class="request-demo" href="#contactUs"><button class="theme-btn-white btn-medium">Request Demo</button></a> -->
+        <button type="button" class="theme-btn-white request-demo" data-option="Request a Demo" data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button>        
       </div>
     </div>
   </div>
@@ -117,43 +113,7 @@
             </div>
           </div>        	        
         </div>
-        {{ end }}  
-        <!-- <div class="col-lg-4 col-md-4 col-sm-6">
-          <div class="expert-warp">            
-            <h3>Network Security Engineer</h3>
-            <p>Lorem ispum dollar sit amet.lorem ispum dollar sit amet.</p>
-            <div class="col-12 text-end">
-              <a class="text-end"><span>VIEW MORE </span><img src="images/orange-right-arrow.png"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6">
-          <div class="expert-warp">            
-            <h3>Network Security Engineer</h3>
-            <p>Lorem ispum dollar sit amet lorem ispum dollar sit amet. Lorem ispum dollar sit amet.</p>
-            <div class="col-12 text-end">
-              <a class="text-end"><span>VIEW MORE </span><img src="images/orange-right-arrow.png"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6">
-          <div class="expert-warp">            
-            <h3>Network Security Engineer</h3>
-            <p>Lorem ispum dollar sit amet.lorem ispum dollar sit amet.</p>
-            <div class="col-12 text-end">
-              <a class="text-end"><span>VIEW MORE </span><img src="images/orange-right-arrow.png"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6">
-          <div class="expert-warp">            
-            <h3>Network Security Engineer</h3>
-            <p>Lorem ispum dollar sit amet.lorem ispum dollar sit amet.</p>
-            <div class="col-12 text-end">
-              <a class="text-end"><span>VIEW MORE </span><img src="images/orange-right-arrow.png"></a>
-            </div>
-          </div>
-        </div> -->
+        {{ end }}      
         <div class="clearfix"></div>
       </div>
     </div>
@@ -164,43 +124,46 @@
 
 {{ if .Site.Data.homepage.testimonials.enable }}
 {{ with .Site.Data.homepage.testimonials }}
-<section id="testmonials" class="testimonials mb-0 mt-0">
-  <div id="textimonialSliderControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-    	{{ range $index, $data := ( .review ) }}			  			  	
-		    <div class="carousel-item {{ if (eq $index 0) }} active {{ end }}">
-	        <div class="banner-wrap">
-	        	<img class="banner-bg" src="{{ .image | relURL }}">
-	          <!-- img class="banner-bg" src="images/testmonial-bg.png" alt="Images"> -->
-	          <div class="banner-content">                
-	            <div class="ms-auto col-lg-offset-6 col-lg-6 col-md-offset-6 col-md-6 col-xs-12">
-	              <h3 class="name">{{ .firstName }} {{ .lastName }} - {{ .designation }} - {{ .company }}</h3>
-	              <h2 class="mt-4 desc">{{ .content | markdownify }}</h2>
-	              <button type="button" class="btn theme-btn-orange mt-5">
-	                <h3><i class="fa fa-play-circle-o" aria-hidden="true"></i><span class="text-white text-uppercase">Hear {{ .firstName }}'s Story</span></h3>
-	              </button>
-	            </div>
-	            <div class="clearfix"></div>                
-	          </div>
-	        </div>
-	      </div>			 
-			{{ end }}    	             
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#textimonialSliderControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#textimonialSliderControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>      
+<section id="testmonials" class="testimonials">
+  <h1 class="text-center text-uppercase mb-5">{{ .title | markdownify }}</h1>
+  <div class="layout-container">
+    <div id="textimonialSliderControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+      	{{ range $index, $data := ( .review ) }}			  			  	
+  		    <div class="carousel-item {{ if (eq $index 0) }} active {{ end }}">
+  	        <div class="banner-wrap">
+  	        	<img class="banner-bg" src="{{ .image | relURL }}">
+  	          <!-- img class="banner-bg" src="images/testmonial-bg.png" alt="Images"> -->
+  	          <div class="banner-content">                
+  	            <div class="ms-auto col-lg-offset-6 col-lg-6 col-md-offset-6 col-md-6 col-xs-12">
+  	              <h3 class="name">{{ .firstName }} {{ .lastName }} - {{ .designation }} - {{ .company }}</h3>
+  	              <h2 class="mt-4 desc">{{ .content | markdownify }}</h2>
+  	              <button type="button" class="btn theme-btn-orange mt-5">
+  	                <h3><i class="fa fa-play-circle-o" aria-hidden="true"></i><span class="text-white text-uppercase">Hear {{ .firstName }}'s Story</span></h3>
+  	              </button>
+  	            </div>
+  	            <div class="clearfix"></div>                
+  	          </div>
+  	        </div>
+  	      </div>			 
+  			{{ end }}    	             
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#textimonialSliderControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#textimonialSliderControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> 
+  </div>     
 </section> 
 {{ end }}
 {{ end }}
 
 {{ if .Site.Data.homepage.blog.enable }}
-<section class="blog-container mt-0">
+<!-- <section class="blog-container">
   <div class="layout-container ps-5 pe-5">
     <div class="row g-5">
     	{{ range first 4 (where site.RegularPages "Type" "post")}}
@@ -211,12 +174,12 @@
       <div class="clearfix"></div>
     </div>
   </div>
-</section>
+</section> -->
 {{ end }}
 
 {{ if .Site.Data.homepage.partners.enable }}
 {{ with .Site.Data.homepage.partners}}
-<section class="partners">
+<section class="partners mb-0">
   <div class="container">
     <h1 class="text-center text-uppercase">{{ .title | markdownify }}</h1>
     <div class="row g-4 mt-5 ">
@@ -232,13 +195,13 @@
 {{ end }}
 {{ end }}
 
-<section class="contact-bg mb-0">
+<section class="contact-bg mb-0 mt-0" id="contactUs">
   <div class="layout-container">
     <div class="row gx-5">
       <div class="col-lg-6 col-md-6 col-sm-12">
-        <div style="min-height: 300px; background: #012395;">
+        <div style="min-height: 300px; background: #182a83;">
           <div class="p-4">
-            <h3 class="text-white text-uppercase">lOREM ISPUM DOLLAR SIT AMET</h3>
+            <h5 class="text-white text-uppercase">OptICA Solutions Headquarters is located at:</h5>
             <p class="text-white">Company test address 1234 ,  lorem ispum dollar</p>
             <p class="text-white"><span><i class="fa fa-phone text-white"></i></span>: 1234-5678-900</p>
             <div class="social-icons" style="display:flex; flex-direction:row; align-items: center;">
@@ -253,34 +216,29 @@
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12">
         <h1 class="text-start text-white text-uppercase mt-5">Contact Us</h1>
-        <div id="" class="contact-form">  
+        <form id="homeContactForm" class="contact-form">  
           <div class="row">
             <div class="col-lg-6 col-md-12 mb-3">
               <input type="text" name="yourName" class="contact-text-field" placeholder="Name" >
+            </div>
+            <div class="col-lg-6 col-md-12 mb-3">
+              <input type="text" name="companyName" class="contact-text-field" placeholder="Company" >
             </div>
             <div class="col-lg-6 col-md-12 mb-3 " >
               <input type="email" name="yourEmail" class="contact-text-field" placeholder="Email" >
             </div>
             <div class="col-lg-6 col-md-12 mb-3">
               <input type="text" name="yourContact" class="contact-text-field" placeholder="Phone" >
-            </div>    
-            <div class="col-lg-6 col-md-12 mb-3">
-              <input type="text" name="companyName" class="contact-text-field" placeholder="Company" >
             </div>
-            <div class="col-lg-6 col-md-12 mb-3 ">
+            <div class="col-lg-12 col-md-12 mb-3 ">
               <select id="purpose">
-                  <option value="">Perpose</option>
-                  <option value="Perpose1">Perpose1</option>
-                  <option value="Perpose2">Perpose2</option>
+                  <option value="">Purpose</option>
+                  <option value="Request a Demo">Request a Demo</option>
+                  <option value="Request Meeting">Request Meeting</option>
+                  <option value="Request Call back">Request Call back</option>
+                  <option value="Partnership Inquiry">Partnership Inquiry</option>
               </select>     
-            </div>
-            <div class="col-lg-6 col-md-12 mb-3">
-              <select id="optionField2">
-                  <option value="">How did you know us</option>
-                  <option value="test1">test1</option>
-                  <option value="test2">test2</option>
-              </select>
-            </div>
+            </div>           
             <div class="col-lg-12 col-md-12 mb-3">
               <textarea name="description" class="contact-text-field" placeholder="Message"></textarea>
             </div>
@@ -292,7 +250,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>
