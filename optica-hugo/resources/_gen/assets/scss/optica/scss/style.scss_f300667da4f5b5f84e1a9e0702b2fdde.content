@@ -61,11 +61,23 @@
   border-color: #000 !important;
   font-weight: 700; }
 
+.theme-btn {
+  background-color: #012395 !important;
+  color: #fff !important;
+  border: 1px solid !important;
+  border-color: #012395 !important;
+  font-weight: 700;
+  padding: 10px 15px; }
+
+048431
 .text-white {
   color: #fff; }
 
+.text-green {
+  color: #182a83; }
+
 .text-orange {
-  color: #012395; }
+  color: #e1502a; }
 
 section {
   margin-top: 5rem;
@@ -83,7 +95,7 @@ section {
 #homeSlider .banner-wrap {
   position: relative; }
   #homeSlider .banner-wrap .banner-bg {
-    height: 650px;
+    height: 100%;
     width: 100%; }
   #homeSlider .banner-wrap .banner-content {
     position: absolute;
@@ -93,6 +105,8 @@ section {
     top: 0;
     bottom: 0;
     margin: auto; }
+    #homeSlider .banner-wrap .banner-content a {
+      text-decoration: none; }
     #homeSlider .banner-wrap .banner-content .banner-text {
       font-family: "Montserrat Regular", "sans-serif" !important;
       font-weight: 400 !important; }
@@ -110,7 +124,13 @@ section {
     min-width: auto;
     margin: 12px 15px 0 0;
     padding: 10px 12px;
-    text-transform: uppercase; }
+    text-transform: capitalize; }
+
+.heading-xl {
+  font-family: "Inter Bold", "sans-serif" !important;
+  letter-spacing: .02em;
+  font-size: 5rem !important;
+  font-weight: 700; }
 
 .large-heading h1 {
   font-family: "Montserrat Bold", "sans-serif" !important;
@@ -118,7 +138,7 @@ section {
   font-size: 3rem !important; }
 
 .layout-container {
-  margin: 20px 150px; }
+  margin: 0 150px 20px; }
 
 .list-wrap {
   display: flex;
@@ -164,11 +184,12 @@ section {
   font-weight: 700; }
 
 .cyber-experts {
-  background-image: url("./../images/wave-4.png");
+  background-image: url("./../images/wave-7.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 6rem;
-  padding-bottom: 5rem; }
+  padding-bottom: 5rem;
+  min-height: 642px; }
   .cyber-experts .expert-warp {
     padding: 20px;
     background-color: #fff; }
@@ -181,7 +202,7 @@ section {
 .testimonials .banner-wrap {
   position: relative; }
   .testimonials .banner-wrap .banner-bg {
-    height: 600px;
+    height: 100%;
     width: 100%; }
   .testimonials .banner-wrap .banner-content {
     position: absolute;
@@ -196,12 +217,11 @@ section {
       font-family: "Inter", "sans-serif" !important; }
 
 .blog-container {
-  background-image: url("./../images/curve-9.png");
+  background-image: url("./../images/curve-6.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #ecf1f5; }
+  padding-bottom: 5rem; }
   .blog-container .blog-wrap {
     position: relative; }
     .blog-container .blog-wrap .blog-content {
@@ -219,8 +239,14 @@ section {
         font-weight: bold;
         color: #000; }
 
-.partener-wrap img {
-  max-width: 200px; }
+.partners {
+  background-image: url("./../images/wave-11.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+  .partners .partener-wrap img {
+    max-width: 200px; }
 
 .contact-bg {
   background-image: url("./../images/curve-3.png");
@@ -328,10 +354,18 @@ footer #copyright {
   .services-container .services-wrapper {
     max-width: 80%;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    display: flex; }
+    .services-container .services-wrapper div.service:nth-child(3) {
+      order: 1; }
+    .services-container .services-wrapper div:nth-child(2) {
+      order: 3; }
+    .services-container .services-wrapper div:nth-child(1) {
+      order: 2; }
   .services-container .service-wrap {
     background-color: #000;
-    padding: 15px; }
+    padding: 15px;
+    min-height: 420px; }
     .services-container .service-wrap .service-title {
       border-bottom: 2px solid #012395; }
 
@@ -359,7 +393,7 @@ footer #copyright {
     font-weight: normal !important; }
 
 .call-action-container {
-  background-color: #012395;
+  background-color: #182a83;
   padding-top: 2rem;
   padding-bottom: 2rem; }
   .call-action-container .dark-btn {
@@ -435,8 +469,12 @@ footer #copyright {
 
 @font-face {
   font-family: 'Inter';
-  src: url("../fonts/Inter/Inter-VariableFont_slnt-wght.ttf") format("truetype-variations"); }
+  src: url("../fonts/Inter/static/Inter-Regular.ttf") format("truetype-variations"); }
 
 @font-face {
-  font-family: 'InterBolder';
-  src: url("../fonts/Inter-bold/Inter-VariableFont_slnt.ttf") format("truetype-variations"); }
+  font-family: 'Inter Bolder';
+  src: url("../fonts/Inter/static/Inter-ExtraBold.ttf") format("truetype-variations"); }
+
+@font-face {
+  font-family: 'Inter Bold';
+  src: url("../fonts/Inter/static/Inter-Bold.ttf") format("truetype-variations"); }

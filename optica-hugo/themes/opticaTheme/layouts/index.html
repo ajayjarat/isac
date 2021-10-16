@@ -20,8 +20,8 @@
             <h3 class="text-white">{{ .content | markdownify }}</h3>
             <div class="multi-button-wrap mt-4">
               <a id="read-more" href="{{ $.Site.BaseURL }}{{ .url }}" ><button class="dark-btn btn-medium me-3">Read More</button></a>
-              
               <button type="button" class="dark-btn btn-medium request-demo" data-option="Request a Demo" data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button>
+             <!--  <button type="button" class="dark-btn btn-medium request-demo" data-option="Request a Demo" data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button> -->
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@
     <div class="row mt-5 pt-5">
       <div class="col-lg-12 text-center btn-wrap">
         <!-- <a class="request-demo" href="#contactUs"><button class="theme-btn-white btn-medium">Request Demo</button></a> -->
-        <button type="button" class="theme-btn-white request-demo" data-option="Request a Demo" data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button>
+        <button type="button" class="theme-btn-white request-demo" data-option="Request a Demo" data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button>        
       </div>
     </div>
   </div>
@@ -216,7 +216,7 @@
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12">
         <h1 class="text-start text-white text-uppercase mt-5">Contact Us</h1>
-        <div id="" class="contact-form">  
+        <form id="homeContactForm" class="contact-form">  
           <div class="row">
             <div class="col-lg-6 col-md-12 mb-3">
               <input type="text" name="yourName" class="contact-text-field" placeholder="Name" >
@@ -238,14 +238,7 @@
                   <option value="Request Call back">Request Call back</option>
                   <option value="Partnership Inquiry">Partnership Inquiry</option>
               </select>     
-            </div>
-            <!-- <div class="col-lg-6 col-md-12 mb-3">
-              <select id="optionField2">
-                  <option value="">How did you know us</option>
-                  <option value="test1">test1</option>
-                  <option value="test2">test2</option>
-              </select>
-            </div> -->
+            </div>           
             <div class="col-lg-12 col-md-12 mb-3">
               <textarea name="description" class="contact-text-field" placeholder="Message"></textarea>
             </div>
@@ -257,7 +250,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>

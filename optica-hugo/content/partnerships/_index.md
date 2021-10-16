@@ -1,7 +1,7 @@
 ---
 title: "OptICA Welcomes Partnerships"
 draft: false
-image: "images/partners-banner.png"
+image: "images/partner.png"
 description : "Join the ISAC Ecosystem to help your clients achieve 100% compliance with the DOD Cybersecurity Mandates"
 ---
 
