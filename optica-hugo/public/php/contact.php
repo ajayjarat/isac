@@ -7,15 +7,15 @@
     $subject='';
     $toEmail= "enquiry@optica.solutions";
     $fromEmail="shalini@jivinc.in";
-    $message ="";    
+    $message ="";
     if (isset($_POST['data']) && isset($_POST['subject'])) { 
         $data=$_POST['data'] ;
         $message="<div>Customer details:</div>";
         foreach($data as $key => $val) {
           $message.="<div><p>".$key.":".$val."</p></div>";
         }   
-        $name=$_POST['data']['yourName'];        
-        $senderEmail=$_POST['data']['yourEmail'] ;
+        $name=$_POST['data']['customerName'];        
+        $senderEmail=$_POST['data']['customerEmail'] ;
         $subject=$_POST['subject'];
     }
     $email->setFrom($fromEmail, "Test Recipient");
