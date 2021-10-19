@@ -11,8 +11,8 @@
           <img class="banner-bg" src="{{ .image | relURL }}" alt="{{ .title | markdownify }}">          
           <div class="banner-content">
             <a class="mb-2" href="#">            	
-              <h1 class="text-white large-heading">OptICA Solutions Launches</h1>
-              <h2 class="text-white heading-xl">ISAC&trade; </h2>
+              <h1 class="text-white large-heading">OptICA&trade; Launches ISAC</h1>
+             <!--  <h2 class="text-white heading-xl">ISAC </h2> -->
             </a>
             <h6 class="text-white"><span class="text-orange">I</span>nformation <span class="text-orange">S</span>ecurity <span class="text-orange">A</span>ll-in-one <span class="text-orange">C</span>onsole with Continuous Compliance Technology</h6>
             <h3 class="text-white">{{ .content | markdownify }}</h3>
@@ -103,9 +103,9 @@
       		<div class="expert-warp">            
             <h3>{{ .title | markdownify }}</h3>
             <p>{{ .content | markdownify }}</p>
-            <div class="col-12 text-end">
+            <!-- <div class="col-12 text-end">
               <a class="text-end"><span>VIEW MORE </span><img src="images/orange-right-arrow.png"></a>
-            </div>
+            </div> -->
           </div>        	        
         </div>
         {{ end }}      
@@ -117,7 +117,7 @@
 {{ end }}
 {{ end }}
 
-{{ if .Site.Data.homepage.testimonials.enable }}
+<!--{{ if .Site.Data.homepage.testimonials.enable }}
 {{ with .Site.Data.homepage.testimonials }}
 <section id="testmonials" class="testimonials">
   <h1 class="text-center text-uppercase mb-5">{{ .title | markdownify }}</h1>
@@ -154,7 +154,7 @@
   </div>     
 </section> 
 {{ end }}
-{{ end }}
+{{ end }}-->
 
 <!--{{ if .Site.Data.homepage.blog.enable }}
  <section class="blog-container">
@@ -173,11 +173,21 @@
 
 {{ if .Site.Data.homepage.partners.enable }}
 {{ with .Site.Data.homepage.partners}}
-<section class="partners mb-0">
+<section class="partners mt-4">
   <div class="container">
     <h1 class="text-center text-uppercase">{{ .title | markdownify }}</h1>
+    <div class="row g-4 mt-3 ">
+      <h3 class="text-center text-uppercase">Business Partners</h3>
+    	{{ range .businessPartner}}
+      <div class="col-lg-4 text-center partener-wrap">
+        <img src="{{ .image | relURL }}" >
+      </div>
+      {{ end }}      
+      <div class="clearfix"></div>      
+    </div>
     <div class="row g-4 mt-5 ">
-    	{{ range .partner}}
+      <h3 class="text-center text-uppercase">Technology Partners</h3>
+      {{ range .technologyPartner}}
       <div class="col-lg-4 text-center partener-wrap">
         <img src="{{ .image | relURL }}" >
       </div>

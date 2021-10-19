@@ -1,5 +1,19 @@
-@media (min-width:992 ){
+@media (min-width:992px ){
 	body{
 		font-size: 16px;
+	}
+	#main-menu.navbar{		.navbar-brand{
+		    img{
+		      max-width: 60px;
+		    }
+		}
+	}
+}
+@media (max-width: 991px ) {
+	.navbar-brand{
+		img{
+	      height: 60px;
+	      width: 100%;
+	    }
 	}
 }

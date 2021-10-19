@@ -5,7 +5,7 @@
     $name='' ;
     $senderEmail='';
     $subject='';
-    $toEmail= "enquiry@optica.solutions";
+    $toEmail= "info@optica.solutions";
     $fromEmail="shalini@jivinc.in";
     $message ="";
     if (isset($_POST['data']) && isset($_POST['subject'])) { 

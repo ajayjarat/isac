@@ -82,13 +82,13 @@ section{
   width: 100%;
   justify-content: space-between !important;
   align-items: center;
-  padding: .5rem 3rem;
+  padding: 0 3rem;
   border-bottom:3px solid $theme-color1;
-  .navbar-brand{
-    img{
-      max-width: 70px;
-    }
-  }
+  // .navbar-brand{
+  //   img{
+  //     max-width: 70px;
+  //   }
+  // }
 }
 #homeSlider{  
   .banner-wrap{
@@ -201,6 +201,7 @@ section{
   .expert-warp{
     padding:20px;
     background-color: #fff;
+    min-height: 230px;
     a{
       text-transform: uppercase;
       color: $theme-color1;
@@ -261,11 +262,11 @@ section{
   }
 }
 .partners{ 
-  background-image: url('./../images/wave-11.png'); 
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  // background-image: url('./../images/wave-11.png'); 
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   .partener-wrap{
     img{
       max-width: 200px;
@@ -428,7 +429,7 @@ footer{
     .service-title{
       border-bottom: 2px solid $theme-color1;
     }
-    min-height: 420px;
+    min-height: 300px;
   }
 }
 .resource-wrap{
@@ -484,11 +485,11 @@ footer{
       margin-bottom: 1rem;
     }
     padding: 10px;
-    text-align: center;
+    text-align: left;
     border-left: 1px solid $gray-300; 
     .features-height{
-      margin-bottom: 2.5rem;
-      min-height: 250px;
+      // margin-bottom: 2.5rem;
+      // min-height: 250px;
     }
     .benefits-height{
       min-height: 200px;
@@ -504,6 +505,11 @@ footer{
   .theme-btn-white{
     padding: 1rem 5rem !important;
   }
+}
+.w-80{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 #productTestimonials{
   max-width: 60%;
