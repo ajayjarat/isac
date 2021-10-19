@@ -9,7 +9,7 @@ description : "With nearly 200 active users and 2,000+ servers under watch, and 
 
 
 features:
-- feature : "ISAC is the disruptive cybersecurity system proven to offer 100% compliance for DISA STIG/SCAP Standards in mid-large scale government enterprises."
+- feature : "IISAC is the disruptive cybersecurity system proven to offer 100% compliance for DISA STIG/SCAP Standards in mid-large scale government enterprises."
 - feature : "With nearly 200 active users and 2,000+ servers under watch, and growing, ISAC has earned major kudos from the client(s) and cybersecurity experts and is positioned for exponential growth."
 
 benefits:

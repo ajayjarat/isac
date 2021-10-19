@@ -9,7 +9,7 @@ description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
 
 features:
 - feature : "Compared to conventional STIG/SCAP benchmarks and processes (and other auditing and remediation products), ISAC’s hyper-automation, end-to-end lifecycle coverage, and centralized control plus collaboration and visuals are totally disruptive."
-- feature : "To facilitate adoption, key ISAC screens appear virtually identical to their DoD STIG Viewer counterparts."
+- feature : "To To facilitate adoption, key ISAC screens appear virtually identical to their DoD STIG Viewer counterparts."
 - feature : "ISAC automatically interfaces directly with all source and target DoD systems."
 - feature : "Leverages cutting edge technology and absolute best practices (we are inventors of successful industry methods) to maximize ISAC’s enduring value."
 

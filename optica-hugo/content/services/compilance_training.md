@@ -1,5 +1,5 @@
 ---
-title: "Compilance Training Service"
+title: "Compilance Training"
 date: 2021-10-05
 draft: false
 image: "images/blog-sec-img.png"
@@ -11,7 +11,4 @@ link: "#"
 type: "service"
 ---
 
-We offer training to customers on how to be continuously complaint for STIG, SCAP. \  
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
-
+We offer training on how to be “continuously compliant” with DoD DISA STIG/SCAP Standards.  

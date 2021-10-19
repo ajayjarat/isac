@@ -11,7 +11,7 @@ features:
 - feature : "ISAC hyper-automates all end-to-end aspects of cybersecurity posture, including Scanning, Documentation, Remediation, Reporting & Analytics."
 - feature : "From a single pane of glass, ISAC starts with bulk acquisition and deployment of all STIG, SCAP, and other DoD/FISMA/NIST compliance benchmarks across hundreds or thousands of servers."
 - feature : "It then provides central orchestration of vulnerability assessments, follow-up, remediation (incl false positives), reminders, audit ep/closure/scoring, gap collaboration, dashboarding (incl heat maps), and more."
-- feature : "ISAC saves hundreds of hours per month in laborious and error prone technical security SOPs. "
+- feature : "ISAC saves hundreds of hours per month in laborious and error prone technical security SOPs."
 
 benefits:
   - benefit : "Lorem ipsum dolor sit amet"     

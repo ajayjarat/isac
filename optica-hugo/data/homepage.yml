@@ -6,13 +6,13 @@ banner:
   image : "images/curve-4.png"
   titleImage : "images/isac-text-img2.png"
   url1: "products"
-  content : "Cyber industry’s most thorough network monitoring software"
+  content : "Cyber industry’s most thorough network compliance and remediation software"
    
 
 opticaSolutions:
   enable : true  
   title : "OptICA Solutions"
-  content : "OptICA Solutions – Optimal Intelligent Cyber Automation Solutions – is a specialized cyber security company that focuses exclusively on hyper-automating the rigorous work of continuous compliance of Information Systems’ Networks with US DOD and Civilian Agency Standards."
+  content : "OptICA Solutions – Optimal Intelligent Cyber Automation Solutions – is a specialized cyber security company that focuses exclusively on hyper-automating the rigorous work of continuous compliance of Information Systems’ Networks IT Assets with US DoD and Civilian Agency Standards."
   url: "company"
 
 
@@ -26,7 +26,7 @@ productPortfolio:
   urlRequestDemo: "#contactUS"
   list:
     - listItem : "Automatically deploy for your entire systems fleet – proven for large US Army Enterprise with 1000s of servers"
-    - listItem : "Achieve 100% Compliance for DISA STIG/SCAP Standards"
+    - listItem : "Achieve 100% compliance for DISA STIG/SCAP Standards generally on the first pass"
     - listItem : "Ensure ongoing “continuous compliance” from one, powerful, simple, central platform"
     - listItem : "Enjoy the speed of hyper-automation – Generates 5+ million entries in 6 seconds"
     - listItem : "Easily pass audits - attach documents, historic results, trends, and compliance analysis" 
@@ -36,22 +36,19 @@ cyberSecurity:
   title: "What Cyber Security Experts Are Saying"
   securityItem:
     # security item loop
-    - title : "Network Security Engineer"      
-      content : "Lorem ispum dollar sit amet.lorem ispum dollar sit amet.Lorem ispum dollar sit amet.lorem ispum dollar sit amet.
-      Lorem ispum dollar sit amet.lorem ispum dollar sit amet."
+    - title : "CCRI Auditor"      
+      content : "SAC has achieved “First Ever” 100% score on the first audit pass <br> …. May 2021"
       link: "#"
     # security item loop
-    - title : "Network Security Engineer"      
-      content : "Lorem ispum dollar sit amet.lorem ispum dollar sit amet.Lorem ispum dollar sit amet.lorem ispum dollar sit amet.
-      Lorem ispum dollar sit amet.lorem ispum dollar sit amet."      
+    - title : "Fort Knox ISSM and Cyber Security Division Chief"      
+      content : "ISAC provides the most comprehensive and single pane of glass view of the enterprise’s total cybersecurity posture that I have ever seen from any SEAM tool <br>…. Sept 2021"      
     # security item loop
-    - title : "Network Security Engineer"
-      content : "Lorem ispum dollar sit amet.lorem ispum dollar sit amet.Lorem ispum dollar sit amet.lorem ispum dollar sit amet.
-      Lorem ispum dollar sit amet.lorem ispum dollar sit amet."     
+    - title : ""
+      content : ""     
 
 testimonials:
   enable : true
-  title : "What ISAC Customers are Saying"
+  title : "Testimonials"
   subtitle : "Amazing reviews illo tenetur laboriosam excepturi velit in, temporibus ab rem dicta sint obcaecati!"
   review:
     # review item loop
@@ -91,30 +88,30 @@ blog:
 partners:
   enable : true
   title : "OUR VALUED PARTNERS"
-  partner:
+  businessPartner:
     # partner item loop
-    - title : "Partner ABC"
-      image : "images/partner-img-1.png"
+    - title : "Dfuse"
+      image : "images/dfuselogo.jpg"
       
     # partner item loop
     - title : "Insystech"
-      image : "images/partner-img-1.png"
+      image : "images/insystech-logo.png"
+
+    # partner item loop
+    - title : "Steelgate"
+      image : "images/steelgate-small.jpg"
+  technologyPartner:   
+    # partner item loop
+    - title : "Digital Ocean"
+      image : "images/digital-ocean.png"
 
     # partner item loop
     - title : "Partner ABC"
-      image : "images/partner-img-1.png"
+      image : "images/aws-logo1.jpg"
       
     # partner item loop
     - title : "Insystech"
-      image : "images/partner-img-1.png"
-
-    # partner item loop
-    - title : "Partner ABC"
-      image : "images/partner-img-1.png"
-      
-    # partner item loop
-    - title : "Insystech"
-      image : "images/partner-img-1.png"
+      image : "images/azure-logo.png"
 
 contact:
   enable : true

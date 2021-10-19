@@ -20,15 +20,15 @@
 <!-- Product Offered -->
 <section>
   <div class="layout-container">
-    <h3 class="text-center" style="">Our team of ISAC product experts and Cybersecurity Compliance experts train our partners extensively to support their ISAC Customers</h3>
+    <h3 class="text-center" style="">Our team of ISAC product experts and Cybersecurity Compliance experts train our partners extensively to support ISAC Customers</h3>
     <p class="text-center mt-4">The following services are typically offered by our partners to ensure that the ISAC system is not only successfully implemented but, the client’s team is fully supported through compliance and audit processes.</p>
   </div>
 </section>
 <section class="services-container mt-0 mb-0">
-  <div class="layout-container ps-5 pe-5">
+  <div class="">
     <div class="row g-5 services-wrapper ">
       {{ range $index, $data := ( .Data.Pages ) }}
-      <div class="service col-lg-6 col-md-6 col-sm-6 me-auto ms-auto">        
+      <div class="service col-lg-4 col-md-4 col-sm-4 me-auto ms-auto">
         {{ .Render "service" }}
       </div>
       {{ end }}             

@@ -1,8 +1,8 @@
-<div class="product-desc">        
-  <img src="{{ .Params.icon | relURL }}" alt="icon" width="80" />
+<div class="product-desc layout-container">        
+  <!-- <img src="{{ .Params.icon | relURL }}" alt="icon" width="80" /> -->
   <h4 class="text-orange text-uppercase mb-4">{{ .Title }}</h4>
  <!--  {{ .Summary }} -->
-  <h5 class="text-uppercase">Features</h5>
+  <!-- <h5 class="text-uppercase">Features</h5> -->
   <div class="features-height">
     {{ range .Params.features }}
       <p>{{ .feature }}</p>    

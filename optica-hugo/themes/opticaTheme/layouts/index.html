@@ -10,16 +10,13 @@
         <div class="banner-wrap">
           <img class="banner-bg" src="{{ .image | relURL }}" alt="{{ .title | markdownify }}">          
           <div class="banner-content">
-            <a class="mb-2" href="#">
-            	<!-- <h1>{{ .title | markdownify }}</h1> -->
-            	<!-- <img src="{{ .titleImage | relURL }}" class="img-fluid" style="max-width: 250px;"> -->
-              <h1 class="text-white large-heading">OptICA Solutions Launches</h1>
-              <h2 class="text-white heading-xl">ISAC&trade; </h2>
+            <a class="mb-2" href="#">            	
+              <h1 class="text-white large-heading">OptICA&trade; Launches ISAC</h1>
+             <!--  <h2 class="text-white heading-xl">ISAC </h2> -->
             </a>
             <h6 class="text-white"><span class="text-orange">I</span>nformation <span class="text-orange">S</span>ecurity <span class="text-orange">A</span>ll-in-one <span class="text-orange">C</span>onsole with Continuous Compliance Technology</h6>
             <h3 class="text-white">{{ .content | markdownify }}</h3>
-            <div class="multi-button-wrap mt-4">
-              <!-- <a id="read-more" href="{{ $.Site.BaseURL }}{{ .url }}" ><button class="dark-btn btn-medium me-3">Read More</button></a> -->
+            <div class="multi-button-wrap mt-4">              
               <a href="{{ $.Site.BaseURL }}{{ .url1 }}"><button class="dark-btn btn-medium ms-3">Read More</button></a>
               <button type="button" class="dark-btn btn-medium request-demo" data-option="Request a Demo" data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button>
             </div>
@@ -84,7 +81,6 @@
     </div>
     <div class="row mt-5 pt-5">
       <div class="col-lg-12 text-center btn-wrap">
-        <!-- <a class="request-demo" href="#contactUs"><button class="theme-btn-white btn-medium">Request Demo</button></a> -->
         <button type="button" class="theme-btn-white request-demo" data-option="Request a Demo" data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button>        
       </div>
     </div>
@@ -96,7 +92,6 @@
 {{ if .Site.Data.homepage.cyberSecurity.enable }}
 {{ with .Site.Data.homepage.cyberSecurity }}
 <section id="cyberExperts" class="cyber-experts mb-0">
-  <!-- <img src="images/orange-bg.png" style="width: 100%"> -->
   <div>
     <div class="layout-container">
       <div class="expert-heading">
@@ -108,9 +103,9 @@
       		<div class="expert-warp">            
             <h3>{{ .title | markdownify }}</h3>
             <p>{{ .content | markdownify }}</p>
-            <div class="col-12 text-end">
+            <!-- <div class="col-12 text-end">
               <a class="text-end"><span>VIEW MORE </span><img src="images/orange-right-arrow.png"></a>
-            </div>
+            </div> -->
           </div>        	        
         </div>
         {{ end }}      
@@ -122,7 +117,7 @@
 {{ end }}
 {{ end }}
 
-{{ if .Site.Data.homepage.testimonials.enable }}
+<!--{{ if .Site.Data.homepage.testimonials.enable }}
 {{ with .Site.Data.homepage.testimonials }}
 <section id="testmonials" class="testimonials">
   <h1 class="text-center text-uppercase mb-5">{{ .title | markdownify }}</h1>
@@ -133,7 +128,6 @@
   		    <div class="carousel-item {{ if (eq $index 0) }} active {{ end }}">
   	        <div class="banner-wrap">
   	        	<img class="banner-bg" src="{{ .image | relURL }}">
-  	          <!-- img class="banner-bg" src="images/testmonial-bg.png" alt="Images"> -->
   	          <div class="banner-content">                
   	            <div class="ms-auto col-lg-offset-6 col-lg-6 col-md-offset-6 col-md-6 col-xs-12">
   	              <h3 class="name">{{ .firstName }} {{ .lastName }} - {{ .designation }} - {{ .company }}</h3>
@@ -160,10 +154,10 @@
   </div>     
 </section> 
 {{ end }}
-{{ end }}
+{{ end }}-->
 
-{{ if .Site.Data.homepage.blog.enable }}
-<!-- <section class="blog-container">
+<!--{{ if .Site.Data.homepage.blog.enable }}
+ <section class="blog-container">
   <div class="layout-container ps-5 pe-5">
     <div class="row g-5">
     	{{ range first 4 (where site.RegularPages "Type" "post")}}
@@ -174,16 +168,26 @@
       <div class="clearfix"></div>
     </div>
   </div>
-</section> -->
-{{ end }}
+</section> 
+{{ end }}-->
 
 {{ if .Site.Data.homepage.partners.enable }}
 {{ with .Site.Data.homepage.partners}}
-<section class="partners mb-0">
+<section class="partners mt-4">
   <div class="container">
     <h1 class="text-center text-uppercase">{{ .title | markdownify }}</h1>
+    <div class="row g-4 mt-3 ">
+      <h3 class="text-center text-uppercase">Business Partners</h3>
+    	{{ range .businessPartner}}
+      <div class="col-lg-4 text-center partener-wrap">
+        <img src="{{ .image | relURL }}" >
+      </div>
+      {{ end }}      
+      <div class="clearfix"></div>      
+    </div>
     <div class="row g-4 mt-5 ">
-    	{{ range .partner}}
+      <h3 class="text-center text-uppercase">Technology Partners</h3>
+      {{ range .technologyPartner}}
       <div class="col-lg-4 text-center partener-wrap">
         <img src="{{ .image | relURL }}" >
       </div>
@@ -212,26 +216,33 @@
             </div>
           </div>
         </div>
-        <img src="images/map-img.png" width="100%">
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=3949 Pender Drive, Suite 125, Fairfax, VA 22030&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            <!-- <a href="https://www.fnfgo.com/">FNF Online Mods</a> -->
+          </div>
+          <style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {width:100%!important;height:400px!important;}</style>
+        </div>
+        <!-- <img src="images/map-img.png" width="100%"> -->
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12">
         <h1 class="text-start text-white text-uppercase mt-5">Contact Us</h1>
         <form id="homeContactForm" class="contact-form">  
           <div class="row">
             <div class="col-lg-6 col-md-12 mb-3">
-              <input type="text" name="yourName" class="contact-text-field" placeholder="Name" >
+              <input type="text" name="customerName" class="contact-text-field" placeholder="Name" >
             </div>
             <div class="col-lg-6 col-md-12 mb-3">
-              <input type="text" name="companyName" class="contact-text-field" placeholder="Company" >
+              <input type="text" name="company" class="contact-text-field" placeholder="Company" >
             </div>
             <div class="col-lg-6 col-md-12 mb-3 " >
-              <input type="email" name="yourEmail" class="contact-text-field" placeholder="Email" >
+              <input type="email" name="customerEmail" class="contact-text-field" placeholder="Email" >
             </div>
             <div class="col-lg-6 col-md-12 mb-3">
-              <input type="text" name="yourContact" class="contact-text-field" placeholder="Phone" >
+              <input type="text" name="customerContact" class="contact-text-field" placeholder="Phone" >
             </div>
             <div class="col-lg-12 col-md-12 mb-3 ">
-              <select id="purpose">
+              <select id="yourPurpose">
                   <option value="">Purpose</option>
                   <option value="Request a Demo">Request a Demo</option>
                   <option value="Request Meeting">Request Meeting</option>
@@ -240,12 +251,12 @@
               </select>     
             </div>           
             <div class="col-lg-12 col-md-12 mb-3">
-              <textarea name="description" class="contact-text-field" placeholder="Message"></textarea>
+              <textarea name="desc" class="contact-text-field" placeholder="Message"></textarea>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-12 col-md-12">
-              <div class=" custom-form-send-button mb-2 text-center">
+              <div class="custom-form-send-button mb-2 text-center">
                 <button type="submit" class="btn custom-form-submit ">SEND</button>
               </div>
             </div>
