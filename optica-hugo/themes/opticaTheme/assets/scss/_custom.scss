@@ -81,8 +81,7 @@ section{
 #main-menu.navbar{
   width: 100%;
   justify-content: space-between !important;
-  align-items: center;
-  padding: 0 3rem;
+  align-items: center;  
   border-bottom:3px solid $theme-color1;
   // .navbar-brand{
   //   img{
@@ -92,18 +91,34 @@ section{
 }
 #homeSlider{  
   .banner-wrap{
-    .banner-bg{
-      // height: 650px;
+    .banner-bg{      
       height: 100%;
       width: 100%;
     }
     position: relative;
     .banner-content{
-      position: absolute;
-      width: 600px;
-      height: 400px;
-      left: 150px;
-      top: 0;
+      position: absolute;      
+      bottom:0;
+      margin: auto;
+      a{
+        text-decoration: none;
+      }
+      .banner-text{
+        font-family: $font-family-montserrat-regular !important;
+        font-weight: 400 !important;
+      }
+    }
+  }
+}
+.pageSlider{  
+  .banner-wrap{
+    .banner-bg{      
+      height: 100%;
+      width: 100%;
+    }
+    position: relative;
+    .banner-content{
+      position: absolute;      
       bottom:0;
       margin: auto;
       a{
@@ -132,24 +147,18 @@ section{
     margin: 12px 15px 0 0;
     padding: 10px 12px;
     text-transform: capitalize;
-  }
-  
+  }  
 }
 .heading-xl{
   font-family: $font-family-Inter-bold !important;
-  letter-spacing: .02em;
-  font-size: 5rem !important;
+  letter-spacing: .02em;  
   font-weight: 700;
 }
 .large-heading{
   h1{
     font-family: $font-family-montserrat-bold !important;
-    letter-spacing: .02em;
-    font-size: 3rem !important;
+    letter-spacing: .02em;  
   }
-}
-.layout-container{
-  margin:0 150px 20px
 }
 .list-wrap{
   .img-icon{
@@ -217,12 +226,7 @@ section{
       width: 100%;
     }
     position: relative;
-    .banner-content{
-      position: absolute;
-      height: 200px;
-      right: 150px;
-      top: 0;
-      bottom:0;
+    .banner-content{      
       margin: auto;
       .name{
         font-weight: bold;
@@ -261,17 +265,9 @@ section{
     }
   }
 }
-.partners{ 
-  // background-image: url('./../images/wave-11.png'); 
-  // background-repeat: no-repeat;
-  // background-size: cover;
+.partners{
   padding-top: 3rem;
-  padding-bottom: 3rem;
-  .partener-wrap{
-    img{
-      max-width: 200px;
-    }
-  }
+  padding-bottom: 3rem;  
 }
 .contact-bg{
   background-image: url('./../images/curve-3.png');
@@ -306,11 +302,9 @@ footer{
       margin-left: auto;
     }
     .social-wrap{
-      .icons{       
-        // max-width: 150px;
+      .icons{
         display: flex;
-        align-items:center; 
-        justify-content: flex-end;
+        align-items:center;
         padding:0 10px;                      
         .fi-wrap{
           width: 35px;
@@ -340,17 +334,21 @@ footer{
   #copyright{
     background-color: #343a40;
     padding: 15px 0 0;
-    p.rights-text{
-      color: #fff;
-      margin-bottom: 15px !important;     
-      span{
+    .copyright-wrap{
+      display: flex;       
+      justify-content: space-between;       
+      p.rights-text{
         color: #fff;
-        margin-right: 2.5rem;
+        margin-bottom: 15px !important;     
+        span{
+          color: #fff;
+          // margin-right: 2.5rem;
+        }
+        span a{
+          color: #fff;
+          text-decoration: none !important;
+        }     
       }
-      span a{
-        color: #fff;
-        text-decoration: none !important;
-      }     
     }
   }
 }
@@ -417,10 +415,10 @@ footer{
       order:1;
     }
     div:nth-child(2){
-      order:3;
+      order:2;
     }
     div:nth-child(1){
-      order:2;
+      order:3;
     }
   }
   .service-wrap{
@@ -438,7 +436,7 @@ footer{
   }
 }
 .partners-container{
-  background-color: $black;
+  // background-color: $black;
   .partner-img-wrap{
     background-color: $white;
     width: 400px;
@@ -484,7 +482,7 @@ footer{
     img{
       margin-bottom: 1rem;
     }
-    padding: 10px;
+    padding: 10px 0 0;
     text-align: left;
     border-left: 1px solid $gray-300; 
     .features-height{
@@ -503,7 +501,7 @@ footer{
     padding:10px 15px;
   }
   .theme-btn-white{
-    padding: 1rem 5rem !important;
+    padding: 1rem 2rem !important;
   }
 }
 .w-80{

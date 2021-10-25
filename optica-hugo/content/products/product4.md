@@ -1,5 +1,5 @@
 ---
-title: " Who ISAC Serves?"
+title: "Who ISAC Serves?"
 date: 2021-09-30
 draft: false
 image: "images/blog-sec-img.png"

@@ -3,12 +3,12 @@
 {{ $data := index site.Data site.Language.Lang }}
 
 <!-- banner -->
-<section class="home-header mb-0 mt-0" id="homeSlider">
+<section class="home-header mb-0 mt-0 pageSlider" id="productsSlider">
   <div class="banner-wrap">
     {{ with .Params.image }}
     <img class="banner-bg" src="{{ . | relURL }}" alt="product banner">
     {{ end }}   
-    <div class="banner-content" style="height: 300px;">      
+    <div class="banner-content">      
       <h1 class="text-white heading-xl">ISAC </h1>
       <h5 class="text-white"><span class="text-orange">I</span>nformation <span class="text-orange">S</span>ecurity <span class="text-orange">A</span>ll-in-one <span class="text-orange">C</span>onsole with Continuous Compliance Technology</h5>
       <!-- <img src="{{ .Params.titleImage | relURL }}" alt="product banner title" class="img-fluid" style="max-width: 250px;"> -->                         
@@ -20,18 +20,27 @@
 <!-- Product Offered -->
 <section id="productOffer" class="product-offer">
   <div class="layout-container">
-    <h2 class="text-center text-orange text-uppercase mb-4">OPTICA SOLUTIONS GUARANTEES THAT YOU WILL PASS YOUR DISA STIG/SCAP AUDIT Generally In the First Pass WITH PROPER IMPLEMENTATION OF ISAC
+    <h2 class="text-center text-orange text-uppercase mb-4">OPTICA&trade; SOLUTIONS GUARANTEES THAT YOU WILL PASS YOUR DISA STIG/SCAP AUDIT Generally In the First Pass WITH PROPER IMPLEMENTATION OF ISAC
     </h2>
   </div>
   <!-- Desktop Layout Start -->
-  <div class="container-fluid product-desktop">    
-    {{ range first 5 (where site.RegularPages "Type" "product")}}
-    <div class="row p-3">
-      <div class="col-12">        
-        {{ .Render "product" }}
-      </div>
-    </div>
-    {{ end }}    
+  <div class="container-fluid product-desktop">   
+     <div class="row p-3">
+      {{ range .Params.productFAQ }}     
+        <div class="col-12">        
+          <div class="product-desc layout-container">
+            <h4 class="text-orange text-uppercase mb-4">{{ .title }}</h4>
+            <div class="features-height">
+              <ul>
+                {{ range .list }}
+                  <li>{{ .listItem | markdownify }}</li>    
+                {{ end }}
+              </ul>          
+            </div>
+          </div>
+        </div>      
+      {{ end }}
+    </div>    
     <div class="row mt-5">
       <div class="col-12 text-center mb-5">
         <button type="button" class="theme-btn-white download-fact-sheet" data-file="{{ $.Site.BaseURL }}files/ISACWebsiteFeedback.pdf" data-bs-toggle="modal" data-bs-target="#downloadFactModal" >Download Product Fact Sheet</button>
@@ -62,7 +71,7 @@
             <div class="banner-wrap">
               <img class="banner-bg" src="{{ .image | relURL }}">
               <div class="banner-content">                
-                <div class="ms-auto col-lg-offset-6 col-lg-6 col-md-offset-6 col-md-6 col-xs-12">
+                <div class="ms-auto col-lg-offset-6 col-lg-6 col-md-offset-6 col-md-6 col-sm-12 col-xs-12">
                   <h3 class="name">{{ .firstName }} {{ .lastName }} - {{ .designation }} - {{ .company }}</h3>
                   <h2 class="mt-4 desc">{{ .content | markdownify }}</h2>
                   <button type="button" class="btn theme-btn-orange mt-5">

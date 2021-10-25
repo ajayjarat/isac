@@ -1,14 +1,14 @@
 {{ define "main" }}
 {{ $data := index site.Data site.Language.Lang }}
 <!-- banner -->
-<section class="home-header mb-0 mt-0" id="homeSlider">
+<section class="home-header mb-0 mt-0 pageSlider" id="companySlider">
   <div class="banner-wrap">
     {{ with .Params.image }}
     <img class="banner-bg" src="{{ . | relURL }}" alt="product banner">
     {{ end }}   
-    <div class="banner-content" style="height: 200px; width: 700px;">
+    <div class="banner-content">
       <div class="mb-4 large-heading">
-        <h1 class="text-white text-uppercase">{{ .Params.title | markdownify }}</h1>
+        <h1 class="text-white">{{ .Params.title | markdownify }}</h1>
       </div>                           
       <h3 class="banner-text text-white mt-2" style="">{{ .Params.description | markdownify }}</h3>                
     </div>
@@ -45,6 +45,13 @@
         </div>
       {{ end }}
       {{ end }}      
+    </div>
+  </div>
+</section>
+<section>
+  <div class="row mt-5">    
+    <div class="col-12 text-center">
+      <button type="button" class="theme-btn-white request-demo" data-option="Request Meeting" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us To Learn More About Our Team</button>
     </div>
   </div>
 </section>

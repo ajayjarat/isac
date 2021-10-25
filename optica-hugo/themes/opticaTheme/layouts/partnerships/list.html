@@ -3,14 +3,14 @@
 {{ $data := index site.Data site.Language.Lang }}
 
 <!-- banner -->
-<section class="home-header mb-0 mt-0" id="homeSlider">
+<section class="home-header mb-0 mt-0 pageSlider" id="partnerSlider">
   <div class="banner-wrap">
     {{ with .Params.image }}
     <img class="banner-bg" src="{{ . | relURL }}" alt="product banner">
     {{ end }}   
-    <div class="banner-content" style="height: 200px; width: 800px;">
+    <div class="banner-content" style="">
       <div class="mb-4 large-heading">
-        <h1 class="text-white text-uppercase">{{ .Params.title | markdownify }}</h1>
+        <h1 class="text-white">{{ .Params.title | markdownify }}</h1>
       </div>                           
       <h3 class="banner-text text-white mt-2" style="">{{ .Params.description | markdownify }}</h3>                
     </div>
@@ -25,18 +25,16 @@
 
 {{ if .Site.Data.homepage.partners.enable }}
 {{ with .Site.Data.homepage.partners}}
-<section class="partners-container mt-0 pt-5 pb-5">
+<section class="partners-container">
   <div class="layout-container">
-    <h1 class="text-center text-white text-uppercase">Our current valuable partners</h1>        
+    <h1 class="text-center text-orange text-uppercase">OUR CURRENT BUSINESS PARTNERS</h1>        
     <div class="row align-items-center mt-3 g-5"> 
-      {{ range .partner}}        
-      <div class="col-lg-4 col-md-4 col-sm-4">
-        <div class="partner-img-wrap">          
-          <img src="{{ .image | relURL }}" >
-        </div>  
+     {{ range .businessPartner}}
+      <div class="col-lg-4 text-center partener-wrap">
+        <a href="{{ .link }}" target="_blank"><img class="img-fluid" src="{{ .image | relURL }}" ></a>
       </div>
-      {{ end }}       
-      <div class="clearfix"></div>       
+      {{ end }}      
+      <div class="clearfix"></div>
     </div>        
   </div>
 </section>
