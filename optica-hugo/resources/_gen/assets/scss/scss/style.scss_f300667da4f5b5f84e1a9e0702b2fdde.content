@@ -95,7 +95,6 @@ section {
     height: 100%;
     width: 100%; }
   #homeSlider .banner-wrap .banner-content {
-    position: absolute;
     bottom: 0;
     margin: auto; }
     #homeSlider .banner-wrap .banner-content a {
@@ -110,7 +109,6 @@ section {
     height: 100%;
     width: 100%; }
   .pageSlider .banner-wrap .banner-content {
-    position: absolute;
     bottom: 0;
     margin: auto; }
     .pageSlider .banner-wrap .banner-content a {
@@ -241,6 +239,11 @@ section {
 .partners {
   padding-top: 3rem;
   padding-bottom: 3rem; }
+
+.light-bg {
+  background: linear-gradient(90deg, #f3e8e8e3, transparent);
+  padding: 5px;
+  max-width: 350px; }
 
 .contact-bg {
   background-image: url("./../images/curve-3.png");
@@ -484,17 +487,22 @@ footer #copyright {
   .layout-container {
     margin: 0 150px 20px; }
   .pageSlider .banner-content {
+    position: absolute;
     top: 0;
     width: 600px;
     left: 150px; }
   #productsSlider .banner-content {
+    position: absolute;
     height: 300px; }
   #servicesSlider .banner-content {
+    position: absolute;
     height: 200px; }
   #partnerSlider .banner-content, #companySlider .banner-content {
+    position: absolute;
     height: 200px;
     width: 800px; }
   #homeSlider .banner-wrap .banner-content {
+    position: absolute;
     top: 0;
     width: 600px;
     height: 400px;
@@ -518,31 +526,57 @@ footer #copyright {
       margin-left: 0rem; } }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  body {
-    font-size: 12px; }
   .layout-container {
     margin: 0 50px 20px; }
   .pageSlider .banner-content {
+    position: absolute;
     top: 0;
     width: 600px;
-    left: 150px; }
+    left: 100px; }
   #productsSlider .banner-content {
+    position: absolute;
     height: 300px;
     top: 0; }
   #servicesSlider .banner-content {
+    position: absolute;
     height: 200px; }
   #partnerSlider .banner-content, #companySlider .banner-content {
+    position: absolute;
     height: 200px;
     width: 600px; }
   #homeSlider .banner-wrap .banner-content {
+    position: absolute;
     top: 90px;
     width: 600px;
     height: 400px;
-    left: 150px; } }
+    left: 100px; } }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
   .layout-container {
-    margin: 0 40px 20px; } }
+    margin: 0 40px 20px; }
+  .pageSlider .banner-content {
+    position: absolute;
+    top: 10px;
+    width: 80%;
+    left: 20px; }
+  #productsSlider .banner-content {
+    position: absolute;
+    height: auto; }
+  #servicesSlider .banner-content {
+    position: absolute;
+    height: 100px; }
+  #partnerSlider .banner-content, #companySlider .banner-content {
+    position: absolute;
+    height: 200px;
+    width: 80%; }
+  #homeSlider .banner-wrap {
+    min-height: 250px; }
+    #homeSlider .banner-wrap .banner-content {
+      position: absolute;
+      top: 10px;
+      width: 90%;
+      height: auto;
+      left: 70px !important; } }
 
 @media screen and (min-width: 768px) {
   .footer-wrap .sitemap {
@@ -567,24 +601,6 @@ footer #copyright {
     margin-bottom: 20px; }
   .footer-wrap .social-wrap .icons {
     justify-content: center; }
-  .pageSlider .banner-content {
-    top: 10px;
-    width: 80%;
-    left: 20px; }
-  #productsSlider .banner-content {
-    height: auto; }
-  #servicesSlider .banner-content {
-    height: 100px; }
-  #partnerSlider .banner-content, #companySlider .banner-content {
-    height: 200px;
-    width: 80%; }
-  #homeSlider .banner-wrap {
-    min-height: 250px; }
-    #homeSlider .banner-wrap .banner-content {
-      top: 10px;
-      width: 100%;
-      height: auto;
-      left: 20px; }
   .partners .partener-wrap img {
     max-width: 250px; }
   .contact-form {
@@ -595,6 +611,8 @@ footer #copyright {
     margin: auto; } }
 
 @media screen and (min-width: 576px) {
+  body {
+    font-size: 16px; }
   .topbar {
     display: flex;
     flex-direction: row;
@@ -634,9 +652,15 @@ footer #copyright {
     #copyright .copyright-wrap p.rights-text:nth-child(1) {
       text-align: flex-start; }
     #copyright .copyright-wrap p.rights-text:nth-child(2) {
-      text-align: flex-end; } }
+      text-align: flex-end; }
+  #homeSlider .banner-wrap .banner-content h1 {
+    color: #fff; }
+  #homeSlider .banner-wrap .banner-content h2, #homeSlider .banner-wrap .banner-content h3, #homeSlider .banner-wrap .banner-content h6, #homeSlider .banner-wrap .banner-content p {
+    color: #fff; } }
 
 @media screen and (max-width: 576px) {
+  body {
+    font-size: 12px; }
   .topbar {
     display: flex;
     flex-direction: row;
@@ -680,27 +704,6 @@ footer #copyright {
       color: #fff; }
   .layout-container {
     margin: 0 20px 20px; }
-  .pageSlider .banner-content {
-    top: 10px;
-    width: 80%;
-    left: 20px; }
-  #productsSlider .banner-content {
-    height: auto; }
-  #servicesSlider .banner-content {
-    height: 100px; }
-  #partnerSlider .banner-bg, #companySlider .banner-bg {
-    min-height: 250px; }
-    #partnerSlider .banner-bg .banner-content, #companySlider .banner-bg .banner-content {
-      height: 200px;
-      width: 80%; }
-  #homeSlider .banner-wrap {
-    min-height: 250px;
-    background: linear-gradient(to right, #182e86f7 0%, #182e86f7 0.2%, transparent 100%); }
-    #homeSlider .banner-wrap .banner-content {
-      top: 10px;
-      width: 100%;
-      height: auto;
-      left: 20px; }
   #copyright .copyright-wrap {
     flex-direction: column; }
     #copyright .copyright-wrap p.rights-text:nth-child(1) {
@@ -708,19 +711,42 @@ footer #copyright {
     #copyright .copyright-wrap p.rights-text:nth-child(2) {
       text-align: center; }
   .partners .partener-wrap img {
-    max-width: 100%; } }
-
-@media screen and (max-width: 430px) {
+    max-width: 100%; }
+  .pageSlider .banner-content {
+    width: 100%;
+    background: #0c2347;
+    padding: 20px; }
+    .pageSlider .banner-content h1, .pageSlider .banner-content h2, .pageSlider .banner-content h3, .pageSlider .banner-content h4, .pageSlider .banner-content h5, .pageSlider .banner-content h6, .pageSlider .banner-content p {
+      color: #fff; }
   #homeSlider .banner-wrap {
-    min-height: 270px;
-    background: linear-gradient(to right, #182e86f7 0%, #182e86f7 0.2%, transparent 100%); }
+    min-height: 250px; }
     #homeSlider .banner-wrap .banner-content {
-      top: 10px;
+      text-align: center;
       width: 100%;
       height: auto;
-      left: 20px; }
-  #partnerSlider .banner-bg, #companySlider .banner-bg {
+      padding: 20px; }
+      #homeSlider .banner-wrap .banner-content h1 {
+        color: #e1502a; }
+      #homeSlider .banner-wrap .banner-content h2, #homeSlider .banner-wrap .banner-content h3, #homeSlider .banner-wrap .banner-content h6, #homeSlider .banner-wrap .banner-content p {
+        color: #333; }
+      #homeSlider .banner-wrap .banner-content .multi-button-wrap {
+        justify-content: center; } }
+
+@media screen and (max-width: 430px) {
+  .pageSlider .banner-content {
+    background: #0c2347;
+    padding: 20px;
+    width: 100%; }
+  #homeSlider .banner-wrap {
     min-height: 270px; }
-    #partnerSlider .banner-bg .banner-content, #companySlider .banner-bg .banner-content {
-      height: 200px;
-      width: 80%; } }
+    #homeSlider .banner-wrap .banner-content {
+      width: 100%;
+      height: auto;
+      padding: 20px; }
+      #homeSlider .banner-wrap .banner-content h1 {
+        color: #e1502a; }
+      #homeSlider .banner-wrap .banner-content h2, #homeSlider .banner-wrap .banner-content h3, #homeSlider .banner-wrap .banner-content h6, #homeSlider .banner-wrap .banner-content p {
+        color: #333; }
+      #homeSlider .banner-wrap .banner-content .multi-button-wrap {
+        justify-content: center;
+        flex-wrap: wrap !important; } }

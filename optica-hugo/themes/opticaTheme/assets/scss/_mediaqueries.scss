@@ -18,7 +18,8 @@
 	  margin:0 150px 20px
 	}
 	.pageSlider{
-		.banner-content{			
+		.banner-content{	
+			position:absolute;		
 			top: 0;	      
       width: 600px;
       left: 150px;
@@ -26,16 +27,19 @@
 	}
 	#productsSlider{
 		.banner-content{
+			position:absolute;
 			height: 300px;			
 		}
 	}
 	#servicesSlider{
 		.banner-content{
+			position:absolute;
 			height: 200px;			
 		}
 	}
 	#partnerSlider, #companySlider{
-		.banner-content{			
+		.banner-content{
+			position:absolute;			
 			height: 200px; 
 			width: 800px;			
 		}
@@ -43,6 +47,7 @@
 	#homeSlider{  
 		.banner-wrap{
 		    .banner-content{
+		    	position:absolute;
 		    	top: 0;		      
 		      width: 600px;
 		      height: 400px;
@@ -82,52 +87,94 @@
 		}
 	}	
 }
-@media only screen and (min-width: 768px) and (max-width: 991px){
-	body{
-		font-size: 12px;
-	}
+@media only screen and (min-width: 768px) and (max-width: 991px){	
 	.layout-container{
 	  margin:0 50px 20px
 	}
 	.pageSlider{
-		.banner-content{			
+		.banner-content{
+			position:absolute;			
 			top: 0;	      
       width: 600px;
-      left: 150px;
+      left: 100px;
 		}			
 	}
 	#productsSlider{
 		.banner-content{
+			position:absolute;
 			height: 300px;
 			top: 0;
 		}
 	}
 	#servicesSlider{
 		.banner-content{
+			position:absolute;
 			height: 200px;			
 		}
 	}
 	#partnerSlider, #companySlider{
-		.banner-content{			
+		.banner-content{
+			position:absolute;	
 			height: 200px; 
 			width: 600px;			
 		}
 	}
 	#homeSlider{  
 		.banner-wrap{
-	    .banner-content{	
+	    .banner-content{
+	    	position:absolute;	
 	    	top: 90px;	      
 	      width: 600px;
 	      height: 400px;
-	      left: 150px;
+	      left: 100px;
 	    }
 		}
 	}
 
 }
-@media only screen and (min-width: 577px) and (max-width: 767px){
+@media only screen and (min-width: 577px) and (max-width: 767px){	
 	.layout-container{
 	  margin:0 40px 20px
+	}
+	.pageSlider{
+		.banner-content{
+			position:absolute;			
+			top: 10px;	      
+      width: 80%;
+      left: 20px;
+		}			
+	}
+	#productsSlider{
+		.banner-content{
+			position:absolute;
+			height: auto;			
+		}
+	}
+	#servicesSlider{
+		.banner-content{
+			position:absolute;
+			height: 100px;			
+		}
+	}
+	#partnerSlider, #companySlider{
+		.banner-content{
+			position:absolute;			
+			height: 200px; 
+			width: 80%;			
+		}
+	}
+	#homeSlider{  
+		.banner-wrap{
+			min-height: 250px;
+			// background: linear-gradient(to right, #182e86f7  0%, #182e86f7  0.2%, transparent 82%);
+	    .banner-content{
+	    	position:absolute;
+	    	top: 10px;		      
+	    	width: 90%;
+	    	height: auto;
+	    	left: 70px !important;
+	    }
+		}
 	}
 }
 @media screen and (min-width: 768px){	
@@ -164,6 +211,7 @@
 	  }
 	}
 }
+
 @media screen and (max-width: 767px){
 	.footer-wrap{
 		.sitemap{
@@ -175,42 +223,7 @@
 				justify-content: center;
 			}
 		}     
-	}
-	.pageSlider{
-		.banner-content{			
-			top: 10px;	      
-      width: 80%;
-      left: 20px;
-		}			
-	}
-	#productsSlider{
-		.banner-content{
-			height: auto;			
-		}
-	}
-	#servicesSlider{
-		.banner-content{
-			height: 100px;			
-		}
-	}
-	#partnerSlider, #companySlider{
-		.banner-content{			
-			height: 200px; 
-			width: 80%;			
-		}
-	}
-	#homeSlider{  
-		.banner-wrap{
-			min-height: 250px;
-			// background: linear-gradient(to right, #182e86f7  0%, #182e86f7  0.2%, transparent 82%);
-	    .banner-content{
-	    	top: 10px;		      
-      	width: 100%;
-      	height: auto;
-      	left: 20px;
-	    }
-		}
-	}
+	}		
 	.partners{	 
 	  .partener-wrap{
 	    img{
@@ -233,6 +246,9 @@
 }
 
 @media screen and (min-width: 576px){
+	body{
+		font-size: 16px;
+	}
 	.topbar{
 	  display: flex;
 	  flex-direction: row;
@@ -247,8 +263,7 @@
 	    align-items: center;
 	    span{
 	      width: 32px;
-	      height: 32px;
-	      // background-color: $theme-color1;
+	      height: 32px;	      
 	      padding:  20px;
 	      border-radius: 5px;
 	      margin-right: 10px; 
@@ -290,8 +305,23 @@
 			}
 		}
 	}
+	#homeSlider{  
+		.banner-wrap{
+	    .banner-content{	    	
+      	h1{
+					color: $white;
+				}
+				h2, h3, h6, p{
+					color: $white;
+				}
+	    }
+		}
+	}
 }
 @media screen and (max-width: 576px){
+	body{
+		font-size: 12px;
+	}
 	.topbar{
 	  display: flex;
 	  flex-direction: row;
@@ -341,45 +371,7 @@
 	}
 	.layout-container{
 	  margin:0 20px 20px
-	}
-	.pageSlider{
-		.banner-content{			
-			top: 10px;	      
-      width: 80%;
-      left: 20px;
-		}			
-	}
-	#productsSlider{
-		.banner-content{
-			height: auto;			
-		}
-	}
-	#servicesSlider{
-		.banner-content{
-			height: 100px;			
-		}
-	}
-	#partnerSlider, #companySlider{
-		.banner-bg{
-			min-height: 250px;		
-			.banner-content{			
-				height: 200px; 
-				width: 80%;			
-			}
-		}
-	}
-	#homeSlider{  
-		.banner-wrap{
-			min-height: 250px;
-			background: linear-gradient(to right, #182e86f7  0%, #182e86f7  0.2%, transparent 100%);
-	    .banner-content{
-	    	top: 10px;		      
-      	width: 100%;
-      	height: auto;
-      	left: 20px;
-	    }
-		}
-	}
+	}	
 	#copyright{
 		.copyright-wrap{			
 			flex-direction: column;
@@ -397,29 +389,68 @@
 	      max-width: 100%;
 	    }
 	  }
+	}
+	.pageSlider{
+		.banner-content{			
+			width: 100%;
+			background: #0c2347;
+			padding: 20px;
+			h1,h2,h3,h4,h5,h6, p{
+				color: $white;
+			}
+		}			
+	}
+	
+	#homeSlider{  
+		.banner-wrap{
+			min-height: 250px;
+			// background: linear-gradient(to right, #182e86f7  0%, #182e86f7  0.2%, transparent 100%);
+	    .banner-content{
+	    	text-align: center;	    	
+      	width: 100%;
+      	height: auto;
+      	padding: 20px;      
+      	h1{
+					color: $theme-color-old;
+				}
+				h2, h3, h6, p{
+					color: #333;
+				}
+				.multi-button-wrap{
+					justify-content: center;
+				}
+	    }
+		}
 	}		
 }
-@media screen and (max-width: 430px){	
+@media screen and (max-width: 430px){
+	.pageSlider{
+		.banner-content{		
+			background: #0c2347;
+			padding: 20px;	      
+      width: 100%;      
+		}			
+	}	
 	#homeSlider{  
 		.banner-wrap{
 			min-height: 270px;
-			background: linear-gradient(to right, #182e86f7  0%, #182e86f7  0.2%, transparent 100%);
-	    .banner-content{
-	    	top: 10px;		      
+			// background: linear-gradient(to right, #182e86f7  0%, #182e86f7  0.2%, transparent 100%);
+    	.banner-content{    		      
       	width: 100%;
-      	height: auto;
-      	left: 20px;
+      	height: auto;      	
+				padding: 20px;
+				h1{
+					color: $theme-color-old;
+				}
+				h2, h3, h6, p{
+					color: #333;
+				}
+				.multi-button-wrap{
+					justify-content: center;
+					flex-wrap: wrap !important;
+				}
 	    }
 		}
-	}
-	#partnerSlider, #companySlider{
-		.banner-bg{
-			min-height: 270px;		
-			.banner-content{			
-				height: 200px; 
-				width: 80%;			
-			}
-		}
-	}
+	}	
 }
 
