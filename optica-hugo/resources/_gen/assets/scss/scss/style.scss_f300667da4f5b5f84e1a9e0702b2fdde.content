@@ -83,7 +83,7 @@ section {
   margin-top: 5rem;
   margin-bottom: 3rem; }
 
-#main-menu.navbar {
+#mainMenu.navbar {
   width: 100%;
   justify-content: space-between !important;
   align-items: center;
@@ -444,6 +444,13 @@ footer #copyright {
   #productTestimonials .carousel-control-next-icon {
     background-image: url("../images/right-arrow.png") !important; }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999; }
+
 @font-face {
   font-family: 'Montserrat Bold';
   /*a name to be used later*/
@@ -480,9 +487,9 @@ footer #copyright {
 @media (min-width: 992px) {
   body {
     font-size: 16px; }
-  #main-menu.navbar {
+  #mainMenu.navbar {
     padding: 0 3rem; }
-    #main-menu.navbar .navbar-brand img {
+    #mainMenu.navbar .navbar-brand img {
       max-width: 60px; }
   .layout-container {
     margin: 0 150px 20px; }
@@ -515,7 +522,9 @@ footer #copyright {
     font-size: 3rem !important; } }
 
 @media (max-width: 991px) {
-  #main-menu.navbar {
+  .sticky {
+    top: 0px; }
+  #mainMenu.navbar {
     padding: 0 1rem; }
   .navbar-brand img {
     height: 60px;

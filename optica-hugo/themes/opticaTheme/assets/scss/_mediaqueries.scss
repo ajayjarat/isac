@@ -6,7 +6,7 @@
 	body{
 		font-size: 16px;
 	}	
-	#main-menu.navbar{
+	#mainMenu.navbar{
 		padding: 0 3rem;		
 		.navbar-brand{
 		    img{
@@ -71,7 +71,10 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1080px){}
 @media (max-width: 991px ) {
-	#main-menu.navbar{
+	.sticky {	
+	  top: 0px;	  
+	}
+	#mainMenu.navbar{
 		padding: 0 1rem;
 	}
 	.navbar-brand{
