@@ -33,11 +33,6 @@
   </url>
   
   <url>
-    <loc>https://isac-8oxfp.ondigitalocean.app/products/product4/</loc>
-    <lastmod>2021-09-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://isac-8oxfp.ondigitalocean.app/blog/</loc>
     <lastmod>2021-09-30T00:00:00+00:00</lastmod>
   </url>
@@ -144,6 +139,11 @@
   
   <url>
     <loc>https://isac-8oxfp.ondigitalocean.app/products/product2/</loc>
+    <lastmod>2021-09-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://isac-8oxfp.ondigitalocean.app/products/product4/</loc>
     <lastmod>2021-09-30T00:00:00+00:00</lastmod>
   </url>
   

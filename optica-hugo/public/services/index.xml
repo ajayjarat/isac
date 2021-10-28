@@ -8,33 +8,30 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://isac-8oxfp.ondigitalocean.app/services/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Audit Support Service</title>
+      <title>Audit Support (Optional)</title>
       <link>https://isac-8oxfp.ondigitalocean.app/services/audit-support/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://isac-8oxfp.ondigitalocean.app/services/audit-support/</guid>
-      <description>This is to hold the customer’s hands during an audit. \
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</description>
+      <description>We offer full support to our Customers in going through a CCRI Audit. \</description>
     </item>
     
     <item>
-      <title>Compilance Training Service</title>
+      <title>Compilance Training (Optional)</title>
       <link>https://isac-8oxfp.ondigitalocean.app/services/compilance_training/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://isac-8oxfp.ondigitalocean.app/services/compilance_training/</guid>
-      <description>We offer training to customers on how to be continuously complaint for STIG, SCAP. \
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</description>
+      <description>We offer training on how to be “continuously compliant” with DoD DISA STIG/SCAP Standards.</description>
     </item>
     
     <item>
-      <title>ISAC User Training Service</title>
+      <title>ISAC User Training</title>
       <link>https://isac-8oxfp.ondigitalocean.app/services/isac-user-training/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://isac-8oxfp.ondigitalocean.app/services/isac-user-training/</guid>
-      <description>We offer training to customers on how to be continuously complaint for STIG, SCAP. \
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</description>
+      <description>We offer training on how to setup and use ISAC for the various roles of the Customer’s Cybersecurity team.</description>
     </item>
     
   </channel>

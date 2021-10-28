@@ -12,16 +12,15 @@ banner:
 opticaSolutions:
   enable : true  
   title : "OptICA Solutions"
-  content : "OptICA Solutions – Optimal Intelligent Cyber Automation Solutions – is a specialized cyber security company that focuses exclusively on hyper-automating the rigorous work of continuous compliance of Information Systems’ Networks IT Assets with US DoD and Civilian Agency Standards."
+  content : "OptICA Solutions – Optimal Intelligent Cyber Automation Solutions – is a specialized cyber security company that focuses exclusively on hyper-automating the rigorous work of continuous compliance of IT Assets with US DoD and Civilian Agency Standards."
   url: "company"
-
 
 productPortfolio:
   enable : true  
   title : "Product Portfolio"
   image : "images/product-video-img.png"
   videoUrl: ""
-  content : "Optica has worked hard to develop the cyber industry’s most thorough network monitoring software, ISAC."
+  content : "OptICA has worked hard to develop the cyber industry’s most thorough network monitoring software, ISAC."
   url1: "products"
   urlRequestDemo: "#contactUS"
   list:
@@ -37,14 +36,17 @@ cyberSecurity:
   securityItem:
     # security item loop
     - title : "CCRI Auditor"      
-      content : "SAC has achieved “First Ever” 100% score on the first audit pass <br> …. May 2021"
+      content : "ISAC has achieved “First Ever” 100% score on the first audit pass"
       link: "#"
+      year: "…. May 2021"
     # security item loop
     - title : "Fort Knox ISSM and Cyber Security Division Chief"      
-      content : "ISAC provides the most comprehensive and single pane of glass view of the enterprise’s total cybersecurity posture that I have ever seen from any SEAM tool <br>…. Sept 2021"      
+      content : "ISAC provides the most comprehensive and single pane of glass view of the enterprise’s total cybersecurity posture that I have ever seen from any SEAM tool"      
+      year: "…. Sept 2021"
     # security item loop
     - title : ""
-      content : ""     
+      content : ""
+      year: ""
 
 testimonials:
   enable : true
@@ -92,26 +94,32 @@ partners:
     # partner item loop
     - title : "Dfuse"
       image : "images/dfuselogo.jpg"
+      link: "https://www.dfusetech.com/"
       
     # partner item loop
     - title : "Insystech"
       image : "images/insystech-logo.png"
+      link: "https://www.insystechinc.com/"
 
     # partner item loop
     - title : "Steelgate"
       image : "images/steelgate-small.jpg"
+      link : "https://www.steelgatellc.com/"
   technologyPartner:   
     # partner item loop
     - title : "Digital Ocean"
       image : "images/digital-ocean.png"
+      link  : "https://www.digitalocean.com/"
 
     # partner item loop
-    - title : "Partner ABC"
+    - title : "AWS"
       image : "images/aws-logo1.jpg"
+      link: "https://aws.amazon.com/"
       
     # partner item loop
-    - title : "Insystech"
+    - title : "Azure"
       image : "images/azure-logo.png"
+      link : "https://azure.microsoft.com/en-us/"
 
 contact:
   enable : true

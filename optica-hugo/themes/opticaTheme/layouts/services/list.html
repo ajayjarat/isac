@@ -3,16 +3,16 @@
 {{ $data := index site.Data site.Language.Lang }}
 
 <!-- banner -->
-<section class="home-header mb-0 mt-0" id="homeSlider">
+<section class="home-header mb-0 mt-0 pageSlider" id="servicesSlider">
   <div class="banner-wrap">
     {{ with .Params.image }}
     <img class="banner-bg" src="{{ . | relURL }}" alt="product banner">
     {{ end }}   
-    <div class="banner-content" style="height: 200px;">
+    <div class="banner-content">
       <a class="mb-2" href="#">
       <!--   <img src="{{ .Params.titleImage | relURL }}" alt="product banner title" class="img-fluid" style="max-width: 400px;"> -->
       </a>                     
-      <h3 class="banner-text  mt-2" style="">{{ .Params.description | markdownify }}</h3>                
+      <h3 class="banner-text  mt-2" style="font-weight: 600;">{{ .Params.description | markdownify }}</h3>                
     </div>
   </div>  
 </section >
@@ -20,15 +20,15 @@
 <!-- Product Offered -->
 <section>
   <div class="layout-container">
-    <h3 class="text-center" style="">Our team of ISAC product experts and Cybersecurity Compliance experts train our partners extensively to support ISAC Customers</h3>
+    <h3 class="text-center" style="font-weight: 600;">Our team of ISAC product experts and Cybersecurity Compliance experts train our partners extensively to support ISAC Customers</h3>
     <p class="text-center mt-4">The following services are typically offered by our partners to ensure that the ISAC system is not only successfully implemented but, the client’s team is fully supported through compliance and audit processes.</p>
   </div>
 </section>
 <section class="services-container mt-0 mb-0">
   <div class="">
-    <div class="row g-5 services-wrapper ">
+    <div class="row g-3 services-wrapper ">
       {{ range $index, $data := ( .Data.Pages ) }}
-      <div class="service col-lg-4 col-md-4 col-sm-4 me-auto ms-auto">
+      <div class="service col-lg-4 col-md-4 col-sm-4 me-auto ms-auto ">
         {{ .Render "service" }}
       </div>
       {{ end }}             

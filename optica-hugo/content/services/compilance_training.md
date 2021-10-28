@@ -1,5 +1,5 @@
 ---
-title: "Compilance Training"
+title: "Compilance Training (Optional)"
 date: 2021-10-05
 draft: false
 image: "images/blog-sec-img.png"

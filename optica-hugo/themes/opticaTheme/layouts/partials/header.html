@@ -17,7 +17,7 @@
     </div>
   </div>
   <div class="clearfix"></div>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="main-menu">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainMenu">
     <a class="navbar-brand" href="{{ .Site.BaseURL }}">
       {{ if .Site.Params.logo }}
       <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" class="img-fluid">
@@ -25,10 +25,10 @@
       <h2 class="mb-0 text-color">{{ .Site.Title }}</h2>
       {{ end }}
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarText">
+    <div class="collapse navbar-collapse" id="mainNavigation">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           {{ if .IsHome }}
           {{ range .Site.Menus.main }}
@@ -52,7 +52,7 @@
 
       {{ if .Site.Params.navButton.enable }}
       {{ "<!-- nav btn -->" | safeHTML }}
-      <button class="btn request-demo-btn btn-success ms-3">
+      <button class="btn request-demo-btn btn-success">
         REQUEST DEMO
       </button>
       {{ end }}  

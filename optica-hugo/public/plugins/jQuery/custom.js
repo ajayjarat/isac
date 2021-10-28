@@ -91,4 +91,15 @@ jQuery(function($) {
             }         
         });
     });
+
+    window.onscroll = function() {myFunction()};
+    var pageHeader = document.getElementById("mainMenu");
+    console.log(pageHeader);
+    function myFunction(){
+        if(window.pageYOffset >= 100){
+            pageHeader.classList.add("sticky");
+        } else {
+            pageHeader.classList.remove("sticky");
+        }
+    }
 });
