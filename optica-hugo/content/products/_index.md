@@ -10,7 +10,7 @@ videoImage: "images/product-video-bg.png"
 productFAQ:
 - title : "What is ISAC?"
   list:
-    - listItem : "IISAC is the <strong>disruptive cybersecurity system</strong> proven to offer 100% compliance for DISA STIG/SCAP Standards in mid-large scale government enterprises."
+    - listItem : "IISAC is the **disruptive cybersecurity system** proven to offer 100% compliance for DISA STIG/SCAP Standards in mid-large scale government enterprises."
     - listItem : "With nearly 200 active users and 2,000+ servers under watch, and growing, ISAC has earned major kudos from the client(s) and cybersecurity experts and is positioned for exponential growth."
   
 - title : "What ISAC does?"
@@ -20,7 +20,7 @@ productFAQ:
     - listItem : "It then provides central orchestration of vulnerability assessments, follow-up, remediation (incl false positives), reminders, audit ep/closure/scoring, gap collaboration, dashboarding (incl heat maps), and more."
     - listItem : "ISAC saves hundreds of hours per month in laborious and error prone technical security SOPs."
 
-- title : "Why do you need ISAC?"
+- title : "Why Do You Need ISAC?"
   list:
     - listItem : "**Look beyond audits!!** With ISAC providing Continuous Compliance and a fool-proof audit capability, your team can focus on securing other aspects of the Enterprise."
     - listItem : "ISAC provides a cost-effective cornerstone for your NIST compliant Cybersecurity Framework."
