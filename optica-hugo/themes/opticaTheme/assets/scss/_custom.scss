@@ -527,7 +527,7 @@ footer{
     padding:2rem;
   }
   .carousel-control-prev-icon {
-    background-image: url('../images/left-arrow.png') !important;   
+    background-image: url('../images/left-arrow.png') !important;  
   }
   .carousel-control-next-icon {
     background-image: url('../images/right-arrow.png') !important;    
@@ -539,4 +539,7 @@ footer{
   width: 100%;
   background-color: $white;
   z-index: 999;
+}
+.carousel-control-next, .carousel-control-prev {  
+  width: 5%;
 }

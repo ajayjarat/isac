@@ -451,6 +451,9 @@ footer #copyright {
   background-color: #fff;
   z-index: 999; }
 
+.carousel-control-next, .carousel-control-prev {
+  width: 5%; }
+
 @font-face {
   font-family: 'Montserrat Bold';
   /*a name to be used later*/
