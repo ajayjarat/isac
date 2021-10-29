@@ -30,7 +30,7 @@ productFAQ:
   list:
     - listItem : "All Government organizations subject to NIST/FISMA security requirements involving DISA STIG/SCAP compliance or a growing set of supplemental standards. This includes all of DoD and other agencies, e.g., DHS, FBI, Veteran, etc."    
 
-- title : "HOW ISAC Does It?"
+- title : "How ISAC Does It?"
   list:
     - listItem : "Compared to conventional STIG/SCAP benchmarks and processes (and other auditing and remediation products), ISAC’s hyper-automation, end-to-end lifecycle coverage, and centralized control plus collaboration and visuals are totally disruptive."
     - listItem : "To To facilitate adoption, key ISAC screens appear virtually identical to their DoD STIG Viewer counterparts."
