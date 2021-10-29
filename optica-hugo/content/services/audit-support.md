@@ -11,5 +11,5 @@ link: "#"
 type: "service"
 ---
 
-We offer full support to our Customers in going through a CCRI Audit.  \  
+We offer full support to our Customers in going through a CCRI Audit.  
 

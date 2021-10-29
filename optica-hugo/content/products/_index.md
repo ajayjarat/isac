@@ -20,7 +20,7 @@ productFAQ:
     - listItem : "It then provides central orchestration of vulnerability assessments, follow-up, remediation (incl false positives), reminders, audit ep/closure/scoring, gap collaboration, dashboarding (incl heat maps), and more."
     - listItem : "ISAC saves hundreds of hours per month in laborious and error prone technical security SOPs."
 
-- title : "Why do you need ISAC?"
+- title : "Why Do You Need ISAC?"
   list:
     - listItem : "**Look beyond audits!!** With ISAC providing Continuous Compliance and a fool-proof audit capability, your team can focus on securing other aspects of the Enterprise."
     - listItem : "ISAC provides a cost-effective cornerstone for your NIST compliant Cybersecurity Framework."
