@@ -108,7 +108,7 @@ partners:
   technologyPartner:   
     # partner item loop
     - title : "Digital Ocean"
-      image : "images/digital-ocean.png"
+      image : "images/digital-ocean-logo.png"
       link  : "https://www.digitalocean.com/"
 
     # partner item loop
