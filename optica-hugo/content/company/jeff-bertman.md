@@ -5,7 +5,7 @@ description : ""
 image: "images/JeffBertman.png"
 course: "Head Of Centers"
 category: "corporate"
-designation: "CO-CEO"
+designation: "Co-CEO, Intelligent Cyber Automations (ICA aka OptICA)"
 id: "member3"
 type: "team"
 ---
