@@ -68,3 +68,6 @@ copyright = "Copyright &copy; 2020 [Resecure](https://resecure.com.au) All Right
 # Navigation get start button
 [params.navButton]
 enable = true
+
+# do_not_log_list : add configurations that you do not wish to be recorded in logs
+#do_not_log_list = "['send_grid_secret_key']"

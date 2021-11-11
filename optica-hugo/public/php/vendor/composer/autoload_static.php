@@ -7,12 +7,19 @@ namespace Composer\Autoload;
 class ComposerStaticInit71679fc0c883f12f29aba28066290436
 {
     public static $files = array (
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '79f66bc0a1900f77abe4a9a299057a0a' => __DIR__ . '/..' . '/starkbank/ecdsa/src/ellipticcurve.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Symfony\\Component\\Yaml\\' => 23,
+            'Symfony\\Component\\Debug\\' => 24,
+            'Symfony\\Component\\Console\\' => 26,
             'SendGrid\\Stats\\' => 15,
             'SendGrid\\Mail\\' => 14,
             'SendGrid\\Helper\\' => 16,
@@ -20,9 +27,33 @@ class ComposerStaticInit71679fc0c883f12f29aba28066290436
             'SendGrid\\Contacts\\' => 18,
             'SendGrid\\' => 9,
         ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Polyfill\\Ctype\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'Symfony\\Component\\Yaml\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/yaml',
+        ),
+        'Symfony\\Component\\Debug\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/debug',
+        ),
+        'Symfony\\Component\\Console\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/console',
+        ),
         'SendGrid\\Stats\\' => 
         array (
             0 => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/stats',
@@ -47,6 +78,27 @@ class ComposerStaticInit71679fc0c883f12f29aba28066290436
         array (
             0 => __DIR__ . '/..' . '/sendgrid/php-http-client/lib',
         ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'H' => 
+        array (
+            'HttpAdapter' => 
+            array (
+                0 => __DIR__ . '/..' . '/toin0u/http-adapter/src',
+            ),
+        ),
+        'D' => 
+        array (
+            'DigitalOcean' => 
+            array (
+                0 => __DIR__ . '/..' . '/toin0u/digitalocean/src',
+            ),
+        ),
     );
 
     public static $classMap = array (
@@ -61,6 +113,7 @@ class ComposerStaticInit71679fc0c883f12f29aba28066290436
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit71679fc0c883f12f29aba28066290436::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit71679fc0c883f12f29aba28066290436::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit71679fc0c883f12f29aba28066290436::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit71679fc0c883f12f29aba28066290436::$classMap;
 
         }, null, ClassLoader::class);

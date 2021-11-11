@@ -48,6 +48,25 @@
     </div>
   </div>
 </section>
+
+
+<section class="">
+  <div class="layout-container">
+    <div class="row mb-5 g-5 about-team">
+      <div class="heading-color text-center">
+        <h1 class="text-orange text-uppercase">Corporate Management</h1>
+      </div>
+      {{ range .Data.Pages.ByParam "Category"  }}
+      {{ if eq .Params.Category "corporate" }}
+        <div class="col-lg-4 col-md-4 col-sm-6">        
+          {{ .Render "team" }}
+        </div>
+      {{ end }}
+      {{ end }}      
+    </div>    
+  </div>
+</section>
+
 <section>
   <div class="row mt-5">    
     <div class="col-12 text-center">

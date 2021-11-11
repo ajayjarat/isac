@@ -6,4 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'HttpAdapter' => array($vendorDir . '/toin0u/http-adapter/src'),
+    'DigitalOcean' => array($vendorDir . '/toin0u/digitalocean/src'),
 );

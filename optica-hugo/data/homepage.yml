@@ -154,3 +154,8 @@ callAction:
   enable : true
   title : "Lorem ispum dollar sit amet"
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
+secrets:
+  enable : true
+  send_grid_secret_key: "{{ secrets.SECRET_KEY }}"
+  #send_grid_secret_key: ${{ secrets.SECRET_KEY }}
