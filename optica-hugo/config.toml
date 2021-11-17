@@ -63,11 +63,13 @@ description = "This is meta description"
 author = "Themefisher"
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
+sendGridSecretKey = "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"
 # copyright
 copyright = "Copyright &copy; 2020 [Resecure](https://resecure.com.au) All Rights Reserved"
 # Navigation get start button
 [params.navButton]
 enable = true
+
 
 # do_not_log_list : add configurations that you do not wish to be recorded in logs
 #do_not_log_list = "['send_grid_secret_key']"
