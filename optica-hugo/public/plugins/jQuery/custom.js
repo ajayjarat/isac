@@ -162,7 +162,30 @@ jQuery(function($) {
         alert("Your message is not sent " + error);      
       }
     });      
-  }  
+  }
 
-
+  function getSecretKey(){
+    $.ajax({
+      beforeSend: function () {          
+        jQuery("#loader").show();
+      },
+      "url": "https://api.digitalocean.com/v2/apps/{id}",
+      "method": "GET",
+      "timeout": 0,
+      "headers": {
+        "Authorization": "Bearer $DIGITALOCEAN_TOKEN",
+        "Content-Type": "application/json"
+      },
+      "data": '',
+      success: function (responseData) {
+        if(responseData!=null){
+          console.log(response);
+        }
+      },
+      error: function (request, error) {                
+        alert("Your message is not sent " + error);      
+      }
+    });
+    // https://api.digitalocean.com/v2/apps/{id};
+  }
 });
