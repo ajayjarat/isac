@@ -7,6 +7,7 @@ course: "Head Of Centers"
 category: "leadership"
 designation: "CO-FOUNDER & PRESIDENT"
 id: "member5"
+order: 5
 type: "team"
 ---
 

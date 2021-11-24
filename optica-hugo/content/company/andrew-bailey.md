@@ -7,6 +7,7 @@ course: "for Intelligent Cyber Automations"
 category: "corporate"
 designation: "Senior Software Developer"
 id: "member1"
+order: 3
 type: "team"
 ---
 

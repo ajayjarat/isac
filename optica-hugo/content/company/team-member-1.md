@@ -7,6 +7,7 @@ course: "Head Of Centers"
 category: "admin"
 designation: "CO-FOUNDER & CEO"
 id: "member6"
+order: 6
 type: "team"
 ---
 

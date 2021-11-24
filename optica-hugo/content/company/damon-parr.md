@@ -7,6 +7,7 @@ course: "Senior Systems Administrator and Architect"
 category: "corporate"
 designation: "Senior Systems Administrator and Architect"
 id: "member4"
+order: 4
 type: "team"
 ---
 

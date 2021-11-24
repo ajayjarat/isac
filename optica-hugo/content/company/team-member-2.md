@@ -7,6 +7,7 @@ image: "images/resource-3.png"
 category: "admin"
 designation: "CHIEF TECHNOLOGY OFFICER"
 id: "member7"
+order: 7
 type: "team"
 ---
 

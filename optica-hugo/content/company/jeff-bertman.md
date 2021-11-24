@@ -7,6 +7,7 @@ course: "Head Of Centers"
 category: "corporate"
 designation: "Co-CEO, Intelligent Cyber Automations (ICA aka OptICA)"
 id: "member3"
+order: 1
 type: "team"
 ---
 
