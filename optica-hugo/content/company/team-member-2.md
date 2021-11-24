@@ -1,5 +1,5 @@
 ---
-title: "Mr. THOMAS COLEMAN"
+title: "Mr. John deo"
 draft: false
 description : ""
 # teacher portrait

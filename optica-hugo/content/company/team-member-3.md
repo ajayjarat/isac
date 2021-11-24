@@ -1,5 +1,5 @@
 ---
-title: "Mr. STEPHEN KASSIN"
+title: "Mr. John deo"
 draft: false
 description : ""
 image: "images/resource-3.png"
