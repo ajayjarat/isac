@@ -275,7 +275,7 @@ section{
   max-width:350px;
 }
 .contact-bg{
-  background-image: url('./../images/curve-3.png');
+  background-image: url('./../images/contact-sec-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   // padding-top: 5rem;
@@ -406,11 +406,13 @@ footer{
   }
 }
 .services-container{
-  background-image: url('./../images/services-bg.png');
+  background-image: url('./../images/services-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  background-attachment: fixed;
+  background-position: center;
   .services-wrapper{
     max-width: 80%;
     margin-left: auto;
