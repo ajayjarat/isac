@@ -1,6 +1,7 @@
 jQuery(function($) {
   var downloadLink="";
   var baseUrl = window.location.origin;
+  var secretKey="";
   $('.team-modal').click(function() {     
     var memberInfo = $(this).attr("data-summary"); 
     var memberTitle = $(this).attr("data-title");             
@@ -8,12 +9,14 @@ jQuery(function($) {
     $('#teamModal .modal-desc').html(memberInfo);    
   });
   $('.request-demo').click(function() { 
-    var optionVal = $(this).attr("data-option");              
+    var optionVal = $(this).attr("data-option");
+    secretKey=$(this).attr("data-secret");
     $('#contactModal').show();
     $('#contactForm #purpose').val(optionVal).change();
   });    
   $('.download-fact-sheet').click(function() { 
-    downloadLink = $(this).attr("data-file");          
+    downloadLink = $(this).attr("data-file"); 
+    secretKey=$(this).attr("data-secret-key");         
     $('#downloadFactModal').show(); 
   });
   $("#download-fact-form").on("submit", function(event){
@@ -22,83 +25,24 @@ jQuery(function($) {
       $.each($('#download-fact-form').serializeArray(), function(i, field) {
         factFormData[field.name]=field.value;
       });
-      sendEmail(factFormData, "Download Product Fact Sheet", "enquiry@optica.solutions" );       
-    
-      /*$.ajax({
-        url: actionurl,
-        type: 'post',
-        data: {
-            data:factFormData,
-            subject: 'Download Product Fact Sheet'
-        },    
-        success: function(response){
-            if(response==1){
-                jQuery('#downloadFactModal .modal-body .download-fact-form').css({"display":"none"});
-                jQuery(".modal-body").html("<div class='text-center'><h5>Your downloadable link is enabled</h5><a class='text-center' href="+downloadLink+">Download fact sheet</a></div>");      
-            }              
-        },
-        error: function (request, error) {
-          // alert("AJAX Call Error: " + error);     
-          console.log("Your message is not sent " + error);      
-        }         
-      });*/
+      sendEmail(factFormData, "Download Product Fact Sheet", "enquiry@optica.solutions", secretKey );
   });
   $("#contactForm").submit(function(event) {               
       event.preventDefault();
       var secretKey = $(this).attr("data-secret");
-      // var actionurl = baseUrl+"/php/send_mail.php";  
       var contactData={}; 
       $.each($('#contactForm').serializeArray(), function(i, field) {
         contactData[field.name]=field.value;
       });        
       sendEmail(contactData, "Request Demo", "info@optica.solutions", secretKey );
-      /*$.ajax({
-          url: actionurl,
-          type: 'post',
-          data: {
-              data:contactData,
-              subject: 'Request Demo'
-          },    
-          success: function(response){
-              if(response==1){
-                  $('#contactModal').modal('toggle');
-                  alert("Your message is sent successfully.")
-              }else{
-                  alert("Your message is not sent")
-              }              
-          },
-          error: function (request, error) {                
-            alert("Your message is not sent " + error);      
-          }         
-      });*/
   });
   $("#homeContactForm").submit(function(event) {          
       event.preventDefault();      
       var formData={};
-      var actionurl = baseUrl+"/php/contact.php";        
       $.each($('#homeContactForm').serializeArray(), function(i, field) {
-          formData[field.name]=field.value;
+        formData[field.name]=field.value;
       });
-      sendEmail(formData, "Request Demo", "enquiry@optica.solutions" );       
-      /*$.ajax({
-          url: actionurl,
-          type: 'post',
-          data: {
-              data:formData,
-              subject: 'Contact email'
-          },    
-          success: function(response){
-              alert(host);
-              if(response==1){
-                  alert("Your message is sent successfully.")
-              }else{
-                  alert("Your message is not sent")
-              }              
-          },
-          error: function (request, error) {                
-            alert("Your message is not sent " + error);      
-          }         
-      });*/
+      sendEmail(formData, "Request Demo", "enquiry@optica.solutions" secretKey );
   });
   window.onscroll = function() {myFunction()};
   var pageHeader = document.getElementById("mainMenu");
@@ -111,7 +55,7 @@ jQuery(function($) {
       }
   }
   function sendEmail(data, subject, mailTo, secret ){
-    alert(secret);
+    
     var message=""; 
     if (data) { 
       // console.log(data);
@@ -120,7 +64,7 @@ jQuery(function($) {
         message+="<div><p>"+key+":"+value+"</p></div>";
       });           
     }     
-    // var SENDGRID_API_KEY= "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";       
+    // var SENDGRID_API_KEY= ${apikey};       
     $.ajax({
       beforeSend: function () {          
         jQuery("#loader").show();
@@ -164,28 +108,27 @@ jQuery(function($) {
     });      
   }
 
-  function getSecretKey(){
-    $.ajax({
-      beforeSend: function () {          
-        jQuery("#loader").show();
-      },
-      "url": "https://api.digitalocean.com/v2/apps/{id}",
-      "method": "GET",
-      "timeout": 0,
-      "headers": {
-        "Authorization": "Bearer $DIGITALOCEAN_TOKEN",
-        "Content-Type": "application/json"
-      },
-      "data": '',
-      success: function (responseData) {
-        if(responseData!=null){
-          console.log(response);
-        }
-      },
-      error: function (request, error) {                
-        alert("Your message is not sent " + error);      
-      }
-    });
-    // https://api.digitalocean.com/v2/apps/{id};
-  }
+  // function getSecretKey(){
+  //   $.ajax({
+  //     beforeSend: function () {          
+  //       jQuery("#loader").show();
+  //     },
+  //     "url": "https://api.digitalocean.com/v2/apps/{id}",
+  //     "method": "GET",
+  //     "timeout": 0,
+  //     "headers": {
+  //       "Authorization": "Bearer $DIGITALOCEAN_TOKEN",
+  //       "Content-Type": "application/json"
+  //     },
+  //     "data": '',
+  //     success: function (responseData) {
+  //       if(responseData!=null){
+  //         console.log(response);
+  //       }
+  //     },
+  //     error: function (request, error) {                
+  //       alert("Your message is not sent " + error);      
+  //     }
+  //   });
+  // }
 });
