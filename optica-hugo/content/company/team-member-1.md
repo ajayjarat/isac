@@ -1,5 +1,5 @@
 ---
-title: "Mr. JASON KASSIN"
+title: "Mr. John deo"
 draft: false
 description : ""
 image: "images/resource-3.png"
@@ -7,6 +7,7 @@ course: "Head Of Centers"
 category: "admin"
 designation: "CO-FOUNDER & CEO"
 id: "member6"
+order: 6
 type: "team"
 ---
 

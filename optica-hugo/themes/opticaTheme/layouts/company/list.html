@@ -20,7 +20,7 @@
     <h5>Our team of highly experienced, high caliber Cybersecurity Professionals, Data Security Professionals, IT Professionals and Government Contracting specialists are here to help you quickly attain and sustain compliance at scale with DISA and other agency’s standards at home and across the globe</h5>
   </div>  
 </section>
-<section class="">
+<!-- <section class="">
   <div class="layout-container">
     <div class="row mb-5 g-5 about-team">
       <div class="heading-color text-center">
@@ -47,7 +47,7 @@
       {{ end }}      
     </div>
   </div>
-</section>
+</section> -->
 
 
 <section class="">
@@ -56,7 +56,7 @@
       <div class="heading-color text-center">
         <h1 class="text-orange text-uppercase">Corporate Management</h1>
       </div>
-      {{ range .Data.Pages.ByParam "Category"  }}
+      {{ range .Data.Pages.ByParam "order" }}
       {{ if eq .Params.Category "corporate" }}
         <div class="col-lg-4 col-md-4 col-sm-6">        
           {{ .Render "team" }}

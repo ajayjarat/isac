@@ -1,5 +1,5 @@
 ---
-title: "Damon Parr"
+title: "Mr. Damon Parr"
 draft: false
 description : ""
 image: "images/Damon-Parr.jpg"
@@ -7,6 +7,7 @@ course: "Senior Systems Administrator and Architect"
 category: "corporate"
 designation: "Senior Systems Administrator and Architect"
 id: "member4"
+order: 4
 type: "team"
 ---
 

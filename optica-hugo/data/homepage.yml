@@ -3,7 +3,7 @@ banner:
   enable : true
   writter : ""
   title : "ISAC"
-  image : "images/curve-4.png"
+  image : "images/home-banner.jpg"
   titleImage : "images/isac-text-img2.png"
   url1: "products"
   content : "Cyber industry’s most thorough network compliance and remediation software"

@@ -7,6 +7,7 @@ course: "for Intelligent Cyber Automations"
 category: "corporate"
 designation: "Senior Agent Developer and CTO"
 id: "member4"
+order: 2
 type: "team"
 ---
 

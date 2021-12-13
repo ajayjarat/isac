@@ -1,5 +1,5 @@
 ---
-title: "Mr. THOMAS COLEMAN"
+title: "Mr. John deo"
 draft: false
 # page title background image
 # bg_image: "images/backgrounds/page-title.jpg"
