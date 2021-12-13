@@ -87,7 +87,7 @@ jQuery(function($) {
           }
         ],
         "from": {
-          "email": "shalini@jivinc.in"
+          "email": "website@optica.solutions"
         },
         "subject": subject,
         "content": [
