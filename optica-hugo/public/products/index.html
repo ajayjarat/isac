@@ -78,9 +78,8 @@
 
       
       <!-- nav btn -->
-      <button class="btn request-demo-btn btn-success">
-        REQUEST DEMO
-      </button>
+      <button type="button" class="btn request-demo-btn btn-success request-demo" data-option="Request a Demo" data-secret=${APP_URL} data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button> 
+      
         
     </div>      
   </nav>
@@ -93,7 +92,7 @@
 <section class="home-header mb-0 mt-0 pageSlider" id="productsSlider">
   <div class="banner-wrap">
     
-    <img class="banner-bg" src="/images/product-banner.png" alt="product banner">
+    <img class="banner-bg" src="/images/product-banner.jpg" alt="product banner">
        
     <div class="banner-content">      
       <h1 class="text-white heading-xl">ISAC </h1>
@@ -200,7 +199,7 @@
     </div>    
     <div class="row mt-5">
       <div class="col-12 text-center mb-5">
-        <button type="button" class="theme-btn-white download-fact-sheet" data-file="https://isac-8oxfp.ondigitalocean.app/files/ISACWebsiteFeedback.pdf" data-bs-toggle="modal" data-bs-target="#downloadFactModal" >Download Product Fact Sheet</button>
+        <button type="button" class="theme-btn-white download-fact-sheet" data-file="https://isac-8oxfp.ondigitalocean.app/files/ISACWebsiteFeedback.pdf" data-secret-key=${APP_URL} data-bs-toggle="modal" data-bs-target="#downloadFactModal" >Download Product Fact Sheet</button>
       </div>
       <div class="col-12 text-center">
         <button type="button" class="theme-btn-white request-demo" data-option="Request a Demo" data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button>

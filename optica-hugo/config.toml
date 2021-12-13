@@ -63,7 +63,7 @@ description = "This is meta description"
 author = "Themefisher"
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
-sendGridSecretKey = "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"
+#sendGridSecretKey = ${apikey}
 # copyright
 copyright = "Copyright &copy; 2020 [Resecure](https://resecure.com.au) All Rights Reserved"
 # Navigation get start button

@@ -1,6 +1,0 @@
-{
-    "require": {
-        "sendgrid/sendgrid": "^7.9",
-        "toin0u/digitalocean": "~1.0"
-    }
-}
