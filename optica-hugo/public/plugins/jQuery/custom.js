@@ -42,7 +42,7 @@ jQuery(function($) {
       $.each($('#homeContactForm').serializeArray(), function(i, field) {
         formData[field.name]=field.value;
       });
-      sendEmail(formData, "Request Demo", "enquiry@optica.solutions" secretKey );
+      sendEmail(formData, "Request Demo", "enquiry@optica.solutions", secretKey );
   });
   window.onscroll = function() {myFunction()};
   var pageHeader = document.getElementById("mainMenu");
