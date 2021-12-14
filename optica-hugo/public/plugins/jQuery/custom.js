@@ -54,8 +54,8 @@ jQuery(function($) {
           pageHeader.classList.remove("sticky");
       }
   }
-  function sendEmail(data, subject, mailTo, secret ){
-    
+  function sendEmail(data, subject, mailTo, secret ){    
+    // getKey();
     var message=""; 
     if (data) { 
       // console.log(data);
@@ -87,7 +87,7 @@ jQuery(function($) {
           }
         ],
         "from": {
-          "email": "shalini@jivinc.in"
+          "email": "website@optica.solutions"
         },
         "subject": subject,
         "content": [
@@ -107,6 +107,19 @@ jQuery(function($) {
       }
     });      
   }
+
+  // function getKey(){     
+  //   $.ajax({
+  //     type: "GET",
+  //     url: baseUrl+"/key.json",
+  //     success: function (response) {
+  //       console.log(response)
+  //     },
+  //     error: function (request, error) {                
+  //       alert(request+", " + error);      
+  //     }
+  //   });
+  // }
 
   // function getSecretKey(){
   //   $.ajax({
