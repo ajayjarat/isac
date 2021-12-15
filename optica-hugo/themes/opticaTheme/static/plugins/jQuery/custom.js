@@ -29,7 +29,6 @@ jQuery(function($) {
   });
   $("#contactForm").submit(function(event) {               
       event.preventDefault();
-      var secretKey = $(this).attr("data-secret");
       var contactData={}; 
       $.each($('#contactForm').serializeArray(), function(i, field) {
         contactData[field.name]=field.value;
@@ -55,7 +54,6 @@ jQuery(function($) {
       }
   }
   function sendEmail(data, subject, mailTo, secret ){
-    
     var message=""; 
     if (data) { 
       // console.log(data);
