@@ -29,7 +29,6 @@ jQuery(function($) {
   });
   $("#contactForm").submit(function(event) {               
       event.preventDefault();
-      var secretKey = $(this).attr("data-secret");
       var contactData={}; 
       $.each($('#contactForm').serializeArray(), function(i, field) {
         contactData[field.name]=field.value;
@@ -54,8 +53,7 @@ jQuery(function($) {
           pageHeader.classList.remove("sticky");
       }
   }
-  function sendEmail(data, subject, mailTo, secret ){    
-    // getKey();
+  function sendEmail(data, subject, mailTo, secret ){
     var message=""; 
     if (data) { 
       // console.log(data);
@@ -107,19 +105,6 @@ jQuery(function($) {
       }
     });      
   }
-
-  // function getKey(){     
-  //   $.ajax({
-  //     type: "GET",
-  //     url: baseUrl+"/key.json",
-  //     success: function (response) {
-  //       console.log(response)
-  //     },
-  //     error: function (request, error) {                
-  //       alert(request+", " + error);      
-  //     }
-  //   });
-  // }
 
   // function getSecretKey(){
   //   $.ajax({
