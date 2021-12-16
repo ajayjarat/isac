@@ -44,8 +44,7 @@ jQuery(function($) {
       sendEmail(formData, "Request Demo", "enquiry@optica.solutions", secretKey );
   });
   window.onscroll = function() {myFunction()};
-  var pageHeader = document.getElementById("mainMenu");
-  console.log(pageHeader);
+  var pageHeader = document.getElementById("mainMenu");  
   function myFunction(){
       if(window.pageYOffset >= 100){
           pageHeader.classList.add("sticky");
@@ -54,7 +53,9 @@ jQuery(function($) {
       }
   }
   function sendEmail(data, subject, mailTo, secret ){
-    var message=""; 
+    var message="";
+    console.log("hii i am here");
+    console.log(process.env.apikey) ;
     if (data) { 
       // console.log(data);
       message+="<div>Customer details:</div>";
