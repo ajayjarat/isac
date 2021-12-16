@@ -18,7 +18,8 @@
             <h3 class="">{{ .content | markdownify }}</h3>
             <div class="multi-button-wrap mt-4">              
               <a href="{{ $.Site.BaseURL }}{{ .url1 }}"><button class="dark-btn btn-medium ms-3">Read More</button></a>
-              <button type="button" class="dark-btn btn-medium request-demo" data-option="Request a Demo" data-secret=${apikey} data-bs-toggle="modal" data-bs-target="#contactModal">Request Demo</button>
+              {{ $key := getenv "api_key" }}
+              <button type="button" class="dark-btn btn-medium request-demo" data-option="Request a Demo" data-secret="{{ $key }}" data-bs-toggle="modal" data-bs-target="#contactModal">Request Demo</button>
             </div>
           </div>
         </div>
@@ -81,7 +82,8 @@
     </div>
     <div class="row mt-5 pt-5">
       <div class="col-lg-12 text-center btn-wrap">
-        <button type="button" class="theme-btn-white request-demo" data-option="Request a Demo" data-secret=${apikey} data-bs-toggle="modal" data-bs-target="#contactModal">Request Demo</button>       
+        {{ $key := getenv "apikey" }}
+        <button type="button" class="theme-btn-white request-demo" data-option="Request a Demo" data-secret="{{ $key }}" data-bs-toggle="modal" data-bs-target="#contactModal">Request Demo</button>       
       </div>
     </div>
   </div>

@@ -3,7 +3,7 @@ baseURL = "https://isac-8oxfp.ondigitalocean.app/"
 languageCode = "en-us"
 title = "ISAC"
 theme = "opticaTheme"
-
+#apikey = {{ getenv "apikey" }}
 ############################# Plugins ##############################
 [params.plugins]
   # CSS Plugins
