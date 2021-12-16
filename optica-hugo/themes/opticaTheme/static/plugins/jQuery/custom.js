@@ -54,8 +54,8 @@ jQuery(function($) {
   }
   function sendEmail(data, subject, mailTo, secret ){
     var message="";
-    console.log("hii i am here");
-    console.log(process.env.apikey) ;
+    // console.log("hii i am here");
+    // console.log(apikey) ;
     if (data) { 
       // console.log(data);
       message+="<div>Customer details:</div>";
