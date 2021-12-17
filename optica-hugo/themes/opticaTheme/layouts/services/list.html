@@ -40,7 +40,8 @@
   <div class="row mt-5">
     <div class="col-12 text-center mb-5">
      <!--  <a href="#"><button type="button" class="theme-btn-white">Download Product Fact Sheet</button></a> -->
-      <button type="button" class="theme-btn-white download-fact-sheet" data-file="{{ $.Site.BaseURL }}files/ISACWebsiteFeedback.pdf" data-secret-key=${apikey} data-bs-toggle="modal" data-bs-target="#downloadFactModal">Download Product Fact Sheet</button>
+      {{ $key := getenv "apikey" }}
+      <button type="button" class="theme-btn-white download-fact-sheet" data-file="{{ $.Site.BaseURL }}files/ISACWebsiteFeedback.pdf" data-secret-key="{{ $key }}" data-bs-toggle="modal" data-bs-target="#downloadFactModal">Download Product Fact Sheet</button>
     </div>
     <div class="col-12 text-center">
       <button type="button" class="theme-btn-white request-demo" data-option="Request a Demo" data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button>
