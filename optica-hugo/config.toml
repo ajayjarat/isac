@@ -3,7 +3,7 @@ baseURL = "https://isac-8oxfp.ondigitalocean.app/"
 languageCode = "en-us"
 title = "ISAC"
 theme = "opticaTheme"
-#apikey = {{ getenv "apikey" }}
+
 ############################# Plugins ##############################
 [params.plugins]
   # CSS Plugins
@@ -63,7 +63,6 @@ description = "This is meta description"
 author = "Themefisher"
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
-#sendGridKey = "${apikey}"
 # copyright
 copyright = "Copyright &copy; 2020 [Resecure](https://resecure.com.au) All Rights Reserved"
 # Navigation get start button
