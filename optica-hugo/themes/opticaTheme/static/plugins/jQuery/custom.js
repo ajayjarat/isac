@@ -53,17 +53,14 @@ jQuery(function($) {
       }
   }
   function sendEmail(data, subject, mailTo, secret ){
-    var message="";
-    // console.log("hii i am here");
-    // console.log(apikey) ;
+    var message="";    
     if (data) { 
       // console.log(data);
       message+="<div>Customer details:</div>";
       $.each(data, function(key,value) {
         message+="<div><p>"+key+":"+value+"</p></div>";
       });           
-    }     
-    // var SENDGRID_API_KEY= ${apikey};       
+    }    
     $.ajax({
       beforeSend: function () {          
         jQuery("#loader").show();
@@ -98,11 +95,12 @@ jQuery(function($) {
       }),
       success: function (responseData) {
         if(responseData!=null){
-          console.log(response);
+          console.log(responseData);
         }
       },
       error: function (request, error) {                
-        alert("Your message is not sent " + error);      
+        alert("Your message is not sent " + error);
+        console.log(error);     
       }
     });      
   }

@@ -52,7 +52,8 @@
 
       {{ if .Site.Params.navButton.enable }}
       {{ "<!-- nav btn -->" | safeHTML }}
-      <button type="button" class="btn request-demo-btn btn-success request-demo" data-option="Request a Demo" data-secret=${apikey} data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button> 
+      {{ $key := getenv "apikey" }}
+      <button type="button" class="btn request-demo-btn btn-success request-demo" data-option="Request a Demo" data-secret="{{ $key }}" data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button> 
       <!-- <button class="btn request-demo-btn btn-success">
         REQUEST DEMO
       </button> -->

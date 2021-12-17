@@ -70,7 +70,8 @@
 <section>
   <div class="row mt-5">    
     <div class="col-12 text-center">
-      <button type="button" class="theme-btn-white request-demo" data-option="Request Meeting" data-secret=${apikey} data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us To Learn More About Our Team</button>
+      {{ $key := getenv "apikey" }}
+      <button type="button" class="theme-btn-white request-demo" data-option="Request Meeting" data-secret="{{ $key }}" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us To Learn More About Our Team</button>
     </div>
   </div>
 </section>
