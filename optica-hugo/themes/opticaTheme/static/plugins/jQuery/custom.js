@@ -69,7 +69,7 @@ jQuery(function($) {
       "method": "POST",
       "timeout": 0,
       "headers": {
-        "Authorization": "Bearer $"+secret,
+        "Authorization": "Bearer "+secret,
         "Content-Type": "application/json"
       },
       "data": JSON.stringify({
