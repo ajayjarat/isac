@@ -11,6 +11,4 @@ order: 2
 type: "team"
 ---
 
-### About Me
-
-My name is Josh Jackson and I am the senior agent developer and CTO for Intelligent Cyber Automations. I am an accomplished programmer and systems architect, and I enjoy using my skills to contribute to the exciting technological advances that happen every day at Intelligence Cyber Automations. I graduated from the Western Governors University in 2016 with a Bachelor's Degree in Information System Security. I have worked in the DoD cyber space for over 8 years and have been a key player in numerous successful audits for large DoD data centers.
+Mr. Jackson is an ardent technologist with deep understanding and expertise in securing large enterprise systems.  As the Chief Technology Officer (CTO) of Intelligent Cyber Automations (ICA) he architects ICA’s solutions and supports establishing both strategic and tactical roadmaps for solutions to meet current and future cyber security needs of ICA’s customers.  Mr. Jackson has specialized experience in DoD Cyber Space and he is actively engaged in managing Cyber Operations for the U.S. Army.

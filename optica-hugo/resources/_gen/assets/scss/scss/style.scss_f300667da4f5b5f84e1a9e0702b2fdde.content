@@ -384,11 +384,13 @@ footer #copyright {
   .partners-container .partner-img-wrap img {
     max-width: 300px; }
 
-.about-team .member-desc {
-  margin-top: 1.5rem; }
-  .about-team .member-desc h3, .about-team .member-desc h5 {
-    font-family: "Inter", "sans-serif" !important;
-    font-weight: normal !important; }
+.about-team {
+  justify-content: center; }
+  .about-team .member-desc {
+    margin-top: 1.5rem; }
+    .about-team .member-desc h3, .about-team .member-desc h5 {
+      font-family: "Inter", "sans-serif" !important;
+      font-weight: normal !important; }
 
 .call-action-container {
   background-color: #182a83;

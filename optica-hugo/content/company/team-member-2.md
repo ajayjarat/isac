@@ -4,7 +4,7 @@ draft: false
 description : ""
 # teacher portrait
 image: "images/resource-3.png"
-category: "admin"
+category: "admin1"
 designation: "CHIEF TECHNOLOGY OFFICER"
 id: "member7"
 order: 7

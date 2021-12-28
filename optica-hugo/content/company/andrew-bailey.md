@@ -2,7 +2,7 @@
 title: "Mr. Andrew Bailey"
 draft: false
 description : ""
-image: "images/AndrewBaileyFull.png"
+image: "images/AndrewBaileyImg.png"
 course: "for Intelligent Cyber Automations"
 category: "corporate"
 designation: "Senior Software Developer"
@@ -11,4 +11,4 @@ order: 3
 type: "team"
 ---
 
-Andrew Bailey is the Senior Software Developer for Intelligent Cyber Automations. Starting back in 2012, Andrew enlisted into the US Army Reserves as a 25B (IT Specialist). Leveraging skills learned during training, Andrew began a career with the US Army in the contract sector. During his career he has managed and developed in multiple efforts targeting cyber security with emphasis in STIG/ACAS. Through developing software optimizing the multiple DOD required security practices, Andrew has assisted in multiple record successful audits.
+Mr. Bailey is the Chief Development Officer at Intelligent Cyber Automations (ICA).  He is leading the efforts to architect, design and develop the solutions of ICA.  Mr. Bailey has the uncanny ability to develop highly optimized, superfast cyber automations.  And he has deep understanding, and experience in STIG/ACAS cyber security compliance, through his experience in multiple efforts.  Mr. Bailey has helped many teams achieve superior compliance in DoD cyber audits.

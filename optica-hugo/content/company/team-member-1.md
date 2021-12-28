@@ -4,7 +4,7 @@ draft: false
 description : ""
 image: "images/resource-3.png"
 course: "Head Of Centers"
-category: "admin"
+category: "admin1"
 designation: "CO-FOUNDER & CEO"
 id: "member6"
 order: 6
