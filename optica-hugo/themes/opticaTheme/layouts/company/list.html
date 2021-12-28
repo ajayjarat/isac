@@ -49,7 +49,6 @@
   </div>
 </section> -->
 
-
 <section class="">
   <div class="layout-container">
     <div class="row mb-5 g-5 about-team">
@@ -58,6 +57,23 @@
       </div>
       {{ range .Data.Pages.ByParam "order" }}
       {{ if eq .Params.Category "corporate" }}
+        <div class="col-lg-4 col-md-4 col-sm-6">        
+          {{ .Render "team" }}
+        </div>
+      {{ end }}
+      {{ end }}      
+    </div>    
+  </div>
+</section>
+
+<section class="">
+  <div class="layout-container">    
+    <div class="row mb-5 g-5 about-team">
+      <div class="heading-color text-center">
+        <h1 class="text-orange text-uppercase">Board Of Advisors</h1>
+      </div>
+      {{ range .Data.Pages.ByParam "Category"  }}
+      {{ if eq .Params.Category "admin" }}
         <div class="col-lg-4 col-md-4 col-sm-6">        
           {{ .Render "team" }}
         </div>
