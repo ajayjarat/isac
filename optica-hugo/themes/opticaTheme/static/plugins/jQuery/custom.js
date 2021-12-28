@@ -101,9 +101,14 @@ jQuery(function($) {
         ]
       }),
       success: function (responseData) {
-        alert("Email Send Successfully");
-        $("#"+formID).trigger("reset");
-        $("#"+modalId).modal('toggle');
+        alert("Email Send Successfully");                
+        if(modalId=="downloadFactModal"){
+          jQuery('#downloadFactModal .modal-body .download-fact-form').css({"display":"none"});
+          jQuery(".modal-body").html("<div class='text-center'><h5>Your downloadable link is enabled</h5><a class='text-center' href="+downloadLink+">Download fact sheet</a></div>");          
+        }else{
+          $("#"+modalId).modal('toggle');
+        }
+        $("#"+formID).trigger("reset");        
       },
       error: function (request, error) {                
         alert("Your message is not sent " + error);

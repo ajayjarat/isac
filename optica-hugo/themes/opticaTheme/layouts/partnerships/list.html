@@ -43,7 +43,8 @@
 <section>
   <div class="row mt-5">    
     <div class="col-12 text-center">
-      <button type="button" class="theme-btn-white request-demo" data-option="Partnership Inquiry" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us To Discuss Partnership Arrangements</button>
+      {{ $key := getenv "apikey" }}      
+      <button type="button" class="theme-btn-white request-demo" data-option="Request a Demo" data-secret="{{ $key }}" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us To Discuss Partnership Arrangements</button>
     </div>
   </div>
 </section>
