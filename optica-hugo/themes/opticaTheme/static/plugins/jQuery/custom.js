@@ -2,7 +2,9 @@ jQuery(function($) {
   var downloadLink="";
   var baseUrl = window.location.origin;
   var secretKey="";
-  $('.team-modal').click(function() {     
+  var modalId="";
+  formID="";
+  $('.team-modal').click(function() {
     var memberInfo = $(this).attr("data-summary"); 
     var memberTitle = $(this).attr("data-title");             
     $('#teamModal .modal-title').html(memberTitle);
@@ -12,15 +14,18 @@ jQuery(function($) {
     var optionVal = $(this).attr("data-option");
     secretKey=$(this).attr("data-secret");
     $('#contactModal').show();
+    modalId="contactModal" ;
     $('#contactForm #purpose').val(optionVal).change();
   });    
   $('.download-fact-sheet').click(function() { 
     downloadLink = $(this).attr("data-file"); 
     secretKey=$(this).attr("data-secret-key");         
-    $('#downloadFactModal').show(); 
+    $('#downloadFactModal').show();
+    modalId="downloadFactModal" ;
   });
   $("#download-fact-form").on("submit", function(event){
-      event.preventDefault();      
+      event.preventDefault();
+      formID= "download-fact-form";      
       var factFormData={};                
       $.each($('#download-fact-form').serializeArray(), function(i, field) {
         factFormData[field.name]=field.value;
@@ -29,6 +34,7 @@ jQuery(function($) {
   });
   $("#contactForm").submit(function(event) {               
       event.preventDefault();
+      formID= "contactForm";
       var contactData={}; 
       $.each($('#contactForm').serializeArray(), function(i, field) {
         contactData[field.name]=field.value;
@@ -36,7 +42,8 @@ jQuery(function($) {
       sendEmail(contactData, "Request Demo", "info@optica.solutions", secretKey );
   });
   $("#homeContactForm").submit(function(event) {          
-      event.preventDefault();      
+      event.preventDefault();
+      formID= "homeContactForm";    
       var formData={};
       $.each($('#homeContactForm').serializeArray(), function(i, field) {
         formData[field.name]=field.value;
@@ -94,38 +101,16 @@ jQuery(function($) {
         ]
       }),
       success: function (responseData) {
-        if(responseData!=null){
-          console.log(responseData);
-        }
+        alert("Email Send Successfully");
+        $("#"+formID).trigger("reset");
+        $("#"+modalId).modal('toggle');
       },
       error: function (request, error) {                
         alert("Your message is not sent " + error);
-        console.log(error);     
+        console.log(error);
+        $("#"+formID).trigger("reset");
+        $("#"+modalId).modal('toggle');    
       }
     });      
   }
-
-  // function getSecretKey(){
-  //   $.ajax({
-  //     beforeSend: function () {          
-  //       jQuery("#loader").show();
-  //     },
-  //     "url": "https://api.digitalocean.com/v2/apps/{id}",
-  //     "method": "GET",
-  //     "timeout": 0,
-  //     "headers": {
-  //       "Authorization": "Bearer $DIGITALOCEAN_TOKEN",
-  //       "Content-Type": "application/json"
-  //     },
-  //     "data": '',
-  //     success: function (responseData) {
-  //       if(responseData!=null){
-  //         console.log(response);
-  //       }
-  //     },
-  //     error: function (request, error) {                
-  //       alert("Your message is not sent " + error);      
-  //     }
-  //   });
-  // }
 });
