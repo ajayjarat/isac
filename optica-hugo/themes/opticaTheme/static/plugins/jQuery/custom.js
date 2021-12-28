@@ -83,7 +83,7 @@ jQuery(function($) {
           }
         ],
         "from": {
-          "email": "website@optica.solutions"
+          "email": "info@optica.solutions"
         },
         "subject": subject,
         "content": [
