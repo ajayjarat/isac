@@ -81,7 +81,7 @@ jQuery(function($) {
       }else{        
         $("input[name='"+phone+"']").css('border','1px solid red');        
         phoneIsvalid=false;
-        alert("enter valid phone number");
+        alert("Enter 10 digit valid phone number");
         return false;
       }
     }
