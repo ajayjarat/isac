@@ -33,6 +33,7 @@ jQuery(function($) {
     if(nameVal.trim()=== ''){ 
       $("input[name='"+name+"']").css('border','1px solid red');
       nameIsvalid=false;
+      // alert("Enter valid name");
       return false;
     }else{
       $("input[name='"+name+"']").css('border','1px solid green');      
@@ -70,6 +71,7 @@ jQuery(function($) {
     if(phoneVal.trim()=== ''){
       $("input[name='"+phone+"']").css('border','1px solid red');      
       phoneIsvalid=false;
+      // alert("Enter 10 digit valid phone number");
       return false;
     }else{      
       var val = $("input[name='"+phone+"']").val();      
@@ -81,7 +83,7 @@ jQuery(function($) {
       }else{        
         $("input[name='"+phone+"']").css('border','1px solid red');        
         phoneIsvalid=false;
-        alert("Enter 10 digit valid phone number");
+        // alert("Enter 10 digit valid phone number");
         return false;
       }
     }
@@ -94,8 +96,12 @@ jQuery(function($) {
     var factFormData={};    
     if(nameIsvalid==true && emailIsvalid==true){
       factFormData = createFormData('download-fact-form') ;
+    }else if(nameIsvalid==false && emailIsvalid==true){
+      alert("Enter valid name");
+    }else if(nameIsvalid==true && emailIsvalid==false){
+      alert("Enter valid email");
     }else{
-      alert("Please enter data to all fields.");
+      alert("Enter data to all fields");
     }
     if(!($.isEmptyObject(factFormData))){
       sendEmail(factFormData, "Download Product Fact Sheet", "enquiry@optica.solutions", secretKey );
@@ -111,9 +117,9 @@ jQuery(function($) {
     var contactData={};    
     if(phoneIsvalid==true && nameIsvalid==true && emailIsvalid==true){
       contactData = createFormData('contactForm');
-    }else{
-      alert("Please enter data to all fields.");
-    } 
+    }else{ 
+      alert("Enter data to all fields");
+    }
     if(!($.isEmptyObject(contactData))){
       sendEmail(contactData, optionVal, "info@optica.solutions", secretKey );
     }
@@ -123,15 +129,17 @@ jQuery(function($) {
     validateName("client_name");
     validEmail('email_id');
     validatePhone('phone_no');
-    secretKey=$("#homeContactForm #api_key").html();    
+    // secretKey=$("#homeContactForm #api_key").html();  
+    secretKey=$("#homeContactForm #api_key").attr("data-key");
+    console.log(secretKey); 
     var purpose=$("#homeContactForm #yourPurpose").val();
     formID= "homeContactForm";    
     var formData={};
     if(phoneIsvalid==true && nameIsvalid==true && emailIsvalid==true){
       formData = createFormData('homeContactForm');
-    }else{
-      alert("Please enter data to all fields.");
-    }        
+    }else{ 
+      alert("Enter data to all fields");
+    }      
     if(!($.isEmptyObject(formData))){
       sendEmail(formData, purpose, "enquiry@optica.solutions", secretKey );
     }
