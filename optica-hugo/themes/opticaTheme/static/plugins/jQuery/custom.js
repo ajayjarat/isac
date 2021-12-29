@@ -3,7 +3,7 @@ jQuery(function($) {
   var baseUrl = window.location.origin;
   var secretKey="";
   var modalId="";
-  var purpose="";
+  var optionVal="";
   formID="";
   $('.team-modal').click(function() {
     $('#teamModal').modal('toggle');
@@ -14,7 +14,7 @@ jQuery(function($) {
   });
   $('.request-demo').click(function() { 
     $('#contactModal').modal('toggle');
-    var optionVal = $(this).attr("data-option");
+    optionVal = $(this).attr("data-option");
     secretKey=$(this).attr("data-secret");    
     modalId="contactModal" ;
     $('#contactForm #purpose').val(optionVal).change();
@@ -36,20 +36,19 @@ jQuery(function($) {
     }
   });
   $("#contactForm").submit(function(event) {               
-    event.preventDefault();
-    purpose=$("#contactForm #purpose").val();
+    event.preventDefault();    
     formID= "contactForm";
     var contactData={}; 
     contactData = createFormData('contactForm') ;
     // console.log(contactData);
-    if(!($.isEmptyObject(contactData))){
-      sendEmail(contactData, purpose, "info@optica.solutions", secretKey );
+    if(!($.isEmptyObject(optionVal))){
+      sendEmail(contactData, optionVal, "info@optica.solutions", secretKey );
     }
   });
   $("#homeContactForm").submit(function(event) {          
     event.preventDefault();
     secretKey=$("#homeContactForm #api_key").val();
-    purpose=$("#homeContactForm #yourPurpose").val();
+    var purpose=$("#homeContactForm #yourPurpose").val();
     formID= "homeContactForm";    
     var formData={};
     formData = createFormData('homeContactForm') ;
@@ -80,6 +79,7 @@ jQuery(function($) {
     return currentFormData;
   }
   function sendEmail(data, subject, mailTo, secret ){
+    // console.log(subject);
     var message="";    
     if (data) { 
       // console.log(data);
