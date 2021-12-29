@@ -230,9 +230,7 @@
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12">
         <h1 class="text-start text-orange light-bg text-uppercase mt-5 ">Contact Us</h1>
-        <form id="homeContactForm" class="contact-form">
-          {{ $key := getenv "apikey" }}
-          <div id="api_key" style="visibility:hidden"> {{ $key }} </div>
+        <form id="homeContactForm" class="contact-form">          
           <div class="row">
             <div class="col-lg-6 col-md-12 mb-3">
               <input type="text" name="client_name" class="contact-text-field" placeholder="Name" >
@@ -266,6 +264,8 @@
               </div>
             </div>
           </div>
+          {{ $key := getenv "apikey" }}
+          <div id="api_key" style="visibility:hidden"> {{ $key }}</div>
         </form>
       </div>
     </div>

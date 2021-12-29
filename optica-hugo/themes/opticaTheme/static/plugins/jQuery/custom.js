@@ -33,6 +33,8 @@ jQuery(function($) {
     // console.log(factFormData);
     if(!($.isEmptyObject(factFormData))){
       sendEmail(factFormData, "Download Product Fact Sheet", "enquiry@optica.solutions", secretKey );
+    }else{
+      alert("Please enter data to all fields correctly.")
     }
   });
   $("#contactForm").submit(function(event) {               
@@ -41,13 +43,15 @@ jQuery(function($) {
     var contactData={}; 
     contactData = createFormData('contactForm') ;
     // console.log(contactData);
-    if(!($.isEmptyObject(optionVal))){
+    if(!($.isEmptyObject(contactData))){
       sendEmail(contactData, optionVal, "info@optica.solutions", secretKey );
+    }else{
+      alert("Please enter data to all fields correctly.")
     }
   });
   $("#homeContactForm").submit(function(event) {          
     event.preventDefault();
-    secretKey=$("#homeContactForm #api_key").val();
+    secretKey=$("#homeContactForm #api_key").html();    
     var purpose=$("#homeContactForm #yourPurpose").val();
     formID= "homeContactForm";    
     var formData={};
@@ -55,6 +59,8 @@ jQuery(function($) {
     // console.log(formData);
     if(!($.isEmptyObject(formData))){
       sendEmail(formData, purpose, "enquiry@optica.solutions", secretKey );
+    }else{
+      alert("Please enter data to all fields correctly.")
     }
   });
   window.onscroll = function() {addSticky()};
@@ -71,12 +77,14 @@ jQuery(function($) {
     $.each($('#'+currentFormId).serializeArray(), function(i, field) {
       if(field.value==''){
         $("input[name='"+field.name+"']").css('border','1px solid red');
+        return;
       }else{
         $("input[name='"+field.name+"']").css('border','1px solid green');
         currentFormData[field.name]=field.value;
+        return currentFormData;
       }        
     });
-    return currentFormData;
+    
   }
   function sendEmail(data, subject, mailTo, secret ){
     // console.log(subject);
