@@ -265,7 +265,7 @@
             </div>
           </div>
           {{ $key := getenv "apikey" }}
-          <div id="api_key" style="visibility:hidden"> {{ $key }}</div>
+          <div id="api_key" data-key="{{ $key }}" style="visibility:hidden">{{ $key }}</div>
         </form>
       </div>
     </div>
