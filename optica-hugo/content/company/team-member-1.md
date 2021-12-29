@@ -1,7 +1,7 @@
 ---
 title: "Mr. John deo"
 draft: false
-description : ""
+description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
 image: "images/resource-3.png"
 course: "Head Of Centers"
 category: "admin1"
@@ -10,5 +10,3 @@ id: "member6"
 order: 6
 type: "team"
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
