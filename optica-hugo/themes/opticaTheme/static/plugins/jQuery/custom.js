@@ -43,7 +43,7 @@ jQuery(function($) {
     var contactData={}; 
     contactData = createFormData('contactForm') ;
     // console.log(contactData);
-    if(!($.isEmptyObject(optionVal))){
+    if(!($.isEmptyObject(contactData))){
       sendEmail(contactData, optionVal, "info@optica.solutions", secretKey );
     }else{
       alert("Please enter data to all fields correctly.")
