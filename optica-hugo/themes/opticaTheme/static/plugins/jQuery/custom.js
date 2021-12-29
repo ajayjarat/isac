@@ -3,6 +3,7 @@ jQuery(function($) {
   var baseUrl = window.location.origin;
   var secretKey="";
   var modalId="";
+  var purpose="";
   formID="";
   $('.team-modal').click(function() {
     $('#teamModal').modal('toggle');
@@ -36,18 +37,19 @@ jQuery(function($) {
   });
   $("#contactForm").submit(function(event) {               
     event.preventDefault();
+    purpose=$("#contactForm #purpose").val();
     formID= "contactForm";
     var contactData={}; 
     contactData = createFormData('contactForm') ;
     // console.log(contactData);
     if(!($.isEmptyObject(contactData))){
-      sendEmail(contactData, "Request Demo", "info@optica.solutions", secretKey );
+      sendEmail(contactData, purpose, "info@optica.solutions", secretKey );
     }
   });
   $("#homeContactForm").submit(function(event) {          
     event.preventDefault();
     secretKey=$("#homeContactForm #api_key").val();
-    var purpose=$("#homeContactForm #yourPurpose").val();
+    purpose=$("#homeContactForm #yourPurpose").val();
     formID= "homeContactForm";    
     var formData={};
     formData = createFormData('homeContactForm') ;
