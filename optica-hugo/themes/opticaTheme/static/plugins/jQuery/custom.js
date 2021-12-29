@@ -135,7 +135,7 @@ jQuery(function($) {
     var purpose=$("#homeContactForm #yourPurpose").val();
     formID= "homeContactForm";    
     var formData={};
-    if(phoneIsvalid==true && nameIsvalid==true && emailIsvalid==true){
+    if(phoneIsvalid==true && nameIsvalid==true && emailIsvalid==true && purpose !=''){
       formData = createFormData('homeContactForm');
     }else{ 
       alert("Enter data to all fields");
@@ -195,7 +195,7 @@ jQuery(function($) {
         "subject": subject,
         "content": [
           {
-            "type": "text/plain",
+            "type": "text/html",
             "value": message
           }
         ]
