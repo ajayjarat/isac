@@ -179,6 +179,7 @@ jQuery(function($) {
         "Authorization": "Bearer "+secret,
         "Content-Type": "application/json"
       },
+      "crossDomain": true,
       "data": JSON.stringify({
         "personalizations": [
           {
@@ -195,7 +196,7 @@ jQuery(function($) {
         "subject": subject,
         "content": [
           {
-            "type": "text/plain",
+            "type": "text/html",
             "value": message
           }
         ]
