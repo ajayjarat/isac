@@ -129,7 +129,6 @@ jQuery(function($) {
     validateName("client_name");
     validEmail('email_id');
     validatePhone('phone_no');
-    // secretKey=$("#homeContactForm #api_key").html();  
     secretKey=$("#homeContactForm #api_key").attr("data-key");
     console.log(secretKey); 
     var purpose=$("#homeContactForm #yourPurpose").val();
@@ -176,27 +175,25 @@ jQuery(function($) {
       "method": "POST",
       "timeout": 0,
       "headers": {
-        "Authorization": "Bearer "+secret,
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "Authorization": "Bearer "+secret
       },
       "data": JSON.stringify({
-        "personalizations": [
+        "personalizations":[
           {
-            "to": [
-              {
-                "email": mailTo
-              }
+            "to":[
+              {"email":mailTo}
             ]
           }
         ],
-        "from": {
-          "email": "info@optica.solutions"
+        "from":{
+          "email":"info@optica.solutions"
         },
-        "subject": subject,
-        "content": [
+        "subject":subject,
+        "content":[
           {
-            "type": "text/html",
-            "value": message
+            "type":"text/html",
+            "value":message
           }
         ]
       }),
@@ -216,6 +213,8 @@ jQuery(function($) {
         // $("#"+formID).trigger("reset");
         // $("#"+modalId).modal('toggle');    
       }
-    });      
+    });     
   }
+
+
 });

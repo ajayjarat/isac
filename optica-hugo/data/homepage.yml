@@ -18,7 +18,7 @@ opticaSolutions:
 productPortfolio:
   enable : true  
   title : "Product Portfolio"
-  image : "images/product-video-img.jpg"
+  image : "images/product-portfolio.jpeg"
   videoUrl: ""
   content : "OptICA has worked hard to develop the cyber industry’s most thorough network monitoring software, ISAC."
   url1: "products"
