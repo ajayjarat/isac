@@ -47,7 +47,7 @@ jQuery(function($) {
   });
   $("#homeContactForm").submit(function(event) {          
     event.preventDefault();
-    secretKey=$("#homeContactForm #api_key").val();
+    secretKey=$("#homeContactForm #api_key").html();    
     var purpose=$("#homeContactForm #yourPurpose").val();
     formID= "homeContactForm";    
     var formData={};
@@ -71,12 +71,14 @@ jQuery(function($) {
     $.each($('#'+currentFormId).serializeArray(), function(i, field) {
       if(field.value==''){
         $("input[name='"+field.name+"']").css('border','1px solid red');
+        return;
       }else{
         $("input[name='"+field.name+"']").css('border','1px solid green');
         currentFormData[field.name]=field.value;
+        return currentFormData;
       }        
     });
-    return currentFormData;
+    
   }
   function sendEmail(data, subject, mailTo, secret ){
     // console.log(subject);
