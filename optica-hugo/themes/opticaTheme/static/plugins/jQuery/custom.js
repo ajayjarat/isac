@@ -33,6 +33,8 @@ jQuery(function($) {
     // console.log(factFormData);
     if(!($.isEmptyObject(factFormData))){
       sendEmail(factFormData, "Download Product Fact Sheet", "enquiry@optica.solutions", secretKey );
+    }else{
+      alert("Please enter data to all fields correctly.")
     }
   });
   $("#contactForm").submit(function(event) {               
@@ -43,6 +45,8 @@ jQuery(function($) {
     // console.log(contactData);
     if(!($.isEmptyObject(optionVal))){
       sendEmail(contactData, optionVal, "info@optica.solutions", secretKey );
+    }else{
+      alert("Please enter data to all fields correctly.")
     }
   });
   $("#homeContactForm").submit(function(event) {          
@@ -55,6 +59,8 @@ jQuery(function($) {
     // console.log(formData);
     if(!($.isEmptyObject(formData))){
       sendEmail(formData, purpose, "enquiry@optica.solutions", secretKey );
+    }else{
+      alert("Please enter data to all fields correctly.")
     }
   });
   window.onscroll = function() {addSticky()};
