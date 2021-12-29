@@ -94,6 +94,8 @@ jQuery(function($) {
     var factFormData={};    
     if(nameIsvalid==true && emailIsvalid==true){
       factFormData = createFormData('download-fact-form') ;
+    }else{
+      alert("Please enter data to all fields.");
     }
     if(!($.isEmptyObject(factFormData))){
       sendEmail(factFormData, "Download Product Fact Sheet", "enquiry@optica.solutions", secretKey );
@@ -109,7 +111,9 @@ jQuery(function($) {
     var contactData={};    
     if(phoneIsvalid==true && nameIsvalid==true && emailIsvalid==true){
       contactData = createFormData('contactForm');
-    }   
+    }else{
+      alert("Please enter data to all fields.");
+    } 
     if(!($.isEmptyObject(contactData))){
       sendEmail(contactData, optionVal, "info@optica.solutions", secretKey );
     }
@@ -125,6 +129,8 @@ jQuery(function($) {
     var formData={};
     if(phoneIsvalid==true && nameIsvalid==true && emailIsvalid==true){
       formData = createFormData('homeContactForm');
+    }else{
+      alert("Please enter data to all fields.");
     }        
     if(!($.isEmptyObject(formData))){
       sendEmail(formData, purpose, "enquiry@optica.solutions", secretKey );
