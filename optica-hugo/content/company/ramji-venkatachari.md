@@ -5,6 +5,7 @@ description : "Mr. Venkatachari is a life-long entrepreneur with excellent acume
 	Mr. Venkatachari has been a charter member of TiEDC for more than five years, through which he has mentored several budding entrepreneurs and has actively contributed to successful startups. He is an inquisitive learner always seeking to learn ways to solve problems using technology. Mr. Venkatachari believes in people power, and strives to cultivate positive relationships with and for entrepreneurs to help them harness this power in their business ventures."
 image: "images/ramji-img.png"
 category: "admin"
+department: "Board of Advisor"
 designation: "Board of Advisor"
 id: "member8"
 order: 8

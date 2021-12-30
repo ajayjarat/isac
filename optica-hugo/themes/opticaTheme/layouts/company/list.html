@@ -29,7 +29,7 @@
       </div>
       {{ range .Data.Pages.ByParam "order" }}
       {{ if eq .Params.Category "corporate" }}
-        <div class="col-lg-4 col-md-4 col-sm-6">        
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">        
           {{ .Render "team" }}
         </div>
       {{ end }}
@@ -45,7 +45,7 @@
       </div>
       {{ range .Data.Pages.ByParam "Category"  }}
       {{ if eq .Params.Category "admin" }}
-        <div class="col-lg-4 col-md-4 col-sm-6">        
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">        
           {{ .Render "team" }}
         </div>
       {{ end }}
@@ -57,9 +57,8 @@
 
 <section>
   <div class="row mt-5">    
-    <div class="col-12 text-center">
-      {{ $key := getenv "apikey" }}
-      <button type="button" class="theme-btn-white request-demo" data-option="Request Meeting" data-secret="{{ $key }}">Contact Us To Learn More About Our Team</button>
+    <div class="col-12 text-center">      
+      <button type="button" class="theme-btn-white request-demo" data-option="Request Meeting" >Contact Us To Learn More About Our Team</button>
     </div>
   </div>
 </section>

@@ -13,6 +13,9 @@
 		      max-width: 60px;
 		    }
 		}
+		.navbar-nav{
+			margin-left: auto;
+		}
 	}
 	.layout-container{
 	  margin:0 150px 20px
@@ -68,29 +71,41 @@
 	    font-size: 3rem !important;
 	  }
 	}
+	.team-wrap .card{
+		min-height: 607px;		
+	}	
 }
 @media only screen and (min-width: 992px) and (max-width: 1080px){}
 @media (max-width: 991px ) {
 	.sticky {	
 	  top: 0px;	  
-	}
-	#mainMenu.navbar{
-		padding: 0 1rem;
-	}
-	.navbar-brand{
-		img{
-      height: 60px;
-      width: 100%;
-	  }
-	}
+	}		
 	#mainNavigation{
 		padding-bottom:20px;
 		.request-demo-btn{
-			margin-left: 0rem;
+			margin-left: 1rem;
 		}
-	}	
+	}
+	.navbar-brand{
+		margin-left: 1rem;  		
+  	}
+	.navbar-toggler{
+		margin-right: 1rem;
+	}
+	#mainNavigation{
+		border-top: 1px solid #012395;		
+    	margin-top: 0.5rem;
+		ul{
+			margin-left: 1rem;
+		}
+	}
+	/*#mainNavigation.show{
+		border-top: 1px solid #012395;		
+    	margin-top: 0.5rem;
+	}*/
+		
 }
-@media only screen and (min-width: 768px) and (max-width: 991px){	
+@media only screen and (min-width: 768px) and (max-width: 991px){		
 	.layout-container{
 	  margin:0 50px 20px
 	}
@@ -133,7 +148,15 @@
 	    }
 		}
 	}
-
+	#mainMenu.navbar{
+		padding: 0 1rem;
+	}
+	.navbar-brand{		
+		img{
+      		height: 60px;
+      		width: 100%;
+	  }
+	}
 }
 @media only screen and (min-width: 577px) and (max-width: 767px){	
 	.layout-container{
@@ -179,6 +202,15 @@
 	    }
 		}
 	}
+	#mainMenu.navbar{
+		padding: 0 1rem;
+	}
+	.navbar-brand{
+		img{
+      		height: 60px;
+      		width: 100%;
+	  	}
+	}
 }
 @media screen and (min-width: 768px){	
 	.footer-wrap{
@@ -213,6 +245,10 @@
 	    }
 	  }
 	}
+	.services-container .service-wrap{
+  		min-height: 300px;
+  		padding: 5px;  	
+  	}
 }
 
 @media screen and (max-width: 767px){
@@ -246,6 +282,10 @@
 	    }
 	  }
 	}
+	.services-container .service-wrap{
+  		min-height: auto;
+  		padding: 0;
+  	}
 }
 
 @media screen and (min-width: 576px){
@@ -320,6 +360,12 @@
 	    }
 		}
 	}
+	#mainNavigation{		
+		.request-demo-btn{
+			font-size: .7rem;
+		}
+	}
+
 }
 @media screen and (max-width: 576px){
 	body{
@@ -355,6 +401,7 @@
 	      }
 	    }*/
 	  }
+	  
 	  .search-wrap{
 	   display: none;    
 	    /*button{
@@ -424,7 +471,19 @@
 				}
 	    }
 		}
-	}		
+	}
+	#mainMenu.navbar {
+	    padding: 0 0rem;
+	}
+	.navbar-brand{		
+  		img{
+	  		width: 45px !important;
+	  		height: auto !important;;
+  		}
+  	}
+  	.services-container .service-wrap{
+  		min-height: auto;
+  	}		
 }
 @media screen and (max-width: 430px){
 	.pageSlider{

@@ -2,123 +2,123 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ISAC</title>
-    <link>https://isac-8oxfp.ondigitalocean.app/</link>
+    <link>http://localhost/optica/</link>
     <description>Recent content on ISAC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://isac-8oxfp.ondigitalocean.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost/optica/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Audit Support (Optional)</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/services/audit-support/</link>
+      <link>http://localhost/optica/services/audit-support/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/services/audit-support/</guid>
+      <guid>http://localhost/optica/services/audit-support/</guid>
       <description>We offer full support to our Customers in going through a CCRI Audit.</description>
     </item>
     
     <item>
       <title>Compilance Training (Optional)</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/services/compilance_training/</link>
+      <link>http://localhost/optica/services/compilance_training/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/services/compilance_training/</guid>
+      <guid>http://localhost/optica/services/compilance_training/</guid>
       <description>We offer training on how to be “continuously compliant” with DoD DISA STIG/SCAP Standards.</description>
     </item>
     
     <item>
       <title>ISAC User Training</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/services/isac-user-training/</link>
+      <link>http://localhost/optica/services/isac-user-training/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/services/isac-user-training/</guid>
+      <guid>http://localhost/optica/services/isac-user-training/</guid>
       <description>We offer training on how to setup and use ISAC for the various roles of the Customer’s Cybersecurity team.</description>
     </item>
     
     <item>
       <title>HOW ISAC Does It?</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/products/product5/</link>
+      <link>http://localhost/optica/products/product5/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/products/product5/</guid>
+      <guid>http://localhost/optica/products/product5/</guid>
       <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
     </item>
     
     <item>
       <title>LOREM IPSUM DOLOR SIT AMET</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/resources/respurc-1/</link>
+      <link>http://localhost/optica/resources/respurc-1/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/resources/respurc-1/</guid>
+      <guid>http://localhost/optica/resources/respurc-1/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
     </item>
     
     <item>
       <title>LOREM IPSUM DOLOR SIT AMET</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/resources/respurce-2/</link>
+      <link>http://localhost/optica/resources/respurce-2/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/resources/respurce-2/</guid>
+      <guid>http://localhost/optica/resources/respurce-2/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
     </item>
     
     <item>
       <title>LOREM IPSUM DOLOR SIT AMET</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/resources/respurce-3/</link>
+      <link>http://localhost/optica/resources/respurce-3/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/resources/respurce-3/</guid>
+      <guid>http://localhost/optica/resources/respurce-3/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
     </item>
     
     <item>
       <title>My Awesome Blog Four</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/blog/blog-post-4/</link>
+      <link>http://localhost/optica/blog/blog-post-4/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/blog/blog-post-4/</guid>
+      <guid>http://localhost/optica/blog/blog-post-4/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
     </item>
     
     <item>
       <title>My Awesome Blog One</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/blog/blog-post/</link>
+      <link>http://localhost/optica/blog/blog-post/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/blog/blog-post/</guid>
+      <guid>http://localhost/optica/blog/blog-post/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
     </item>
     
     <item>
       <title>My Awesome Blog Three</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/blog/blog-post-3/</link>
+      <link>http://localhost/optica/blog/blog-post-3/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/blog/blog-post-3/</guid>
+      <guid>http://localhost/optica/blog/blog-post-3/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
     </item>
     
     <item>
       <title>My Awesome Blog Two</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/blog/blog-post-2/</link>
+      <link>http://localhost/optica/blog/blog-post-2/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/blog/blog-post-2/</guid>
+      <guid>http://localhost/optica/blog/blog-post-2/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
     </item>
     
     <item>
       <title>What is ISAC?</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/products/isac/</link>
+      <link>http://localhost/optica/products/isac/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/products/isac/</guid>
+      <guid>http://localhost/optica/products/isac/</guid>
       <description>  Features
  Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit amet    Benefits
  Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit amet    </description>
@@ -126,119 +126,119 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspi
     
     <item>
       <title>What ISAC does?</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/products/product2/</link>
+      <link>http://localhost/optica/products/product2/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/products/product2/</guid>
+      <guid>http://localhost/optica/products/product2/</guid>
       <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
     </item>
     
     <item>
       <title>Who ISAC Serves?</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/products/product4/</link>
+      <link>http://localhost/optica/products/product4/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/products/product4/</guid>
+      <guid>http://localhost/optica/products/product4/</guid>
       <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
     </item>
     
     <item>
       <title>Why do you need ISAC?</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/products/product3/</link>
+      <link>http://localhost/optica/products/product3/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/products/product3/</guid>
+      <guid>http://localhost/optica/products/product3/</guid>
       <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
     </item>
     
     <item>
       <title>Mr. Andrew Bailey</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/company/andrew-bailey/</link>
+      <link>http://localhost/optica/company/andrew-bailey/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/company/andrew-bailey/</guid>
-      <description>Mr. Bailey is the Chief Development Officer at Intelligent Cyber Automations (ICA). He is leading the efforts to architect, design and develop the solutions of ICA. Mr. Bailey has the uncanny ability to develop highly optimized, superfast cyber automations. And he has deep understanding, and experience in STIG/ACAS cyber security compliance, through his experience in multiple efforts. Mr. Bailey has helped many teams achieve superior compliance in DoD cyber audits.</description>
+      <guid>http://localhost/optica/company/andrew-bailey/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Mr. Damon Parr</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/company/damon-parr/</link>
+      <link>http://localhost/optica/company/damon-parr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/company/damon-parr/</guid>
-      <description>Damon Parr is the Lead Systems Engineer at Intelligent Cyber Automations (ICA). He has extensive experience in deploying ICA automations in private data center (server farms), cloud infrastructure or hybrid infrastructure. He has led several highly successful audits and brings those experiences and development skills to the advancing technologies here at ICA. Damon’s early accomplishments as a secondary educator also brings a unique set of skills and perspectives that bridges our technology with the people it touches.</description>
+      <guid>http://localhost/optica/company/damon-parr/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Mr. Jeff Bertman</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/company/jeff-bertman/</link>
+      <link>http://localhost/optica/company/jeff-bertman/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/company/jeff-bertman/</guid>
-      <description>Mr. Bertman brings 20+ years of technology, business, management, and product development experience to his role with ICA. Guiding both strategy and operations, he has played senior executive and founding roles in multiple startup-to-acquisition success stories. He is at home serving the technology and management consulting needs of Federal Government (mainly DoD, DoJ, IC) as well as small to large Fortune 100/1000 organizations, i.e., Verizon, Comcast, AT&amp;amp;T, GEICO, Cigna, Oracle, IBM, Airlines, and Warner Bros.</description>
+      <guid>http://localhost/optica/company/jeff-bertman/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Mr. John deo</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/company/jason-kassin/</link>
+      <link>http://localhost/optica/company/jason-kassin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/company/jason-kassin/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</description>
+      <guid>http://localhost/optica/company/jason-kassin/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Mr. John deo</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/company/stephen-kassin/</link>
+      <link>http://localhost/optica/company/stephen-kassin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/company/stephen-kassin/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</description>
+      <guid>http://localhost/optica/company/stephen-kassin/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Mr. John deo</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/company/team-member-1/</link>
+      <link>http://localhost/optica/company/team-member-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/company/team-member-1/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</description>
+      <guid>http://localhost/optica/company/team-member-1/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Mr. John deo</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/company/team-member-2/</link>
+      <link>http://localhost/optica/company/team-member-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/company/team-member-2/</guid>
-      <description>About Me Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</description>
+      <guid>http://localhost/optica/company/team-member-2/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Mr. John deo</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/company/thomas/</link>
+      <link>http://localhost/optica/company/thomas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/company/thomas/</guid>
+      <guid>http://localhost/optica/company/thomas/</guid>
       <description>About Me Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</description>
     </item>
     
     <item>
       <title>Mr. Josh Jackson</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/company/josh-jackson/</link>
+      <link>http://localhost/optica/company/josh-jackson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/company/josh-jackson/</guid>
-      <description>Mr. Jackson is an ardent technologist with deep understanding and expertise in securing large enterprise systems. As the Chief Technology Officer (CTO) of Intelligent Cyber Automations (ICA) he architects ICA’s solutions and supports establishing both strategic and tactical roadmaps for solutions to meet current and future cyber security needs of ICA’s customers. Mr. Jackson has specialized experience in DoD Cyber Space and he is actively engaged in managing Cyber Operations for the U.</description>
+      <guid>http://localhost/optica/company/josh-jackson/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Ramji Venkatachari</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/company/ramji-venkatachari/</link>
+      <link>http://localhost/optica/company/ramji-venkatachari/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/company/ramji-venkatachari/</guid>
-      <description>Mr. Venkatachari is a life-long entrepreneur with excellent acumen to develop pathways to monetize IT solutions and services. He has 20+ years of experience selling IT solutions and services to the U.S. Federal and State and Local Government agencies and to Commercial entities. Most recently he has focused on process automations that provide opportunities for users to automate their mundane repetitive tasks and focus on more interesting knowledge based tasks. By infusing artificial intelligence, machine learning, deep learning models and techniques in a variety of use cases, Mr.</description>
+      <guid>http://localhost/optica/company/ramji-venkatachari/</guid>
+      <description></description>
     </item>
     
   </channel>
