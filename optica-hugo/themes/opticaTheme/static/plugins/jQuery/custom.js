@@ -176,7 +176,7 @@ jQuery(function($) {
         message+="<div><p>"+key+":"+value+"</p></div>";
       });           
     }
-    var actionurl = "http://35.153.200.54/ISAC-PHP/api/email";
+    var actionurl = "https://isac-api-dx4bj.ondigitalocean.app/email";
     $.ajax({
       url: actionurl,
       type: 'post',
