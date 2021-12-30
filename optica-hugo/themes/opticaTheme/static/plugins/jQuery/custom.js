@@ -176,7 +176,7 @@ jQuery(function($) {
         message+="<div><p>"+key+":"+value+"</p></div>";
       });           
     }
-    var actionurl = "https://isac-api-dx4bj.ondigitalocean.app/email";
+    var actionurl = "https://isac-api-dx4bj.ondigitalocean.app/email.php";
     $.ajax({
       url: actionurl,
       type: 'post',
