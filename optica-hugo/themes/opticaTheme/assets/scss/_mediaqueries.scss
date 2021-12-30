@@ -92,12 +92,14 @@
 	.navbar-toggler{
 		margin-right: 1rem;
 	}
-	#mainNavigation.show{
-		border-top: 1px solid #012395;		
-    	margin-top: 0.5rem;
+	#mainNavigation{
 		ul{
 			margin-left: 1rem;
 		}
+	}
+	#mainNavigation.show{
+		border-top: 1px solid #012395;		
+    	margin-top: 0.5rem;
 	}
 		
 }
