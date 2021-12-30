@@ -194,7 +194,9 @@ jQuery(function($) {
             jQuery("#downloadFactModal .modal-body").html("<div class='text-center'><h5>Your downloadable link is enabled</h5><a class='text-center' href="+downloadLink+" target='_blank'>Download fact sheet</a></div>");          
           }else{
             alert(response.message);
-            $("#"+modalId).modal('toggle');
+            if(modalId !=""){
+              $("#"+modalId).modal('toggle');
+            }
           }
           $("#"+formID).trigger("reset");
         }else{
