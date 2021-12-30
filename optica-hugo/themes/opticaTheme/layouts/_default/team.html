@@ -1,13 +1,15 @@
-<div class="p-2">
-  <div class="team-wrap panel text-center" id="{{ .Params.id }}">                
-    <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="img-fluid text-center" />
-    <div class="member-desc">
-      <h5 class="text-center text-orange">{{ .Title }}</h5>
-      <h6 class="text-center text-orange">{{ .Params.designation }}</h6>
-    </div> 
-    <div class="text-center">
-      <p class="mt-3 mb-4">{{ .Params.description | truncate 150  }}</p>
-      <a id="teamMemberDesc" type="button" class="team-modal text-orange" data-title="{{ .Title }}" data-summary="{{ .Params.description }}"> More...</a>            
-    </div>               
-  </div>              
+<div class="team-wrap" id="{{ .Params.id }}">
+  <div class="card p-2">
+    <div class="image-wrap"><img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="card-img-top text-center" /></div>
+    <div class="card-body">
+      <div class="member-desc">
+        <h5 class="card-title text-orange">{{ .Title }}</h5>
+        <h6 class="card-sub-title text-orange">{{ .Params.designation }}</h6>
+        <p class="">{{ .Params.description | truncate 150  }}</p>
+      </div>
+      <div class="text-end">      
+        <a id="teamMemberDesc" type="button" class="team-modal text-orange" data-title="{{ .Title }}" data-department="{{ .Params.department }}" data-designation="{{ .Params.designation }}" data-summary="{{ .Params.description }}" data-image="{{ .Params.image }}"> More...</a>            
+      </div>
+    </div>
+  </div>               
 </div>

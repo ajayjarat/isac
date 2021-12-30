@@ -41,13 +41,12 @@
         </div>      
       {{ end }}
     </div>    
-    <div class="row mt-5">
-      {{ $key := getenv "apikey" }}
+    <div class="row mt-5">     
       <div class="col-12 text-center mb-5">
-        <button type="button" class="theme-btn-white download-fact-sheet" data-file="{{ $.Site.BaseURL }}files/ISACWebsiteFeedback.pdf" data-secret-key="{{ $key }}" >Download Product Fact Sheet</button>
+        <button type="button" class="theme-btn-white download-fact-sheet" data-file="{{ $.Site.BaseURL }}files/ISACWebsiteFeedback.pdf">Download Product Fact Sheet</button>
       </div>
       <div class="col-12 text-center">
-        <button type="button" class="theme-btn-white request-demo" data-option="Request a Demo" data-secret="{{ $key }}">Request Demo</button>
+        <button type="button" class="theme-btn-white request-demo" data-option="Request a Demo">Request Demo</button>
       </div>
     </div>
   </div>

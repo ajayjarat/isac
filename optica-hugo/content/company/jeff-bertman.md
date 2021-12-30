@@ -6,6 +6,7 @@ description : "Mr. Bertman brings 20+ years of technology, business, management,
 image: "images/JeffBertman.png"
 course: "Head Of Centers"
 category: "corporate"
+department: "Corporate Management"
 designation: "Co-Chief Executive Officer (Co-CEO)"
 id: "member3"
 order: 1

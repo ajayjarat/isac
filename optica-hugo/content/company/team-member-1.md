@@ -5,6 +5,7 @@ description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
 image: "images/resource-3.png"
 course: "Head Of Centers"
 category: "admin1"
+department: "Board of Advisor"
 designation: "CO-FOUNDER & CEO"
 id: "member6"
 order: 6

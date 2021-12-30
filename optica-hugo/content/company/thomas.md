@@ -8,6 +8,7 @@ description : ""
 # teacher portrait
 image: "images/resource-3.png"
 category: "leadership"
+department: "Corporate Management"
 designation: "CHIEF TECHNOLOGY OFFICER"
 # contact info
 # contact:

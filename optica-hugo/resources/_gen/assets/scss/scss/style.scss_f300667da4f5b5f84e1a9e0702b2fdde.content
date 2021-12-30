@@ -73,7 +73,7 @@
 .text-white {
   color: #fff; }
 
-.text-green {
+.text-blue {
   color: #182a83; }
 
 .text-orange {
@@ -152,7 +152,8 @@ section {
     margin-left: 12px; }
 
 .video-container {
-  position: relative; }
+  position: relative;
+  text-align: center; }
   .video-container .play-btn {
     position: absolute;
     top: 0;
@@ -363,9 +364,7 @@ footer #copyright {
     .services-container .services-wrapper div:nth-child(1) {
       order: 3; }
   .services-container .service-wrap {
-    background-color: #000;
-    padding: 15px;
-    min-height: 300px; }
+    background-color: #000; }
     .services-container .service-wrap .service-title {
       border-bottom: 2px solid #012395; }
 
@@ -458,6 +457,18 @@ footer #copyright {
 .carousel-control-next, .carousel-control-prev {
   width: 5%; }
 
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0 !important;
+  outline: 0;
+  color: #012395;
+  border-color: #012395; }
+
+#teamModal .modal-desc {
+  text-align: justify; }
+
+.team-wrap .card {
+  box-shadow: 2px 2px 7px #939394; }
+
 @font-face {
   font-family: 'Montserrat Bold';
   /*a name to be used later*/
@@ -498,6 +509,8 @@ footer #copyright {
     padding: 0 3rem; }
     #mainMenu.navbar .navbar-brand img {
       max-width: 60px; }
+    #mainMenu.navbar .navbar-nav {
+      margin-left: auto; }
   .layout-container {
     margin: 0 150px 20px; }
   .pageSlider .banner-content {
@@ -526,20 +539,26 @@ footer #copyright {
   .heading-xl {
     font-size: 5rem !important; }
   .large-heading h1 {
-    font-size: 3rem !important; } }
+    font-size: 3rem !important; }
+  .team-wrap .card {
+    min-height: 607px; } }
 
 @media (max-width: 991px) {
   .sticky {
     top: 0px; }
-  #mainMenu.navbar {
-    padding: 0 1rem; }
-  .navbar-brand img {
-    height: 60px;
-    width: 100%; }
   #mainNavigation {
     padding-bottom: 20px; }
     #mainNavigation .request-demo-btn {
-      margin-left: 0rem; } }
+      margin-left: 1rem; }
+  .navbar-brand {
+    margin-left: 1rem; }
+  .navbar-toggler {
+    margin-right: 1rem; }
+  #mainNavigation.show {
+    border-top: 1px solid #012395;
+    margin-top: 0.5rem; }
+    #mainNavigation.show ul {
+      margin-left: 1rem; } }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .layout-container {
@@ -565,7 +584,12 @@ footer #copyright {
     top: 90px;
     width: 600px;
     height: 400px;
-    left: 100px; } }
+    left: 100px; }
+  #mainMenu.navbar {
+    padding: 0 1rem; }
+  .navbar-brand img {
+    height: 60px;
+    width: 100%; } }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
   .layout-container {
@@ -592,7 +616,12 @@ footer #copyright {
       top: 10px;
       width: 90%;
       height: auto;
-      left: 70px !important; } }
+      left: 70px !important; }
+  #mainMenu.navbar {
+    padding: 0 1rem; }
+  .navbar-brand img {
+    height: 60px;
+    width: 100%; } }
 
 @media screen and (min-width: 768px) {
   .footer-wrap .sitemap {
@@ -609,7 +638,10 @@ footer #copyright {
     right: 150px;
     top: 0;
     bottom: 0;
-    margin: auto; } }
+    margin: auto; }
+  .services-container .service-wrap {
+    min-height: 300px;
+    padding: 5px; } }
 
 @media screen and (max-width: 767px) {
   .footer-wrap .sitemap {
@@ -624,7 +656,10 @@ footer #copyright {
   .testimonials .banner-wrap .banner-content {
     padding-top: 20px;
     text-align: center;
-    margin: auto; } }
+    margin: auto; }
+  .services-container .service-wrap {
+    min-height: auto;
+    padding: 0; } }
 
 @media screen and (min-width: 576px) {
   body {
@@ -672,7 +707,9 @@ footer #copyright {
   #homeSlider .banner-wrap .banner-content h1 {
     color: #fff; }
   #homeSlider .banner-wrap .banner-content h2, #homeSlider .banner-wrap .banner-content h3, #homeSlider .banner-wrap .banner-content h6, #homeSlider .banner-wrap .banner-content p {
-    color: #fff; } }
+    color: #fff; }
+  #mainNavigation .request-demo-btn {
+    font-size: .7rem; } }
 
 @media screen and (max-width: 576px) {
   body {
@@ -746,7 +783,14 @@ footer #copyright {
       #homeSlider .banner-wrap .banner-content h2, #homeSlider .banner-wrap .banner-content h3, #homeSlider .banner-wrap .banner-content h6, #homeSlider .banner-wrap .banner-content p {
         color: #333; }
       #homeSlider .banner-wrap .banner-content .multi-button-wrap {
-        justify-content: center; } }
+        justify-content: center; }
+  #mainMenu.navbar {
+    padding: 0 0rem; }
+  .navbar-brand img {
+    width: 45px !important;
+    height: auto !important; }
+  .services-container .service-wrap {
+    min-height: auto; } }
 
 @media screen and (max-width: 430px) {
   .pageSlider .banner-content {

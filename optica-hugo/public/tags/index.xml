@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ISAC</title>
-    <link>https://isac-8oxfp.ondigitalocean.app/tags/</link>
+    <link>http://localhost/optica/tags/</link>
     <description>Recent content in Tags on ISAC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://isac-8oxfp.ondigitalocean.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost/optica/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Book</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/tags/book/</link>
+      <link>http://localhost/optica/tags/book/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/tags/book/</guid>
+      <guid>http://localhost/optica/tags/book/</guid>
       <description></description>
     </item>
     
     <item>
       <title>HTML</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/tags/html/</link>
+      <link>http://localhost/optica/tags/html/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/tags/html/</guid>
+      <guid>http://localhost/optica/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>New</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/tags/new/</link>
+      <link>http://localhost/optica/tags/new/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/tags/new/</guid>
+      <guid>http://localhost/optica/tags/new/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Photos</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/tags/photos/</link>
+      <link>http://localhost/optica/tags/photos/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/tags/photos/</guid>
+      <guid>http://localhost/optica/tags/photos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>https://isac-8oxfp.ondigitalocean.app/tags/python/</link>
+      <link>http://localhost/optica/tags/python/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://isac-8oxfp.ondigitalocean.app/tags/python/</guid>
+      <guid>http://localhost/optica/tags/python/</guid>
       <description></description>
     </item>
     
