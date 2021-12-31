@@ -3,71 +3,102 @@ jQuery(function($) {
   var baseUrl = window.location.origin;
   var secretKey="";
   var modalId="";
+  var optionVal="";
   formID="";
   $('.team-modal').click(function() {
+    $('#teamModal').modal('toggle');
     var memberInfo = $(this).attr("data-summary"); 
     var memberTitle = $(this).attr("data-title");             
     $('#teamModal .modal-title').html(memberTitle);
     $('#teamModal .modal-desc').html(memberInfo);    
   });
   $('.request-demo').click(function() { 
-    var optionVal = $(this).attr("data-option");
-    secretKey=$(this).attr("data-secret");
-    $('#contactModal').show();
+    $('#contactModal').modal('toggle');
+    optionVal = $(this).attr("data-option");
+    secretKey=$(this).attr("data-secret");    
     modalId="contactModal" ;
     $('#contactForm #purpose').val(optionVal).change();
   });    
   $('.download-fact-sheet').click(function() { 
     downloadLink = $(this).attr("data-file"); 
     secretKey=$(this).attr("data-secret-key");         
-    $('#downloadFactModal').show();
+    $('#downloadFactModal').modal('toggle');
     modalId="downloadFactModal" ;
   });
   $("#download-fact-form").on("submit", function(event){
-      event.preventDefault();
-      formID= "download-fact-form";      
-      var factFormData={};                
-      $.each($('#download-fact-form').serializeArray(), function(i, field) {
-        factFormData[field.name]=field.value;
-      });
+    event.preventDefault();
+    formID= "download-fact-form";      
+    var factFormData={};
+    factFormData = createFormData('download-fact-form') ;
+    // console.log(factFormData);
+    if(!($.isEmptyObject(factFormData))){
       sendEmail(factFormData, "Download Product Fact Sheet", "enquiry@optica.solutions", secretKey );
+    }else{
+      alert("Please enter data to all fields correctly.")
+    }
   });
   $("#contactForm").submit(function(event) {               
-      event.preventDefault();
-      formID= "contactForm";
-      var contactData={}; 
-      $.each($('#contactForm').serializeArray(), function(i, field) {
-        contactData[field.name]=field.value;
-      });        
-      sendEmail(contactData, "Request Demo", "info@optica.solutions", secretKey );
+    event.preventDefault();    
+    /*formID= "contactForm";
+    var contactData={}; 
+    contactData = createFormData('contactForm') ;
+     console.log(contactData);
+    if(!($.isEmptyObject(contactData))){
+      sendEmail(contactData, optionVal, "info@optica.solutions", secretKey );
+    }else{
+      alert("Please enter data to all fields correctly.")
+    }*/
+    email();
   });
   $("#homeContactForm").submit(function(event) {          
-      event.preventDefault();
-      formID= "homeContactForm";    
-      var formData={};
-      $.each($('#homeContactForm').serializeArray(), function(i, field) {
-        formData[field.name]=field.value;
-      });
-      sendEmail(formData, "Request Demo", "enquiry@optica.solutions", secretKey );
+    event.preventDefault();
+    secretKey=$("#homeContactForm #api_key").html();    
+    var purpose=$("#homeContactForm #yourPurpose").val();
+    formID= "homeContactForm";    
+    var formData={};
+    formData = createFormData('homeContactForm') ;
+    // console.log(formData);
+    if(!($.isEmptyObject(formData))){
+      sendEmail(formData, purpose, "enquiry@optica.solutions", secretKey );
+    }else{
+      alert("Please enter data to all fields correctly.")
+    }
   });
-  window.onscroll = function() {myFunction()};
+  window.onscroll = function() {addSticky()};
   var pageHeader = document.getElementById("mainMenu");  
-  function myFunction(){
-      if(window.pageYOffset >= 100){
-          pageHeader.classList.add("sticky");
-      } else {
-          pageHeader.classList.remove("sticky");
-      }
+  function addSticky(){
+    if(window.pageYOffset >= 100){
+        pageHeader.classList.add("sticky");
+    } else {
+        pageHeader.classList.remove("sticky");
+    }
+  }
+  function createFormData(currentFormId){
+    console.log(currentFormId);
+    var currentFormData={};
+    $.each($('#'+currentFormId).serializeArray(), function(i, field) {
+       console.log(field);
+      if(field.value==''){
+        $("input[name='"+field.name+"']").css('border','1px solid red');
+        return;
+      }else{
+        $("input[name='"+field.name+"']").css('border','1px solid green');
+        currentFormData[field.name]=field.value;
+      }       
+    });
+     return currentFormData; 
   }
   function sendEmail(data, subject, mailTo, secret ){
+    // console.log(subject);
     var message="";    
     if (data) { 
       // console.log(data);
-      message+="<div>Customer details:</div>";
+      message+="<div><h4>Customer details:</h4></div>";
       $.each(data, function(key,value) {
         message+="<div><p>"+key+":"+value+"</p></div>";
       });           
     }    
+    
     $.ajax({
       beforeSend: function () {          
         jQuery("#loader").show();
@@ -104,7 +135,7 @@ jQuery(function($) {
         alert("Email Send Successfully");                
         if(modalId=="downloadFactModal"){
           jQuery('#downloadFactModal .modal-body .download-fact-form').css({"display":"none"});
-          jQuery(".modal-body").html("<div class='text-center'><h5>Your downloadable link is enabled</h5><a class='text-center' href="+downloadLink+">Download fact sheet</a></div>");          
+          jQuery("#downloadFactModal .modal-body").html("<div class='text-center'><h5>Your downloadable link is enabled</h5><a class='text-center' href="+downloadLink+" target='_blank'>Download fact sheet</a></div>");          
         }else{
           $("#"+modalId).modal('toggle');
         }
@@ -113,9 +144,33 @@ jQuery(function($) {
       error: function (request, error) {                
         alert("Your message is not sent " + error);
         console.log(error);
-        $("#"+formID).trigger("reset");
-        $("#"+modalId).modal('toggle');    
+        // $("#"+formID).trigger("reset");
+        // $("#"+modalId).modal('toggle');    
       }
     });      
+  }
+
+
+  function email(){
+    $.ajax({
+      beforeSend: function () {          
+        jQuery("#loader").show();
+      },
+      "url": "http://35.153.200.54/ISAC-PHP/api/email",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      success: function (res) {
+        JSON.parse(res);
+        alert(res.message);      
+      },
+      error: function (request, error) {                
+        alert("Your message is not sent " + error);
+        console.log(error);
+        // $("#"+formID).trigger("reset");
+        // $("#"+modalId).modal('toggle');    
+      }
+    });  
   }
 });

@@ -19,7 +19,7 @@
             <div class="multi-button-wrap mt-4">              
               <a href="{{ $.Site.BaseURL }}{{ .url1 }}"><button class="dark-btn btn-medium ms-3">Read More</button></a>
               {{ $key := getenv "apikey" }}
-              <button type="button" class="dark-btn btn-medium request-demo" data-option="Request a Demo" data-secret="{{ $key }}" data-bs-toggle="modal" data-bs-target="#contactModal">Request Demo</button>
+              <button type="button" class="dark-btn btn-medium request-demo" data-option="Request a Demo" data-secret="{{ $key }}" >Request Demo</button>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@
     <div class="row mt-5 pt-5">
       <div class="col-lg-12 text-center btn-wrap">
         {{ $key := getenv "apikey" }}
-        <button type="button" class="theme-btn-white request-demo" data-option="Request a Demo" data-secret="{{ $key }}" data-bs-toggle="modal" data-bs-target="#contactModal">Request Demo</button>       
+        <button type="button" class="theme-btn-white request-demo" data-option="Request a Demo" data-secret="{{ $key }}">Request Demo</button>       
       </div>
     </div>
   </div>
@@ -230,8 +230,7 @@
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12">
         <h1 class="text-start text-orange light-bg text-uppercase mt-5 ">Contact Us</h1>
-        <form id="homeContactForm" class="contact-form">
-          <div class="api_key" style="visibility:hidden"> ${apikey} </div>
+        <form id="homeContactForm" class="contact-form">          
           <div class="row">
             <div class="col-lg-6 col-md-12 mb-3">
               <input type="text" name="client_name" class="contact-text-field" placeholder="Name" >
@@ -261,10 +260,12 @@
           <div class="row">
             <div class="col-lg-12 col-md-12">
               <div class="custom-form-send-button mb-2 text-center">
-                <button type="submit" class="btn custom-form-submit ">SEND</button>
+                <button type="submit" class="btn custom-form-submit">SEND</button>
               </div>
             </div>
           </div>
+          {{ $key := getenv "apikey" }}
+          <div id="api_key" style="visibility:hidden"> {{ $key }}</div>
         </form>
       </div>
     </div>

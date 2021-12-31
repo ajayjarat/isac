@@ -78,7 +78,8 @@
 
       
       <!-- nav btn -->
-      <button type="button" class="btn request-demo-btn btn-success request-demo" data-option="Request a Demo" data-secret=${APP_URL} data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button> 
+      
+      <button type="button" class="btn request-demo-btn btn-success request-demo" data-option="Request a Demo" data-secret="" data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button> 
       
         
     </div>      
@@ -198,11 +199,12 @@
       
     </div>    
     <div class="row mt-5">
+      
       <div class="col-12 text-center mb-5">
-        <button type="button" class="theme-btn-white download-fact-sheet" data-file="https://isac-8oxfp.ondigitalocean.app/files/ISACWebsiteFeedback.pdf" data-secret-key=${APP_URL} data-bs-toggle="modal" data-bs-target="#downloadFactModal" >Download Product Fact Sheet</button>
+        <button type="button" class="theme-btn-white download-fact-sheet" data-file="https://isac-8oxfp.ondigitalocean.app/files/ISACWebsiteFeedback.pdf" data-secret-key="" data-bs-toggle="modal" >Download Product Fact Sheet</button>
       </div>
       <div class="col-12 text-center">
-        <button type="button" class="theme-btn-white request-demo" data-option="Request a Demo" data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button>
+        <button type="button" class="theme-btn-white request-demo" data-option="Request a Demo" data-secret="" data-bs-toggle="modal">Request Demo</button>
       </div>
     </div>
   </div>
@@ -338,7 +340,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+        <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -386,7 +388,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Download Product Fact Sheet</h5>
+        <h5 class="modal-title" id="downloadModalLabel">Download Product Fact Sheet</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body p-4">
@@ -408,6 +410,23 @@
           </div>
         </form>
       </div>      
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="teamModal" tabindex="-1" aria-labelledby="teamInfoLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <h5 class="modal-title text-orange mb-4" id="teamInfoLabel"></h5>
+          <div class="modal-desc"></div>
+        </div>
+        
+      </div>
     </div>
   </div>
 </div>

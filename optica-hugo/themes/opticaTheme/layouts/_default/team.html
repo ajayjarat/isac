@@ -2,29 +2,12 @@
   <div class="team-wrap panel text-center" id="{{ .Params.id }}">                
     <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="img-fluid text-center" />
     <div class="member-desc">
-      <h5 class="text-center text-green">{{ .Title }}</h5>
+      <h5 class="text-center text-orange">{{ .Title }}</h5>
       <h6 class="text-center text-orange">{{ .Params.designation }}</h6>
     </div> 
     <div class="text-center">
-      <p class="mt-3 mb-4">{{ .Summary | truncate 150  }}</p>
-      <a id="teamMemberDesc" type="button" class="team-modal text-orange" data-bs-toggle="modal" data-bs-target="#teamModal" data-title="{{ .Title }}" data-summary="{{ .Summary }}"> More...</a>
-
-      <div class="modal fade" id="teamModal" tabindex="-1" aria-labelledby="teamInfoLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">        
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="text-center">
-                <h5 class="modal-title text-orange mb-4" id="teamInfoLabel"></h5>
-                <div class="modal-desc"></div>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>      
+      <p class="mt-3 mb-4">{{ .Params.description | truncate 150  }}</p>
+      <a id="teamMemberDesc" type="button" class="team-modal text-orange" data-title="{{ .Title }}" data-summary="{{ .Params.description }}"> More...</a>            
     </div>               
   </div>              
 </div>
