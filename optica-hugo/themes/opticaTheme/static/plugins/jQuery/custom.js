@@ -219,7 +219,6 @@ jQuery(function($) {
       error: function (request, error) {                
         alert("Your message is not sent " + error);      
       }         
-    });    
-         
+    });  
   }
 });
