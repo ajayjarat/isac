@@ -48,7 +48,8 @@ jQuery(function($) {
       validName=false;
       return false;
     }else{      
-      clientName=nameVal;      
+      clientName=nameVal;
+      $("input[name='"+name+"']").css('border','1px solid #cbc9c9');      
       validName=true;
       return true;
       
@@ -70,7 +71,8 @@ jQuery(function($) {
       validEmail=false;
       return false;
     }else{
-      if(validateEmail(email)){               
+      if(validateEmail(email)){
+        $("input[name='"+fieldName+"']").css('border','1px solid #cbc9c9');               
         validEmail=true;
         return true;
       }else{      
@@ -91,7 +93,8 @@ jQuery(function($) {
     }else{      
       var val = $("input[name='"+phone+"']").val();      
       var filter = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
-      if(filter.test(val)){                      
+      if(filter.test(val)){ 
+        $("input[name='"+phone+"']").css('border','1px solid #cbc9c9');                     
         validPhone=true;
         return true;
       }else{        
@@ -219,6 +222,6 @@ jQuery(function($) {
       error: function (request, error) {                
         alert("Your message is not sent " + error);      
       }         
-    });  
+    });
   }
 });

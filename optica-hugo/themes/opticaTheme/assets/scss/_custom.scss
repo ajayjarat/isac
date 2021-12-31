@@ -343,6 +343,9 @@ footer{
     }
   }
 }
+input.contact-text-field{
+  border:1px solid #cbc9c9;
+}
 .contact-form{
   padding: 30px 0;
   width: 100%;  
@@ -357,6 +360,7 @@ footer{
   }
   input.contact-text-field,select, input.contact-date-field{
     background-color: #e2e2e2;
+    border:1px solid #cbc9c9;
     height: 42px;
     padding:10px !important;
     font-family: $font-family-montserrat-regular !important;
