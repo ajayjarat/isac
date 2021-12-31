@@ -47,8 +47,7 @@ jQuery(function($) {
       $("input[name='"+name+"']").css('border','1px solid red');
       validName=false;
       return false;
-    }else{
-      $("input[name='"+name+"']").css('border','1px solid green');
+    }else{      
       clientName=nameVal;      
       validName=true;
       return true;
@@ -64,20 +63,19 @@ jQuery(function($) {
         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       );
   };
-  function validEmail(fieldName){
+  function validateEmailField(fieldName){
     var email = $("input[name='"+fieldName+"']").val();
     if(email.trim()=== ''){          
       $("input[name='"+fieldName+"']").css('border','1px solid red');
-      valid=false;
+      validEmail=false;
       return false;
     }else{
-      if(validateEmail(email)){
-        $("input[name='"+fieldName+"']").css('border','1px solid green');        
-        valid=true;
+      if(validateEmail(email)){               
+        validEmail=true;
         return true;
       }else{      
         $("input[name='"+fieldName+"']").css('border','1px solid red');        
-        valid=false;
+        validEmail=false;
         return false;
       }
     }
@@ -93,8 +91,7 @@ jQuery(function($) {
     }else{      
       var val = $("input[name='"+phone+"']").val();      
       var filter = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
-      if(filter.test(val)){  
-        $("input[name='"+phone+"']").css('border','1px solid green');              
+      if(filter.test(val)){                      
         validPhone=true;
         return true;
       }else{        
@@ -108,14 +105,14 @@ jQuery(function($) {
   $("#downloadFactForm").on("submit", function(event){
     event.preventDefault();
     validateName("personName");
-    validEmail('personEmail');    
+    validateEmailField('personEmail');    
     formID= "downloadFactForm";      
     var factFormData={};    
-    if(validName==true && valid==true){
+    if(validName==true && validEmail==true){
       factFormData = createFormData('downloadFactForm') ;
-    }else if(validName==false && valid==true){
+    }else if(validName==false && validEmail==true){
       alert("Enter valid name");
-    }else if(validName==true && valid==false){
+    }else if(validName==true && validEmail==false){
       alert("Enter valid email");
     }else{
       alert("Enter data to all fields");
@@ -129,11 +126,11 @@ jQuery(function($) {
   $("#contactForm").submit(function(event) {               
     event.preventDefault();
     validateName("customerName");
-    validEmail('customerEmail');
+    validateEmailField('customerEmail');
     validatePhone('contact');   
     formID= "contactForm";
     var contactData={};    
-    if(validPhone==true && validName==true && valid==true){
+    if(validPhone==true && validName==true && validEmail==true){
       contactData = createFormData('contactForm');
     }else{ 
       alert("Enter data to all fields");
@@ -147,12 +144,13 @@ jQuery(function($) {
   $("#homeContactForm").submit(function(event) {          
     event.preventDefault();
     validateName("client_name");
-    validEmail('email_id');
+    validateEmailField('email_id');
     validatePhone('phone_no');
     var purpose=$("#homeContactForm #yourPurpose").val();
-    formID= "homeContactForm";    
+    formID= "homeContactForm";
+    modalId="";    
     var formData={};
-    if(validPhone==true && validName==true && valid==true && purpose !='' && clientName!=''){
+    if(validPhone==true && validName==true && validEmail==true && purpose !='' && clientName!=''){
       formData = createFormData('homeContactForm');
     }else{ 
       alert("Enter data to all fields");
@@ -183,7 +181,7 @@ jQuery(function($) {
   }
 
   //Call php script to send email 
-  function sendEmail(name, data, subject, mailTo ){   
+  function sendEmail(name, data, subject, mailTo ){    
     var message="";      
     if (data) {       
       message+="<div><h4>Customer details:</h4></div>";
@@ -203,12 +201,13 @@ jQuery(function($) {
       },    
       success: function(response){        
         if(response.status==202){
+          console.log(modalId);
           if(modalId=="downloadFactModal"){
             jQuery('#downloadFactModal .modal-body .downloadFactForm').css({"display":"none"});
-            jQuery("#downloadFactModal .modal-body").html("<div class='text-center'><h5>Your downloadable link is enabled</h5><a class='text-center' href="+downloadLink+" target='_blank'>Download fact sheet</a></div>");          
+            jQuery("#downloadFactModal .modal-body").html("<div class='text-center'><h5>Your downloadable link is enabled</h5><a id='downloadLinkId' class='text-center' href="+downloadLink+" target='_blank'>Download fact sheet</a></div>");          
           }else{
             alert(response.message);
-            if(modalId !=""){
+            if(modalId=="contactModal"){
               $("#"+modalId).modal('toggle');
             }
           }
