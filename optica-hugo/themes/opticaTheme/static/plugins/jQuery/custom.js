@@ -1,71 +1,171 @@
 jQuery(function($) {
   var downloadLink="";
   var baseUrl = window.location.origin;
-  var secretKey="";
   var modalId="";
-  var optionVal="";
+  var puroseOptionVal="";
+  var clientName="";
+  var validName =false;
+  var validEmail =false;
+  var validPhone =false;
+
   formID="";
+  // Display team modal and Render data in team modal
   $('.team-modal').click(function() {
     $('#teamModal').modal('toggle');
-    var memberInfo = $(this).attr("data-summary"); 
-    var memberTitle = $(this).attr("data-title");             
-    $('#teamModal .modal-title').html(memberTitle);
-    $('#teamModal .modal-desc').html(memberInfo);    
+    var department = $(this).attr("data-department");
+    var memberImage = $(this).attr("data-image");
+    var image="<img src='/"+memberImage+"' class='img-fluid'> ";
+    var memberTitle = $(this).attr("data-title");
+    var designation = $(this).attr("data-designation");
+    var summary = $(this).attr("data-summary");         
+    $('#teamModal .modal-header .title').html(department);
+    $('#teamModal .modal-image').html(image);
+    $('#teamModal .member-name').html(memberTitle);
+    $('#teamModal .designation').html(designation);   
+    $('#teamModal .modal-desc').html(summary);    
   });
+
+  //Display and render data in contact modal
   $('.request-demo').click(function() { 
     $('#contactModal').modal('toggle');
-    optionVal = $(this).attr("data-option");
-    secretKey=$(this).attr("data-secret");    
+    puroseOptionVal = $(this).attr("data-option");
     modalId="contactModal" ;
-    $('#contactForm #purpose').val(optionVal).change();
-  });    
+    $('#contactForm #purpose').val(puroseOptionVal).change();
+  }); 
+
+  //Display and render data in download fact modal
   $('.download-fact-sheet').click(function() { 
     downloadLink = $(this).attr("data-file"); 
-    secretKey=$(this).attr("data-secret-key");         
     $('#downloadFactModal').modal('toggle');
     modalId="downloadFactModal" ;
   });
-  $("#download-fact-form").on("submit", function(event){
-    event.preventDefault();
-    formID= "download-fact-form";      
-    var factFormData={};
-    factFormData = createFormData('download-fact-form') ;
-    // console.log(factFormData);
-    if(!($.isEmptyObject(factFormData))){
-      sendEmail(factFormData, "Download Product Fact Sheet", "enquiry@optica.solutions", secretKey );
+
+  //Validation for name field in the form 
+  function validateName(name){
+    var nameVal = $("input[name='"+name+"']").val();
+    if(nameVal.trim()=== ''){ 
+      $("input[name='"+name+"']").css('border','1px solid red');
+      validName=false;
+      return false;
     }else{
-      alert("Please enter data to all fields correctly.")
+      $("input[name='"+name+"']").css('border','1px solid green');
+      clientName=nameVal;      
+      validName=true;
+      return true;
+      
+    }
+  }  
+
+  //Validation for email field in the form
+  const validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
+  function validEmail(fieldName){
+    var email = $("input[name='"+fieldName+"']").val();
+    if(email.trim()=== ''){          
+      $("input[name='"+fieldName+"']").css('border','1px solid red');
+      valid=false;
+      return false;
+    }else{
+      if(validateEmail(email)){
+        $("input[name='"+fieldName+"']").css('border','1px solid green');        
+        valid=true;
+        return true;
+      }else{      
+        $("input[name='"+fieldName+"']").css('border','1px solid red');        
+        valid=false;
+        return false;
+      }
+    }
+  }
+
+  //Validation for phone no field in the form
+  function validatePhone(phone){
+    var phoneVal = $("input[name='"+phone+"']").val();
+    if(phoneVal.trim()=== ''){
+      $("input[name='"+phone+"']").css('border','1px solid red');      
+      validPhone=false;
+      return false;
+    }else{      
+      var val = $("input[name='"+phone+"']").val();      
+      var filter = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
+      if(filter.test(val)){  
+        $("input[name='"+phone+"']").css('border','1px solid green');              
+        validPhone=true;
+        return true;
+      }else{        
+        $("input[name='"+phone+"']").css('border','1px solid red');        
+        validPhone=false;
+        return false;
+      }
+    }
+  }
+  //Submit download fact form and call send email function
+  $("#downloadFactForm").on("submit", function(event){
+    event.preventDefault();
+    validateName("personName");
+    validEmail('personEmail');    
+    formID= "downloadFactForm";      
+    var factFormData={};    
+    if(validName==true && valid==true){
+      factFormData = createFormData('downloadFactForm') ;
+    }else if(validName==false && valid==true){
+      alert("Enter valid name");
+    }else if(validName==true && valid==false){
+      alert("Enter valid email");
+    }else{
+      alert("Enter data to all fields");
+    }
+    if(!($.isEmptyObject(factFormData)) && clientName!=''){
+      sendEmail(clientName, factFormData, "Download Product Fact Sheet", "enquiry@optica.solutions");
     }
   });
+  
+  //Submit contact form and call send email function
   $("#contactForm").submit(function(event) {               
-    event.preventDefault();    
-    /*formID= "contactForm";
-    var contactData={}; 
-    contactData = createFormData('contactForm') ;
-     console.log(contactData);
-    if(!($.isEmptyObject(contactData))){
-      sendEmail(contactData, optionVal, "info@optica.solutions", secretKey );
-    }else{
-      alert("Please enter data to all fields correctly.")
-    }*/
-    email();
+    event.preventDefault();
+    validateName("customerName");
+    validEmail('customerEmail');
+    validatePhone('contact');   
+    formID= "contactForm";
+    var contactData={};    
+    if(validPhone==true && validName==true && valid==true){
+      contactData = createFormData('contactForm');
+    }else{ 
+      alert("Enter data to all fields");
+    }
+    if(!($.isEmptyObject(contactData)) && clientName!=''){
+      sendEmail(clientName, contactData, puroseOptionVal, "info@optica.solutions" );
+    }
   });
+
+  //Submit home page contact form and call send email function
   $("#homeContactForm").submit(function(event) {          
     event.preventDefault();
-    secretKey=$("#homeContactForm #api_key").html();    
+    validateName("client_name");
+    validEmail('email_id');
+    validatePhone('phone_no');
     var purpose=$("#homeContactForm #yourPurpose").val();
     formID= "homeContactForm";    
     var formData={};
-    formData = createFormData('homeContactForm') ;
-    // console.log(formData);
+    if(validPhone==true && validName==true && valid==true && purpose !='' && clientName!=''){
+      formData = createFormData('homeContactForm');
+    }else{ 
+      alert("Enter data to all fields");
+    }      
     if(!($.isEmptyObject(formData))){
-      sendEmail(formData, purpose, "enquiry@optica.solutions", secretKey );
-    }else{
-      alert("Please enter data to all fields correctly.")
+      sendEmail(clientName, formData, purpose, "enquiry@optica.solutions" );
     }
   });
+
+  //Call addsticky function
   window.onscroll = function() {addSticky()};
-  var pageHeader = document.getElementById("mainMenu");  
+  var pageHeader = document.getElementById("mainMenu"); 
+  //Add sticky header on page scroll
   function addSticky(){
     if(window.pageYOffset >= 100){
         pageHeader.classList.add("sticky");
@@ -73,104 +173,52 @@ jQuery(function($) {
         pageHeader.classList.remove("sticky");
     }
   }
+  //Get form data 
   function createFormData(currentFormId){
-    console.log(currentFormId);
-    var currentFormData={};
+    var currentFormData={};    
     $.each($('#'+currentFormId).serializeArray(), function(i, field) {
-       console.log(field);
-      if(field.value==''){
-        $("input[name='"+field.name+"']").css('border','1px solid red');
-        return;
-      }else{
-        $("input[name='"+field.name+"']").css('border','1px solid green');
-        currentFormData[field.name]=field.value;
-      }       
+      currentFormData[field.name]=field.value; 
     });
-     return currentFormData; 
+    return currentFormData;     
   }
-  function sendEmail(data, subject, mailTo, secret ){
-    // console.log(subject);
-    var message="";    
-    if (data) { 
-      // console.log(data);
+
+  //Call php script to send email 
+  function sendEmail(name, data, subject, mailTo ){   
+    var message="";      
+    if (data) {       
       message+="<div><h4>Customer details:</h4></div>";
       $.each(data, function(key,value) {
         message+="<div><p>"+key+":"+value+"</p></div>";
       });           
-    }    
-    
+    }
+    var actionurl = "http://35.153.200.54/ISAC-PHP/api/email";
     $.ajax({
-      beforeSend: function () {          
-        jQuery("#loader").show();
-      },
-      "url": "https://api.sendgrid.com/v3/mail/send",
-      "method": "POST",
-      "timeout": 0,
-      "headers": {
-        "Authorization": "Bearer "+secret,
-        "Content-Type": "application/json"
-      },
-      "data": JSON.stringify({
-        "personalizations": [
-          {
-            "to": [
-              {
-                "email": mailTo
-              }
-            ]
+      url: actionurl,
+      type: 'post',
+      data: {
+        data:message,
+        subject: subject,
+        mailto:mailTo,
+        name:name
+      },    
+      success: function(response){        
+        if(response.status==202){
+          if(modalId=="downloadFactModal"){
+            jQuery('#downloadFactModal .modal-body .downloadFactForm').css({"display":"none"});
+            jQuery("#downloadFactModal .modal-body").html("<div class='text-center'><h5>Your downloadable link is enabled</h5><a class='text-center' href="+downloadLink+" target='_blank'>Download fact sheet</a></div>");          
+          }else{
+            alert(response.message);
+            $("#"+modalId).modal('toggle');
           }
-        ],
-        "from": {
-          "email": "info@optica.solutions"
-        },
-        "subject": subject,
-        "content": [
-          {
-            "type": "text/plain",
-            "value": message
-          }
-        ]
-      }),
-      success: function (responseData) {
-        alert("Email Send Successfully");                
-        if(modalId=="downloadFactModal"){
-          jQuery('#downloadFactModal .modal-body .download-fact-form').css({"display":"none"});
-          jQuery("#downloadFactModal .modal-body").html("<div class='text-center'><h5>Your downloadable link is enabled</h5><a class='text-center' href="+downloadLink+" target='_blank'>Download fact sheet</a></div>");          
+          $("#"+formID).trigger("reset");
         }else{
-          $("#"+modalId).modal('toggle');
-        }
-        $("#"+formID).trigger("reset");        
+          alert("Your message is not sent")
+        }             
       },
       error: function (request, error) {                
-        alert("Your message is not sent " + error);
-        console.log(error);
-        // $("#"+formID).trigger("reset");
-        // $("#"+modalId).modal('toggle');    
-      }
-    });      
-  }
-
-
-  function email(){
-    $.ajax({
-      beforeSend: function () {          
-        jQuery("#loader").show();
-      },
-      "url": "http://35.153.200.54/ISAC-PHP/api/email",
-      "method": "POST",
-      "headers": {
-        "Content-Type": "application/json"
-      },
-      success: function (res) {
-        JSON.parse(res);
-        alert(res.message);      
-      },
-      error: function (request, error) {                
-        alert("Your message is not sent " + error);
-        console.log(error);
-        // $("#"+formID).trigger("reset");
-        // $("#"+modalId).modal('toggle');    
-      }
-    });  
+        alert("Your message is not sent " + error);      
+      }         
+    });    
+         
   }
 });

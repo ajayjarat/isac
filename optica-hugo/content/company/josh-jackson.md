@@ -5,6 +5,7 @@ description : "Mr. Jackson is an ardent technologist with deep understanding and
 image: "images/JoshuaJackson.png"
 course: "for Intelligent Cyber Automations"
 category: "corporate"
+department: "Corporate Management"
 designation: "Chief Technology Officer (CTO)"
 id: "member4"
 order: 2

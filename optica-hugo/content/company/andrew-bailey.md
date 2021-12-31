@@ -5,6 +5,7 @@ description : "Mr. Bailey is leading the efforts to architect, design and develo
 image: "images/AndrewBaileyImg.jpg"
 course: "for Intelligent Cyber Automations"
 category: "corporate"
+department: "Corporate Management"
 designation: "Chief Development Officer (CDO)"
 id: "member1"
 order: 3

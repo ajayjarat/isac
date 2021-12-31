@@ -10,7 +10,6 @@
     {{ end }}   
     <div class="banner-content">
       <a class="mb-2" href="#">
-      <!--   <img src="{{ .Params.titleImage | relURL }}" alt="product banner title" class="img-fluid" style="max-width: 400px;"> -->
       </a>                     
       <h3 class="banner-text text-white mt-2" style="font-weight: 600;">{{ .Params.description | markdownify }}</h3>                
     </div>
@@ -28,7 +27,7 @@
   <div class="">
     <div class="row g-3 services-wrapper ">
       {{ range $index, $data := ( .Data.Pages ) }}
-      <div class="service col-lg-4 col-md-4 col-sm-4 me-auto ms-auto ">
+      <div class="service col-lg-4 col-md-4 col-sm-12 me-auto ms-auto ">
         {{ .Render "service" }}
       </div>
       {{ end }}             
@@ -37,13 +36,12 @@
   </div>
 </section>
 <section>
-  <div class="row mt-5">
-    {{ $key := getenv "apikey" }}
-    <div class="col-12 text-center mb-5"> 
-      <button type="button" class="theme-btn-white download-fact-sheet" data-file="{{ $.Site.BaseURL }}files/ISACWebsiteFeedback.pdf" data-secret-key="{{ $key }}">Download Product Fact Sheet</button>
+  <div class="row mt-5">   
+    <div class="col-12 text-center mb-4"> 
+      <button type="button" class="theme-btn-white download-fact-sheet" data-file="{{ $.Site.BaseURL }}files/ISACWebsiteFeedback.pdf">Download Product Fact Sheet</button>
     </div>
     <div class="col-12 text-center">
-      <button type="button" class="theme-btn-white request-demo" data-option="Request a Demo" data-secret="{{ $key }}">Request Demo</button>
+      <button type="button" class="theme-btn-white request-demo" data-option="Request a Demo">Request Demo</button>
     </div>
   </div>
 </section>

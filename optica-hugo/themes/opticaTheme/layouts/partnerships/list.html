@@ -1,5 +1,4 @@
 {{ define "main" }}
-
 {{ $data := index site.Data site.Language.Lang }}
 
 <!-- banner -->
@@ -17,11 +16,6 @@
   </div>  
 </section >
 <!-- /banner -->
-<!-- <section class="partner-desc">
-  <div class="layout-container">
-    <p class="text-center" style="font-size:1.5rem;">{{ .Summary }}</p>
-  </div>
-</section> -->
 
 {{ if .Site.Data.homepage.partners.enable }}
 {{ with .Site.Data.homepage.partners}}
@@ -42,9 +36,8 @@
 {{ end }}
 <section>
   <div class="row mt-5">    
-    <div class="col-12 text-center">
-      {{ $key := getenv "apikey" }}      
-      <button type="button" class="theme-btn-white request-demo" data-option="Partnership Inquiry" data-secret="{{ $key }}">Contact Us To Discuss Partnership Arrangements</button>
+    <div class="col-12 text-center">           
+      <button type="button" class="theme-btn-white request-demo" data-option="Partnership Inquiry">Contact Us To Discuss Partnership Arrangements</button>
     </div>
   </div>
 </section>

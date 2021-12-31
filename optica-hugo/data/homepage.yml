@@ -4,7 +4,6 @@ banner:
   writter : ""
   title : "ISAC"
   image : "images/MicrosoftTeams-imag.png"
-  titleImage : "images/isac-text-img2.png"
   url1: "products"
   content : "Cyber industry’s most thorough network compliance and remediation software"
    
@@ -18,7 +17,7 @@ opticaSolutions:
 productPortfolio:
   enable : true  
   title : "Product Portfolio"
-  image : "images/product-video-img.jpg"
+  image : "images/product-portfolio.jpeg"
   videoUrl: ""
   content : "OptICA has worked hard to develop the cyber industry’s most thorough network monitoring software, ISAC."
   url1: "products"
@@ -81,12 +80,6 @@ testimonials:
       # rating : "five" # rating from one to five
       content : "Lorem Ispum dolar sit amet lorem ispum dollar sit amet.Lorem Ispum dolar sit amet."
 
-blog:
-  enable : true
-  title : "Our insights and articles"
-  subtitle : "Laboriosam eos aperiam excepturi accusamus velit repudiandae sit rem incidunt, similique facere quas blanditiis."
-  # blog post comes from 'content/blog'
-
 partners:
   enable : true
   title : "OUR VALUED PARTNERS"
@@ -148,14 +141,3 @@ contact:
         - listItem : "Melbourne (Metro & nearby areas) Adelaide "
         # - listItem : "Adelaide"
   
-
-
-callAction:
-  enable : true
-  title : "Lorem ispum dollar sit amet"
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-secrets:
-  enable : true
-  send_grid_secret_key: "{{ secrets.SECRET_KEY }}"
-  #send_grid_secret_key: ${{ secrets.SECRET_KEY }}

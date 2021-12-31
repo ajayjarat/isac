@@ -152,7 +152,8 @@ section {
     margin-left: 12px; }
 
 .video-container {
-  position: relative; }
+  position: relative;
+  text-align: center; }
   .video-container .play-btn {
     position: absolute;
     top: 0;
@@ -388,7 +389,7 @@ footer #copyright {
   justify-content: center; }
   .about-team .member-desc {
     margin-top: 1.5rem; }
-    .about-team .member-desc h3, .about-team .member-desc h5 {
+    .about-team .member-desc h3, .about-team .member-desc h5, .about-team .member-desc h6 {
       font-family: "Inter", "sans-serif" !important;
       font-weight: normal !important; }
 

@@ -7,10 +7,10 @@
       <a href="#"><span><i class="fa fa-linkedin"></i></span></a>
     </div>
     <div class="search-wrap">
-      <form class="d-flex">
+      <!-- <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="" type="submit"><i class="fa fa-search"></i></button>
-      </form>
+      </form> -->
     </div>
     <div class="top-menu">
       <a class="nav-link">Get Support</a>
@@ -29,7 +29,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="mainNavigation">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav  mb-2 mb-lg-0">
           {{ if .IsHome }}
           {{ range .Site.Menus.main }}
           <li class="nav-item">
@@ -51,9 +51,8 @@
       </ul>       
 
       {{ if .Site.Params.navButton.enable }}
-      {{ "<!-- nav btn -->" | safeHTML }}
-      {{ $key := getenv "apikey" }}
-      <button type="button" class="btn request-demo-btn btn-success request-demo" data-option="Request a Demo" data-secret="{{ $key }}" data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button> 
+      {{ "<!-- nav btn -->" | safeHTML }}      
+      <button type="button" class="btn request-demo-btn btn-success request-demo" data-option="Request a Demo" data-bs-toggle="modal" data-bs-target="#contactModal">REQUEST DEMO</button> 
       <!-- <button class="btn request-demo-btn btn-success">
         REQUEST DEMO
       </button> -->

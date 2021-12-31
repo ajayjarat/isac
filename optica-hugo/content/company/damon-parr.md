@@ -5,6 +5,7 @@ description : "Mr. Parr is the Lead Systems Engineer at Intelligent Cyber Automa
 image: "images/Damon-Parr-img.jpg"
 course: "Senior Systems Administrator and Architect"
 category: "corporate"
+department: "Corporate Management"
 designation: "Lead Systems Engineer"
 id: "member4"
 order: 4
