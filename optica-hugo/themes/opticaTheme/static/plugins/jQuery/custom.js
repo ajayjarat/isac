@@ -1,14 +1,15 @@
 jQuery(function($) {
   var downloadLink="";
   var baseUrl = window.location.origin;
-  // var secretKey="";
   var modalId="";
-  var optionVal="";
+  var puroseOptionVal="";
   var clientName="";
-  var nameIsvalid =false;
-  var emailIsvalid =false;
-  var phoneIsvalid =false;
+  var validName =false;
+  var validEmail =false;
+  var validPhone =false;
+
   formID="";
+  // Display team modal and Render data in team modal
   $('.team-modal').click(function() {
     $('#teamModal').modal('toggle');
     var department = $(this).attr("data-department");
@@ -16,41 +17,46 @@ jQuery(function($) {
     var image="<img src='/"+memberImage+"' class='img-fluid'> ";
     var memberTitle = $(this).attr("data-title");
     var designation = $(this).attr("data-designation");
-    var memberInfo = $(this).attr("data-summary");         
+    var summary = $(this).attr("data-summary");         
     $('#teamModal .modal-header .title').html(department);
     $('#teamModal .modal-image').html(image);
     $('#teamModal .member-name').html(memberTitle);
     $('#teamModal .designation').html(designation);   
-    $('#teamModal .modal-desc').html(memberInfo);    
+    $('#teamModal .modal-desc').html(summary);    
   });
+
+  //Display and render data in contact modal
   $('.request-demo').click(function() { 
     $('#contactModal').modal('toggle');
-    optionVal = $(this).attr("data-option");
-    // secretKey=$(this).attr("data-secret");    
+    puroseOptionVal = $(this).attr("data-option");
     modalId="contactModal" ;
-    $('#contactForm #purpose').val(optionVal).change();
-  });    
+    $('#contactForm #purpose').val(puroseOptionVal).change();
+  }); 
+
+  //Display and render data in download fact modal
   $('.download-fact-sheet').click(function() { 
     downloadLink = $(this).attr("data-file"); 
-    // secretKey=$(this).attr("data-secret-key");         
     $('#downloadFactModal').modal('toggle');
     modalId="downloadFactModal" ;
   });
+
+  //Validation for name field in the form 
   function validateName(name){
     var nameVal = $("input[name='"+name+"']").val();
     if(nameVal.trim()=== ''){ 
       $("input[name='"+name+"']").css('border','1px solid red');
-      nameIsvalid=false;
-      // alert("Enter valid name");
+      validName=false;
       return false;
     }else{
       $("input[name='"+name+"']").css('border','1px solid green');
       clientName=nameVal;      
-      nameIsvalid=true;
+      validName=true;
       return true;
       
     }
   }  
+
+  //Validation for email field in the form
   const validateEmail = (email) => {
     return String(email)
       .toLowerCase()
@@ -62,53 +68,54 @@ jQuery(function($) {
     var email = $("input[name='"+fieldName+"']").val();
     if(email.trim()=== ''){          
       $("input[name='"+fieldName+"']").css('border','1px solid red');
-      emailIsvalid=false;
+      valid=false;
       return false;
     }else{
       if(validateEmail(email)){
         $("input[name='"+fieldName+"']").css('border','1px solid green');        
-        emailIsvalid=true;
+        valid=true;
         return true;
       }else{      
         $("input[name='"+fieldName+"']").css('border','1px solid red');        
-        emailIsvalid=false;
+        valid=false;
         return false;
       }
     }
   }
+
+  //Validation for phone no field in the form
   function validatePhone(phone){
     var phoneVal = $("input[name='"+phone+"']").val();
     if(phoneVal.trim()=== ''){
       $("input[name='"+phone+"']").css('border','1px solid red');      
-      phoneIsvalid=false;
-      // alert("Enter 10 digit valid phone number");
+      validPhone=false;
       return false;
     }else{      
       var val = $("input[name='"+phone+"']").val();      
       var filter = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
       if(filter.test(val)){  
         $("input[name='"+phone+"']").css('border','1px solid green');              
-        phoneIsvalid=true;
+        validPhone=true;
         return true;
       }else{        
         $("input[name='"+phone+"']").css('border','1px solid red');        
-        phoneIsvalid=false;
-        // alert("Enter 10 digit valid phone number");
+        validPhone=false;
         return false;
       }
     }
   }
-  $("#download-fact-form").on("submit", function(event){
+  //Submit download fact form and call send email function
+  $("#downloadFactForm").on("submit", function(event){
     event.preventDefault();
     validateName("personName");
     validEmail('personEmail');    
-    formID= "download-fact-form";      
+    formID= "downloadFactForm";      
     var factFormData={};    
-    if(nameIsvalid==true && emailIsvalid==true){
-      factFormData = createFormData('download-fact-form') ;
-    }else if(nameIsvalid==false && emailIsvalid==true){
+    if(validName==true && valid==true){
+      factFormData = createFormData('downloadFactForm') ;
+    }else if(validName==false && valid==true){
       alert("Enter valid name");
-    }else if(nameIsvalid==true && emailIsvalid==false){
+    }else if(validName==true && valid==false){
       alert("Enter valid email");
     }else{
       alert("Enter data to all fields");
@@ -118,6 +125,7 @@ jQuery(function($) {
     }
   });
   
+  //Submit contact form and call send email function
   $("#contactForm").submit(function(event) {               
     event.preventDefault();
     validateName("customerName");
@@ -125,25 +133,26 @@ jQuery(function($) {
     validatePhone('contact');   
     formID= "contactForm";
     var contactData={};    
-    if(phoneIsvalid==true && nameIsvalid==true && emailIsvalid==true){
+    if(validPhone==true && validName==true && valid==true){
       contactData = createFormData('contactForm');
     }else{ 
       alert("Enter data to all fields");
     }
     if(!($.isEmptyObject(contactData)) && clientName!=''){
-      sendEmail(clientName, contactData, optionVal, "info@optica.solutions" );
+      sendEmail(clientName, contactData, puroseOptionVal, "info@optica.solutions" );
     }
   });
+
+  //Submit home page contact form and call send email function
   $("#homeContactForm").submit(function(event) {          
     event.preventDefault();
     validateName("client_name");
     validEmail('email_id');
     validatePhone('phone_no');
-    // secretKey=$("#homeContactForm #api_key").attr("data-key");    
     var purpose=$("#homeContactForm #yourPurpose").val();
     formID= "homeContactForm";    
     var formData={};
-    if(phoneIsvalid==true && nameIsvalid==true && emailIsvalid==true && purpose !='' && clientName!=''){
+    if(validPhone==true && validName==true && valid==true && purpose !='' && clientName!=''){
       formData = createFormData('homeContactForm');
     }else{ 
       alert("Enter data to all fields");
@@ -152,8 +161,11 @@ jQuery(function($) {
       sendEmail(clientName, formData, purpose, "enquiry@optica.solutions" );
     }
   });
+
+  //Call addsticky function
   window.onscroll = function() {addSticky()};
-  var pageHeader = document.getElementById("mainMenu");  
+  var pageHeader = document.getElementById("mainMenu"); 
+  //Add sticky header on page scroll
   function addSticky(){
     if(window.pageYOffset >= 100){
         pageHeader.classList.add("sticky");
@@ -161,6 +173,7 @@ jQuery(function($) {
         pageHeader.classList.remove("sticky");
     }
   }
+  //Get form data 
   function createFormData(currentFormId){
     var currentFormData={};    
     $.each($('#'+currentFormId).serializeArray(), function(i, field) {
@@ -168,6 +181,8 @@ jQuery(function($) {
     });
     return currentFormData;     
   }
+
+  //Call php script to send email 
   function sendEmail(name, data, subject, mailTo ){   
     var message="";      
     if (data) {       
@@ -187,10 +202,9 @@ jQuery(function($) {
         name:name
       },    
       success: function(response){        
-        console.log(response);
         if(response.status==202){
           if(modalId=="downloadFactModal"){
-            jQuery('#downloadFactModal .modal-body .download-fact-form').css({"display":"none"});
+            jQuery('#downloadFactModal .modal-body .downloadFactForm').css({"display":"none"});
             jQuery("#downloadFactModal .modal-body").html("<div class='text-center'><h5>Your downloadable link is enabled</h5><a class='text-center' href="+downloadLink+" target='_blank'>Download fact sheet</a></div>");          
           }else{
             alert(response.message);
@@ -209,6 +223,4 @@ jQuery(function($) {
     });    
          
   }
-
-
 });

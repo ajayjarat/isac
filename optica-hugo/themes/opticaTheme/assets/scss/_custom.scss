@@ -83,11 +83,6 @@ section{
   justify-content: space-between !important;
   align-items: center;  
   border-bottom:3px solid $theme-color1;
-  // .navbar-brand{
-  //   img{
-  //     max-width: 70px;
-  //   }
-  // }
 }
 #homeSlider{  
   .banner-wrap{
@@ -97,7 +92,6 @@ section{
     }
     position: relative;
     .banner-content{
-      // position: absolute;      
       bottom:0;
       margin: auto;
       a{
@@ -118,7 +112,6 @@ section{
     }
     position: relative;
     .banner-content{
-      // position: absolute;      
       bottom:0;
       margin: auto;
       a{
@@ -204,9 +197,7 @@ section{
   padding-top: 6rem;
   padding-bottom: 5rem;
   min-height: 642px;
-  // background-color: #ecf1f5;
   .expert-heading{
-    // margin-top: 3rem;
   }
   .expert-warp{
     padding:20px;
@@ -279,13 +270,8 @@ section{
   background-image: url('./../images/contact-sec-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  // padding-top: 5rem;
-  // padding-bottom: 5rem;
 }
 footer{
-  // .container{
-  //   max-width: 95.75% !important;
-  // }
   .footer-wrap{
     background-color: #f8f8f8;
     border-top: 1px solid $theme-color1;
@@ -348,7 +334,6 @@ footer{
         margin-bottom: 15px !important;     
         span{
           color: #fff;
-          // margin-right: 2.5rem;
         }
         span a{
           color: #fff;
@@ -442,7 +427,6 @@ footer{
   }
 }
 .partners-container{
-  // background-color: $black;
   .partner-img-wrap{
     background-color: $white;
     width: 400px;
@@ -492,10 +476,6 @@ footer{
     padding: 10px 0 0;
     text-align: left;
     border-left: 1px solid $gray-300; 
-    .features-height{
-      // margin-bottom: 2.5rem;
-      // min-height: 250px;
-    }
     .benefits-height{
       min-height: 200px;
       margin-bottom: 2.5rem;
