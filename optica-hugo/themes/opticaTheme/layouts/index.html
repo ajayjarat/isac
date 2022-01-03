@@ -1,6 +1,4 @@
 {{ define "main" }}
-
-
 {{ if .Site.Data.homepage.banner.enable }}
 {{ with .Site.Data.homepage.banner }}
 <section class="home-header mb-0 mt-0" id="homeSlider">
@@ -12,23 +10,16 @@
           <div class="banner-content">
             <a class="mb-2" href="#">            	
               <h1 class="large-heading">OptICA&trade; Launches ISAC</h1>
-             <!--  <h2 class="text-white heading-xl">ISAC </h2> -->
             </a>
             <h6 class=""><span class="text-orange">I</span>nformation <span class="text-orange">S</span>ecurity <span class="text-orange">A</span>ll-in-one <span class="text-orange">C</span>onsole with Continuous Compliance Technology</h6>
             <h3 class="">{{ .content | markdownify }}</h3>
             <div class="multi-button-wrap mt-4">              
               <a href="{{ $.Site.BaseURL }}{{ .url1 }}"><button class="dark-btn btn-medium ms-3">Read More</button></a>
-              <!-- {{ $key := getenv "apikey" }} -->
               <button type="button" class="dark-btn btn-medium request-demo" data-option="Request a Demo">Request Demo</button>
             </div>
           </div>
         </div>
-      </div>
-      <!-- <div class="carousel-item">
-        <div class="banner-wrap">
-          <img src="images/banner-img.png" alt="Images">
-        </div>
-      </div>  -->         
+      </div>        
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#homeSliderControls" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -106,9 +97,6 @@
             <h3>{{ .title | markdownify }}</h3>
             <p>{{ .content | markdownify }}</p>
             <p class="text-end"><i>{{ .year | markdownify }}</i></p>
-            <!-- <div class="col-12 text-end">
-              <a class="text-end"><span>VIEW MORE </span><img src="images/orange-right-arrow.png"></a>
-            </div> -->
           </div>        	        
         </div>
         {{ end }}      
@@ -119,60 +107,6 @@
 </section>
 {{ end }}
 {{ end }}
-
-<!--{{ if .Site.Data.homepage.testimonials.enable }}
-{{ with .Site.Data.homepage.testimonials }}
-<section id="testmonials" class="testimonials">
-  <h1 class="text-center text-uppercase mb-5">{{ .title | markdownify }}</h1>
-  <div class="layout-container">
-    <div id="textimonialSliderControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-      	{{ range $index, $data := ( .review ) }}			  			  	
-  		    <div class="carousel-item {{ if (eq $index 0) }} active {{ end }}">
-  	        <div class="banner-wrap">
-  	        	<img class="banner-bg" src="{{ .image | relURL }}">
-  	          <div class="banner-content">                
-  	            <div class="ms-auto col-lg-offset-6 col-lg-6 col-md-offset-6 col-md-6 col-xs-12">
-  	              <h3 class="name">{{ .firstName }} {{ .lastName }} - {{ .designation }} - {{ .company }}</h3>
-  	              <h2 class="mt-4 desc">{{ .content | markdownify }}</h2>
-  	              <button type="button" class="btn theme-btn-orange mt-5">
-  	                <h3><i class="fa fa-play-circle-o" aria-hidden="true"></i><span class="text-white text-uppercase">Hear {{ .firstName }}'s Story</span></h3>
-  	              </button>
-  	            </div>
-  	            <div class="clearfix"></div>                
-  	          </div>
-  	        </div>
-  	      </div>			 
-  			{{ end }}    	             
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#textimonialSliderControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#textimonialSliderControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div> 
-  </div>     
-</section> 
-{{ end }}
-{{ end }}-->
-
-<!--{{ if .Site.Data.homepage.blog.enable }}
- <section class="blog-container">
-  <div class="layout-container ps-5 pe-5">
-    <div class="row g-5">
-    	{{ range first 4 (where site.RegularPages "Type" "post")}}
-    		<div class="col-lg-6 col-md-6 col-sm-6">
-    			{{ .Render "post" }}
-    		</div>
-    	{{ end }}      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</section> 
-{{ end }}-->
 
 {{ if .Site.Data.homepage.partners.enable }}
 {{ with .Site.Data.homepage.partners}}
@@ -222,11 +156,9 @@
         <div class="mapouter">
           <div class="gmap_canvas">
             <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=3949 Pender Drive, Suite 125, Fairfax, VA 22030&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-            <!-- <a href="https://www.fnfgo.com/">FNF Online Mods</a> -->
           </div>
           <style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {width:100%!important;height:400px!important;}</style>
         </div>
-        <!-- <img src="images/map-img.png" width="100%"> -->
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12">
         <h1 class="text-start text-orange light-bg text-uppercase mt-5 ">Contact Us</h1>

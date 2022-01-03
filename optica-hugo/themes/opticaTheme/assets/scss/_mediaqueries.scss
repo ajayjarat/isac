@@ -99,10 +99,6 @@
 			margin-left: 1rem;
 		}
 	}
-	/*#mainNavigation.show{
-		border-top: 1px solid #012395;		
-    	margin-top: 0.5rem;
-	}*/
 		
 }
 @media only screen and (min-width: 768px) and (max-width: 991px){		
@@ -192,7 +188,6 @@
 	#homeSlider{  
 		.banner-wrap{
 			min-height: 250px;
-			// background: linear-gradient(to right, #182e86f7  0%, #182e86f7  0.2%, transparent 82%);
 	    .banner-content{
 	    	position:absolute;
 	    	top: 10px;		      
@@ -380,38 +375,10 @@
 	  background-color: $gray-800;
 	  .social-media-wrap{
 	    display: none;    
-	    /*align-items: center;    
-	    justify-content: space-evenly;
-	    align-items: center;
-	    span{
-	      width: 32px;
-	      height: 32px;
-	      // background-color: $theme-color1;
-	      padding:  20px;
-	      border-radius: 5px;
-	      margin-right: 10px; 
-	      padding: 2px;
-	      border-radius: 5px;
-	      margin-right: 10px;
-	      display: inline-block;
-	      text-align: center;     
-	      i{
-	        color: #fff;
-	        font-size: 24px;
-	      }
-	    }*/
 	  }
 	  
 	  .search-wrap{
 	   display: none;    
-	    /*button{
-	      background-color:transparent;
-	      border:none;
-	      i{
-	        color: #fff;
-	        font-size: 24px;
-	      }
-	    }*/
 	  }
 	  .top-menu{    
 	    .nav-link{
@@ -454,7 +421,6 @@
 	#homeSlider{  
 		.banner-wrap{
 			min-height: 250px;
-			// background: linear-gradient(to right, #182e86f7  0%, #182e86f7  0.2%, transparent 100%);
 	    .banner-content{
 	    	text-align: center;	    	
       	width: 100%;
@@ -496,7 +462,6 @@
 	#homeSlider{  
 		.banner-wrap{
 			min-height: 270px;
-			// background: linear-gradient(to right, #182e86f7  0%, #182e86f7  0.2%, transparent 100%);
     	.banner-content{    		      
       	width: 100%;
       	height: auto;      	
