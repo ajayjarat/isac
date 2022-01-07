@@ -1,5 +1,5 @@
 ---
-title: "Service"
+title: "Services"
 date: 2021-10-05
 draft: false
 description: "To serve ISAC Customers, OptICA&trade; leverages effective Partner ecosystem"

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Service on ISAC</title>
+    <link>https://www.optica.solutions/services/</link>
+    <description>Recent content in Service on ISAC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.optica.solutions/services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Audit Support (Optional)</title>
+      <link>https://www.optica.solutions/services/audit-support/</link>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.optica.solutions/services/audit-support/</guid>
+      <description>We offer full support to our Customers in going through a CCRI Audit.</description>
+    </item>
+    
+    <item>
+      <title>Compilance Training (Optional)</title>
+      <link>https://www.optica.solutions/services/compilance_training/</link>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.optica.solutions/services/compilance_training/</guid>
+      <description>We offer training on how to be “continuously compliant” with DoD DISA STIG/SCAP Standards.</description>
+    </item>
+    
+    <item>
+      <title>ISAC User Training</title>
+      <link>https://www.optica.solutions/services/isac-user-training/</link>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.optica.solutions/services/isac-user-training/</guid>
+      <description>We offer training on how to setup and use ISAC for the various roles of the Customer’s Cybersecurity team.</description>
+    </item>
+    
+  </channel>
+</rss>

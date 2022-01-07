@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ISAC</title>
+    <link>https://www.optica.solutions/</link>
+    <description>Recent content on ISAC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.optica.solutions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Audit Support (Optional)</title>
+      <link>https://www.optica.solutions/services/audit-support/</link>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.optica.solutions/services/audit-support/</guid>
+      <description>We offer full support to our Customers in going through a CCRI Audit.</description>
+    </item>
+    
+    <item>
+      <title>Compilance Training (Optional)</title>
+      <link>https://www.optica.solutions/services/compilance_training/</link>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.optica.solutions/services/compilance_training/</guid>
+      <description>We offer training on how to be “continuously compliant” with DoD DISA STIG/SCAP Standards.</description>
+    </item>
+    
+    <item>
+      <title>ISAC User Training</title>
+      <link>https://www.optica.solutions/services/isac-user-training/</link>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.optica.solutions/services/isac-user-training/</guid>
+      <description>We offer training on how to setup and use ISAC for the various roles of the Customer’s Cybersecurity team.</description>
+    </item>
+    
+    <item>
+      <title>My Awesome Blog One</title>
+      <link>https://www.optica.solutions/blog/blog-post/</link>
+      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.optica.solutions/blog/blog-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
+    </item>
+    
+    <item>
+      <title>Mr. Andrew Bailey</title>
+      <link>https://www.optica.solutions/company/andrew-bailey/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.optica.solutions/company/andrew-bailey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mr. Damon Parr</title>
+      <link>https://www.optica.solutions/company/damon-parr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.optica.solutions/company/damon-parr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mr. Jeff Bertman</title>
+      <link>https://www.optica.solutions/company/jeff-bertman/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.optica.solutions/company/jeff-bertman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mr. Josh Jackson</title>
+      <link>https://www.optica.solutions/company/josh-jackson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.optica.solutions/company/josh-jackson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ramji Venkatachari</title>
+      <link>https://www.optica.solutions/company/ramji-venkatachari/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.optica.solutions/company/ramji-venkatachari/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
