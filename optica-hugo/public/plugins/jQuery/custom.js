@@ -165,7 +165,7 @@ jQuery(function($) {
 
   //Call addsticky function
   window.onscroll = function() {addSticky()};
-  var pageHeader = document.getElementById("mainMenu"); 
+  var pageHeader = document.getElementById("navHeader"); 
   //Add sticky header on page scroll
   function addSticky(){
     if(window.pageYOffset >= 100){
@@ -184,7 +184,7 @@ jQuery(function($) {
   }
 
   //Call php script to send email 
-  function sendEmail(name, data, subject, mailTo ){    
+  function sendEmail(name, data, subject, mailTo ){  
     var message="";      
     if (data) {       
       message+="<div><h4>Customer details:</h4></div>";
@@ -192,7 +192,8 @@ jQuery(function($) {
         message+="<div><p>"+key+":"+value+"</p></div>";
       });           
     }
-    var actionurl = "https://isac-api-dx4bj.ondigitalocean.app/email.php";
+    // var actionurl = "https://isac-api-dx4bj.ondigitalocean.app/email.php";
+    var actionurl="http://localhost/ISAC-PHP/api/email.php"
     $.ajax({
       url: actionurl,
       type: 'post',
