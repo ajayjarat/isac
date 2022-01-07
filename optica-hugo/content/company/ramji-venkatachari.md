@@ -6,7 +6,7 @@ description : "Mr. Venkatachari is a life-long entrepreneur with excellent acume
 image: "images/ramji-img.png"
 category: "admin"
 department: "Board of Advisor"
-designation: "Board of Advisor"
+designation: "Advisor"
 id: "member8"
 order: 8
 type: "team"

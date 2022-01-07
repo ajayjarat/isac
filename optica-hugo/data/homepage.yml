@@ -42,10 +42,7 @@ cyberSecurity:
     - title : "Fort Knox ISSM and Cyber Security Division Chief"      
       content : "ISAC provides the most comprehensive and single pane of glass view of the enterprise’s total cybersecurity posture that I have ever seen from any SEAM tool"      
       year: "…. Sept 2021"
-    # security item loop
-    - title : ""
-      content : ""
-      year: ""
+    
 
 testimonials:
   enable : true
