@@ -1,3 +1,9 @@
+body {  
+  font-family: $font-family-base, $font-family-montserrat-regular;
+}
+h1, h2, h3, h4, h5, h6 {  
+  font-family: $headings-font-family;
+}
 .topbar{
   display: flex;
   flex-direction: row;
@@ -45,7 +51,8 @@
   }
 }
 .nav-link{
-  font-family: $font-family-montserrat-bold !important;
+  // font-family: $font-family-montserrat-bold !important;
+  font-family: $font-family-Inter-bold !important;
   font-size: .875rem !important;
   text-transform: uppercase;
 }
@@ -467,6 +474,10 @@ input.contact-text-field{
 }
 .w-70{
   width: 70%;
+}
+.product-portfolio h5.reason{  
+  font-family: $font-family-montserrat-regular !important;
+  font-weight: normal;  
 }
 .product-offer{
   h3, h5{

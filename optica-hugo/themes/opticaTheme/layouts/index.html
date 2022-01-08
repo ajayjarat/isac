@@ -12,7 +12,7 @@
               <h1 class="large-heading">OptICA&trade; Launches ISAC</h1>
             </a>
             <h6 class=""><span class="text-orange">I</span>nformation <span class="text-orange">S</span>ecurity <span class="text-orange">A</span>ll-in-one <span class="text-orange">C</span>onsole with Continuous Compliance Technology</h6>
-            <h3 class="">{{ .content | markdownify }}</h3>
+            <h3 class="banner-text">{{ .content | markdownify }}</h3>
             <div class="multi-button-wrap mt-4">              
               <a href="{{ $.Site.BaseURL }}{{ .url1 }}"><button class="dark-btn btn-medium ms-3">Read More</button></a>
               <button type="button" class="dark-btn btn-medium request-demo" data-option="Request a Demo">Request Demo</button>
@@ -56,7 +56,7 @@
         	{{range .list}}
         		<div class="list-wrap">
 	            <img src="images/small-arrow.png" class="img-fluid">
-	            <h5>{{ .listItem }} </h5>
+	            <h5 class="reason">{{ .listItem }} </h5>
 	          </div>
           {{end}}         
         </div>
