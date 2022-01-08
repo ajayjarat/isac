@@ -488,7 +488,8 @@ a.disabled {
 
 body.modal-open {
   padding-right: 0 !important;
-  overflow: unset !important; }
+  position: static !important;
+  overflow-y: auto !important; }
 
 @font-face {
   font-family: 'Montserrat Bold';
