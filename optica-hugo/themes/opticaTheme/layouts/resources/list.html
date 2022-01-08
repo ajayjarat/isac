@@ -3,7 +3,11 @@
 {{ $data := index site.Data site.Language.Lang }}
 <section>
   <div class="layout-container">
-    <img src="../images/undesr-construction.jpg" style="width:100%; height: 400px;">
+    {{ with .Params.image }}
+    <img class="banner-bg" src="{{ . | relURL }}" alt="resource banner" style="width:100%; height: 400px;">
+    {{ end }}
+    
+    <!-- <img src="images/undesr-construction.jpg" style="width:100%; height: 400px;"> -->
   </div>
 </section>
 {{ end }}

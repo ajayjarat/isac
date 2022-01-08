@@ -45,7 +45,7 @@ cyberSecurity:
     
 
 testimonials:
-  enable : true
+  enable : false
   title : "Testimonials"
   subtitle : "Amazing reviews illo tenetur laboriosam excepturi velit in, temporibus ab rem dicta sint obcaecati!"
   review:
