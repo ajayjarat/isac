@@ -107,8 +107,8 @@ jQuery(function($) {
   //Submit download fact form and call send email function
   $("#downloadFactForm").on("submit", function(event){
     event.preventDefault();
-    validateName("personName");
-    validateEmailField('personEmail');    
+    validateName("Person Name");
+    validateEmailField('Person Email');    
     formID= "downloadFactForm";      
     var factFormData={};    
     if(validName==true && validEmail==true){
@@ -128,9 +128,9 @@ jQuery(function($) {
   //Submit contact form and call send email function
   $("#contactForm").submit(function(event) {               
     event.preventDefault();
-    validateName("customerName");
-    validateEmailField('customerEmail');
-    validatePhone('contact');   
+    validateName("Customer Name");
+    validateEmailField('Customer Email');
+    validatePhone('Contact');   
     formID= "contactForm";
     var contactData={};    
     if(validPhone==true && validName==true && validEmail==true){
@@ -146,9 +146,9 @@ jQuery(function($) {
   //Submit home page contact form and call send email function
   $("#homeContactForm").submit(function(event) {          
     event.preventDefault();
-    validateName("client_name");
-    validateEmailField('email_id');
-    validatePhone('phone_no');
+    validateName("Client Name");
+    validateEmailField('Email');
+    validatePhone('Phone No');
     var purpose=$("#homeContactForm #yourPurpose").val();
     formID= "homeContactForm";
     modalId="";    
@@ -184,12 +184,12 @@ jQuery(function($) {
   }
 
   //Call php script to send email 
-  function sendEmail(name, data, subject, mailTo ){  
+  function sendEmail(name, data, subject, mailTo ){
     var message="";      
     if (data) {       
-      message+="<div><h4>Customer details:</h4></div>";
+      // message+="<div><h4>Customer Details:</h4></div>";
       $.each(data, function(key,value) {
-        message+="<div><p>"+key+":"+value+"</p></div>";
+        message+="<div><p>"+key+": "+value+"</p></div>";
       });           
     }
     var actionurl = "https://isac-api-dx4bj.ondigitalocean.app/email.php";    
