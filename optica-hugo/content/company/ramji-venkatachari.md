@@ -1,15 +1,8 @@
 ---
 title: "Ramji Venkatachari"
 draft: false
-description : "Mr. Pyon is a technology industry leader with a proven track record in developing and managing engineering teams to
-drive profitable performance and achieve business goals.
-Mr. Pyon is further described as a key leader in a company that helped pioneer Business Process Management and
-Robotic Process Automation technologies, which are touted as the next generational wave of technology innovation.  He
-is skilled in market situational analysis, organization change management, and system integration management to
-respond to an ever-changing virtual marketplace.
-Mr. Pyon has three decades of frontline management and operational experience in the government and commercial
-sectors, driving next-generation technology to market.  He has successfully led multiple business units and executed
-multi-million dollar critical contract programs within leading technology and defense companies."
+description : "Mr. Venkatachari is a life-long entrepreneur with excellent acumen to develop pathways to monetize IT solutions and services. He has 20+ years of experience selling IT solutions and services to the U.S. Federal and State and Local Government agencies and to Commercial entities. Most recently he has focused on process automations that provide opportunities for users to automate their mundane repetitive tasks and focus on more interesting knowledge based tasks. By infusing artificial intelligence, machine learning, deep learning models and techniques in a variety of use cases, Mr. Venkatachari has shown how AI, ML, DL can help solve real life problems.<br>    
+	Mr. Venkatachari has been a charter member of TiEDC for more than five years, through which he has mentored several budding entrepreneurs and has actively contributed to successful startups. He is an inquisitive learner always seeking to learn ways to solve problems using technology. Mr. Venkatachari believes in people power, and strives to cultivate positive relationships with and for entrepreneurs to help them harness this power in their business ventures."
 image: "images/ramji-img.png"
 category: "admin"
 department: "Board of Advisor"
