@@ -4,6 +4,12 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+body {
+  font-family: var(--bs-font-sans-serif), "Montserrat Regular", "sans-serif"; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat Regular", "sans-serif"; }
+
 .topbar {
   display: flex;
   flex-direction: row;
@@ -407,6 +413,10 @@ input.contact-text-field {
 .w-70 {
   width: 70%; }
 
+.product-portfolio h5.reason {
+  font-family: "Montserrat Regular", "sans-serif" !important;
+  font-weight: normal; }
+
 .product-offer h3, .product-offer h5 {
   font-family: "Inter", "sans-serif" !important;
   font-weight: normal; }
@@ -478,7 +488,9 @@ a.disabled {
 
 body.modal-open {
   padding-right: 0 !important;
-  overflow: unset !important; }
+  overflow: unset !important;
+  position: static;
+  overflow-y: auto; }
 
 @font-face {
   font-family: 'Montserrat Bold';
