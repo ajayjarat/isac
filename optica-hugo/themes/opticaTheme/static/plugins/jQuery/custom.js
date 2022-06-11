@@ -64,20 +64,20 @@ jQuery(function($) {
         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       );
   };
-  function validEmail(fieldName){
+  function validEmailField(fieldName){
     var email = $("input[name='"+fieldName+"']").val();
     if(email.trim()=== ''){          
       $("input[name='"+fieldName+"']").css('border','1px solid red');
-      valid=false;
+      validEmail=false;
       return false;
     }else{
       if(validateEmail(email)){
         $("input[name='"+fieldName+"']").css('border','1px solid green');        
-        valid=true;
+        validEmail=true;
         return true;
       }else{      
         $("input[name='"+fieldName+"']").css('border','1px solid red');        
-        valid=false;
+        validEmail=false;
         return false;
       }
     }
@@ -108,14 +108,14 @@ jQuery(function($) {
   $("#downloadFactForm").on("submit", function(event){
     event.preventDefault();
     validateName("personName");
-    validEmail('personEmail');    
+    validEmailField('personEmail');    
     formID= "downloadFactForm";      
     var factFormData={};    
-    if(validName==true && valid==true){
+    if(validName==true && validEmail==true){
       factFormData = createFormData('downloadFactForm') ;
-    }else if(validName==false && valid==true){
+    }else if(validName==false && validEmail==true){
       alert("Enter valid name");
-    }else if(validName==true && valid==false){
+    }else if(validName==true && validEmail==false){
       alert("Enter valid email");
     }else{
       alert("Enter data to all fields");
@@ -129,11 +129,11 @@ jQuery(function($) {
   $("#contactForm").submit(function(event) {               
     event.preventDefault();
     validateName("customerName");
-    validEmail('customerEmail');
+    validEmailField('customerEmail');
     validatePhone('contact');   
     formID= "contactForm";
     var contactData={};    
-    if(validPhone==true && validName==true && valid==true){
+    if(validPhone==true && validName==true && validEmail==true){
       contactData = createFormData('contactForm');
     }else{ 
       alert("Enter data to all fields");
@@ -146,13 +146,14 @@ jQuery(function($) {
   //Submit home page contact form and call send email function
   $("#homeContactForm").submit(function(event) {          
     event.preventDefault();
+    modalId="";
     validateName("client_name");
-    validEmail('email_id');
+    validEmailField('email_id');
     validatePhone('phone_no');
     var purpose=$("#homeContactForm #yourPurpose").val();
     formID= "homeContactForm";    
     var formData={};
-    if(validPhone==true && validName==true && valid==true && purpose !='' && clientName!=''){
+    if(validPhone==true && validName==true && validEmail==true && purpose !='' && clientName!=''){
       formData = createFormData('homeContactForm');
     }else{ 
       alert("Enter data to all fields");
@@ -203,13 +204,18 @@ jQuery(function($) {
       },    
       success: function(response){        
         if(response.status==202){
-          if(modalId=="downloadFactModal"){
-            jQuery('#downloadFactModal .modal-body .downloadFactForm').css({"display":"none"});
-            jQuery("#downloadFactModal .modal-body").html("<div class='text-center'><h5>Your downloadable link is enabled</h5><a class='text-center' href="+downloadLink+" target='_blank'>Download fact sheet</a></div>");          
-          }else{
+          if(modalId==''){
             alert(response.message);
-            $("#"+modalId).modal('toggle');
+          }else{
+            if(modalId=="downloadFactModal"){
+              jQuery('#downloadFactModal .modal-body .downloadFactForm').css({"display":"none"});
+              jQuery("#downloadFactModal .modal-body").html("<div class='text-center'><h5>Your downloadable link is enabled</h5><a class='text-center' href="+downloadLink+" target='_blank'>Download fact sheet</a></div>");          
+            }else {
+              alert(response.message);
+              $("#"+modalId).modal('toggle');
+            }
           }
+          
           $("#"+formID).trigger("reset");
         }else{
           alert("Your message is not sent")
