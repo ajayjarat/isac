@@ -8,8 +8,8 @@
     <img class="banner-bg" src="{{ . | relURL }}" alt="product banner">
     {{ end }}   
     <div class="banner-content">      
-      <h1 class="text-white heading-xl">ISAC </h1>
-      <h5 class="text-white"><span class="text-orange">I</span>nformation <span class="text-orange">S</span>ecurity <span class="text-orange">A</span>ll-in-one <span class="text-orange">C</span>onsole with Continuous Compliance Technology</h5>                      
+      <h1 class="text-white heading-xl">OptICA </h1>
+      <h5 class="text-white">Information Security All-in-one Console with Continuous Compliance Technology</h5>                      
       <h5 class="banner-text text-white mt-2" style="">{{ .Params.description | markdownify }}</h5>                
     </div>
   </div>  
@@ -18,12 +18,12 @@
 <!-- Product Offered -->
 <section id="productOffer" class="product-offer">
   <div class="layout-container">
-    <h2 class="text-center text-orange mb-4">OptICA&trade;<span class="text-uppercase"> SOLUTIONS GUARANTEES THAT YOU WILL PASS YOUR DISA STIG/SCAP AUDIT Generally In the First Pass WITH PROPER IMPLEMENTATION OF ISAC</span>
+    <h2 class="text-center text-orange mb-4">OptICA&trade;<span class="text-uppercase"> SOLUTIONS GUARANTEES THAT YOU WILL PASS YOUR DISA STIG/SCAP AUDIT Generally In the First Pass WITH PROPER IMPLEMENTATION OF OptICA</span>
     </h2>
   </div>
   <!-- Desktop Layout Start -->
   <div class="container-fluid product-desktop">   
-     <div class="row p-3">
+     <div class="row p-3 ms-0 me-0">
       {{ range .Params.productFAQ }}     
         <div class="col-12">        
           <div class="product-desc layout-container">
@@ -39,7 +39,7 @@
         </div>      
       {{ end }}
     </div>    
-    <div class="row mt-5">     
+    <div class="row mt-5 ms-0 me-0">     
       <div class="col-12 text-center mb-5">
         <button type="button" class="theme-btn-white download-fact-sheet" data-file="{{ $.Site.BaseURL }}files/ISACWebsiteFeedback.pdf">Download Product Fact Sheet</button>
       </div>

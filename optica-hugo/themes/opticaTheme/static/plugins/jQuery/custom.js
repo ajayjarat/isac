@@ -47,9 +47,9 @@ jQuery(function($) {
       $("input[name='"+name+"']").css('border','1px solid red');
       validName=false;
       return false;
-    }else{
-      $("input[name='"+name+"']").css('border','1px solid green');
-      clientName=nameVal;      
+    }else{      
+      clientName=nameVal;
+      $("input[name='"+name+"']").css('border','1px solid #cbc9c9');      
       validName=true;
       return true;
       
@@ -64,7 +64,7 @@ jQuery(function($) {
         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       );
   };
-  function validEmailField(fieldName){
+  function validateEmailField(fieldName){
     var email = $("input[name='"+fieldName+"']").val();
     if(email.trim()=== ''){          
       $("input[name='"+fieldName+"']").css('border','1px solid red');
@@ -72,7 +72,7 @@ jQuery(function($) {
       return false;
     }else{
       if(validateEmail(email)){
-        $("input[name='"+fieldName+"']").css('border','1px solid green');        
+        $("input[name='"+fieldName+"']").css('border','1px solid #cbc9c9');               
         validEmail=true;
         return true;
       }else{      
@@ -93,8 +93,8 @@ jQuery(function($) {
     }else{      
       var val = $("input[name='"+phone+"']").val();      
       var filter = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
-      if(filter.test(val)){  
-        $("input[name='"+phone+"']").css('border','1px solid green');              
+      if(filter.test(val)){ 
+        $("input[name='"+phone+"']").css('border','1px solid #cbc9c9');                     
         validPhone=true;
         return true;
       }else{        
@@ -107,8 +107,8 @@ jQuery(function($) {
   //Submit download fact form and call send email function
   $("#downloadFactForm").on("submit", function(event){
     event.preventDefault();
-    validateName("personName");
-    validEmailField('personEmail');    
+    validateName("Person Name");
+    validateEmailField('Person Email');    
     formID= "downloadFactForm";      
     var factFormData={};    
     if(validName==true && validEmail==true){
@@ -128,9 +128,9 @@ jQuery(function($) {
   //Submit contact form and call send email function
   $("#contactForm").submit(function(event) {               
     event.preventDefault();
-    validateName("customerName");
-    validEmailField('customerEmail');
-    validatePhone('contact');   
+    validateName("Customer Name");
+    validateEmailField('Customer Email');
+    validatePhone('Contact');   
     formID= "contactForm";
     var contactData={};    
     if(validPhone==true && validName==true && validEmail==true){
@@ -146,12 +146,12 @@ jQuery(function($) {
   //Submit home page contact form and call send email function
   $("#homeContactForm").submit(function(event) {          
     event.preventDefault();
-    modalId="";
-    validateName("client_name");
-    validEmailField('email_id');
-    validatePhone('phone_no');
+    validateName("Client Name");
+    validateEmailField('Email');
+    validatePhone('Phone No');
     var purpose=$("#homeContactForm #yourPurpose").val();
-    formID= "homeContactForm";    
+    formID= "homeContactForm";
+    modalId="";    
     var formData={};
     if(validPhone==true && validName==true && validEmail==true && purpose !='' && clientName!=''){
       formData = createFormData('homeContactForm');
@@ -165,7 +165,7 @@ jQuery(function($) {
 
   //Call addsticky function
   window.onscroll = function() {addSticky()};
-  var pageHeader = document.getElementById("mainMenu"); 
+  var pageHeader = document.getElementById("navHeader"); 
   //Add sticky header on page scroll
   function addSticky(){
     if(window.pageYOffset >= 100){
@@ -184,15 +184,15 @@ jQuery(function($) {
   }
 
   //Call php script to send email 
-  function sendEmail(name, data, subject, mailTo ){   
+  function sendEmail(name, data, subject, mailTo ){
     var message="";      
     if (data) {       
-      message+="<div><h4>Customer details:</h4></div>";
+      // message+="<div><h4>Customer Details:</h4></div>";
       $.each(data, function(key,value) {
-        message+="<div><p>"+key+":"+value+"</p></div>";
+        message+="<div><p>"+key+": "+value+"</p></div>";
       });           
     }
-    var actionurl = "http://35.153.200.54/ISAC-PHP/api/email";
+    var actionurl = "https://isac-api-dx4bj.ondigitalocean.app/email.php";    
     $.ajax({
       url: actionurl,
       type: 'post',
@@ -204,14 +204,13 @@ jQuery(function($) {
       },    
       success: function(response){        
         if(response.status==202){
-          if(modalId==''){
-            alert(response.message);
+          console.log(modalId);
+          if(modalId=="downloadFactModal"){
+            jQuery('#downloadFactModal .modal-body .downloadFactForm').css({"display":"none"});
+            jQuery("#downloadFactModal .modal-body").html("<div class='text-center'><h5>Your downloadable link is enabled</h5><a id='downloadLinkId' class='text-center' href="+downloadLink+" target='_blank'>Download fact sheet</a></div>");          
           }else{
-            if(modalId=="downloadFactModal"){
-              jQuery('#downloadFactModal .modal-body .downloadFactForm').css({"display":"none"});
-              jQuery("#downloadFactModal .modal-body").html("<div class='text-center'><h5>Your downloadable link is enabled</h5><a class='text-center' href="+downloadLink+" target='_blank'>Download fact sheet</a></div>");          
-            }else {
-              alert(response.message);
+            alert(response.message);
+            if(modalId=="contactModal"){
               $("#"+modalId).modal('toggle');
             }
           }
@@ -224,7 +223,6 @@ jQuery(function($) {
       error: function (request, error) {                
         alert("Your message is not sent " + error);      
       }         
-    });    
-         
+    });
   }
 });

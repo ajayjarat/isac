@@ -1,7 +1,8 @@
-baseURL = "https://isac-8oxfp.ondigitalocean.app/"
+baseURL = "https://www.optica.solutions/"
+#baseURL = "https://isac-8oxfp.ondigitalocean.app/"
 #baseURL = "http://localhost/optica/"
 languageCode = "en-us"
-title = "ISAC"
+title = "OptICA"
 theme = "opticaTheme"
 
 ############################# Plugins ##############################

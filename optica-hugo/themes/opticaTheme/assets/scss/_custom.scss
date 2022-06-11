@@ -1,3 +1,9 @@
+body {  
+  font-family: $font-family-base, $font-family-montserrat-regular;
+}
+h1, h2, h3, h4, h5, h6 {  
+  font-family: $headings-font-family;
+}
 .topbar{
   display: flex;
   flex-direction: row;
@@ -45,7 +51,8 @@
   }
 }
 .nav-link{
-  font-family: $font-family-montserrat-bold !important;
+  // font-family: $font-family-montserrat-bold !important;
+  font-family: $font-family-Inter-bold !important;
   font-size: .875rem !important;
   text-transform: uppercase;
 }
@@ -343,6 +350,9 @@ footer{
     }
   }
 }
+input.contact-text-field{
+  border:1px solid #cbc9c9;
+}
 .contact-form{
   padding: 30px 0;
   width: 100%;  
@@ -357,6 +367,7 @@ footer{
   }
   input.contact-text-field,select, input.contact-date-field{
     background-color: #e2e2e2;
+    border:1px solid #cbc9c9;
     height: 42px;
     padding:10px !important;
     font-family: $font-family-montserrat-regular !important;
@@ -464,6 +475,10 @@ footer{
 .w-70{
   width: 70%;
 }
+.product-portfolio h5.reason{  
+  font-family: $font-family-montserrat-regular !important;
+  font-weight: normal;  
+}
 .product-offer{
   h3, h5{
     font-family: $font-family-Inter !important;
@@ -538,4 +553,14 @@ footer{
 }
 .team-wrap .card{
   box-shadow: 2px 2px 7px #939394;
+}
+a.disabled{
+  cursor: default;
+}
+
+body.modal-open{
+  padding-right: 0 !important;
+  overflow: unset !important;
+  position: static; 
+  overflow-y:auto
 }

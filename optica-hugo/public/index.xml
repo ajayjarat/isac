@@ -2,242 +2,99 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ISAC</title>
-    <link>http://localhost/optica/</link>
+    <link>https://www.optica.solutions/</link>
     <description>Recent content on ISAC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost/optica/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.optica.solutions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Audit Support (Optional)</title>
-      <link>http://localhost/optica/services/audit-support/</link>
+      <link>https://www.optica.solutions/services/audit-support/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/optica/services/audit-support/</guid>
+      <guid>https://www.optica.solutions/services/audit-support/</guid>
       <description>We offer full support to our Customers in going through a CCRI Audit.</description>
     </item>
     
     <item>
       <title>Compilance Training (Optional)</title>
-      <link>http://localhost/optica/services/compilance_training/</link>
+      <link>https://www.optica.solutions/services/compilance_training/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/optica/services/compilance_training/</guid>
+      <guid>https://www.optica.solutions/services/compilance_training/</guid>
       <description>We offer training on how to be “continuously compliant” with DoD DISA STIG/SCAP Standards.</description>
     </item>
     
     <item>
       <title>ISAC User Training</title>
-      <link>http://localhost/optica/services/isac-user-training/</link>
+      <link>https://www.optica.solutions/services/isac-user-training/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/optica/services/isac-user-training/</guid>
+      <guid>https://www.optica.solutions/services/isac-user-training/</guid>
       <description>We offer training on how to setup and use ISAC for the various roles of the Customer’s Cybersecurity team.</description>
     </item>
     
     <item>
-      <title>HOW ISAC Does It?</title>
-      <link>http://localhost/optica/products/product5/</link>
-      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/optica/products/product5/</guid>
-      <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
-    </item>
-    
-    <item>
-      <title>LOREM IPSUM DOLOR SIT AMET</title>
-      <link>http://localhost/optica/resources/respurc-1/</link>
-      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/optica/resources/respurc-1/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
-    </item>
-    
-    <item>
-      <title>LOREM IPSUM DOLOR SIT AMET</title>
-      <link>http://localhost/optica/resources/respurce-2/</link>
-      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/optica/resources/respurce-2/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
-    </item>
-    
-    <item>
-      <title>LOREM IPSUM DOLOR SIT AMET</title>
-      <link>http://localhost/optica/resources/respurce-3/</link>
-      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/optica/resources/respurce-3/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
-    </item>
-    
-    <item>
-      <title>My Awesome Blog Four</title>
-      <link>http://localhost/optica/blog/blog-post-4/</link>
-      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/optica/blog/blog-post-4/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
-    </item>
-    
-    <item>
       <title>My Awesome Blog One</title>
-      <link>http://localhost/optica/blog/blog-post/</link>
+      <link>https://www.optica.solutions/blog/blog-post/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/optica/blog/blog-post/</guid>
+      <guid>https://www.optica.solutions/blog/blog-post/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
     </item>
     
     <item>
-      <title>My Awesome Blog Three</title>
-      <link>http://localhost/optica/blog/blog-post-3/</link>
-      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      <title>James Pyon</title>
+      <link>https://www.optica.solutions/company/james-pyon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/optica/blog/blog-post-3/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
-    </item>
-    
-    <item>
-      <title>My Awesome Blog Two</title>
-      <link>http://localhost/optica/blog/blog-post-2/</link>
-      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/optica/blog/blog-post-2/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis perspiciatis, eaque porro ad facilis vel amet. Pariatur eligendi odio voluptatem provident modi eos, perferendis quas delectus. Dolore, quo. Ad.</description>
-    </item>
-    
-    <item>
-      <title>What is ISAC?</title>
-      <link>http://localhost/optica/products/isac/</link>
-      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/optica/products/isac/</guid>
-      <description>  Features
- Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit amet    Benefits
- Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit amet    </description>
-    </item>
-    
-    <item>
-      <title>What ISAC does?</title>
-      <link>http://localhost/optica/products/product2/</link>
-      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/optica/products/product2/</guid>
-      <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
-    </item>
-    
-    <item>
-      <title>Who ISAC Serves?</title>
-      <link>http://localhost/optica/products/product4/</link>
-      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/optica/products/product4/</guid>
-      <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
-    </item>
-    
-    <item>
-      <title>Why do you need ISAC?</title>
-      <link>http://localhost/optica/products/product3/</link>
-      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/optica/products/product3/</guid>
-      <description>About Product Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</description>
+      <guid>https://www.optica.solutions/company/james-pyon/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Mr. Andrew Bailey</title>
-      <link>http://localhost/optica/company/andrew-bailey/</link>
+      <link>https://www.optica.solutions/company/andrew-bailey/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/optica/company/andrew-bailey/</guid>
+      <guid>https://www.optica.solutions/company/andrew-bailey/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mr. Damon Parr</title>
-      <link>http://localhost/optica/company/damon-parr/</link>
+      <link>https://www.optica.solutions/company/damon-parr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/optica/company/damon-parr/</guid>
+      <guid>https://www.optica.solutions/company/damon-parr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mr. Jeff Bertman</title>
-      <link>http://localhost/optica/company/jeff-bertman/</link>
+      <link>https://www.optica.solutions/company/jeff-bertman/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/optica/company/jeff-bertman/</guid>
+      <guid>https://www.optica.solutions/company/jeff-bertman/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Mr. John deo</title>
-      <link>http://localhost/optica/company/jason-kassin/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/optica/company/jason-kassin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mr. John deo</title>
-      <link>http://localhost/optica/company/stephen-kassin/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/optica/company/stephen-kassin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mr. John deo</title>
-      <link>http://localhost/optica/company/team-member-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/optica/company/team-member-1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mr. John deo</title>
-      <link>http://localhost/optica/company/team-member-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/optica/company/team-member-2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mr. John deo</title>
-      <link>http://localhost/optica/company/thomas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/optica/company/thomas/</guid>
-      <description>About Me Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</description>
     </item>
     
     <item>
       <title>Mr. Josh Jackson</title>
-      <link>http://localhost/optica/company/josh-jackson/</link>
+      <link>https://www.optica.solutions/company/josh-jackson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/optica/company/josh-jackson/</guid>
+      <guid>https://www.optica.solutions/company/josh-jackson/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ramji Venkatachari</title>
-      <link>http://localhost/optica/company/ramji-venkatachari/</link>
+      <link>https://www.optica.solutions/company/ramji-venkatachari/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/optica/company/ramji-venkatachari/</guid>
+      <guid>https://www.optica.solutions/company/ramji-venkatachari/</guid>
       <description></description>
     </item>
     

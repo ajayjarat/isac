@@ -1,5 +1,6 @@
 ---
-title: "OptICA&trade; Welcomes Partnerships"
+title: "Partnerships"
+bannerTitle: "OptICA&trade; Welcomes Partnerships"
 draft: false
 image: "images/partner.jpg"
 description : "Join the OptICA Ecosystem to help your clients achieve 100% compliance with the DoD Cybersecurity Mandates"

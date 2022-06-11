@@ -9,10 +9,10 @@
           <img class="banner-bg" src="{{ .image | relURL }}" alt="{{ .title | markdownify }}">          
           <div class="banner-content">
             <a class="mb-2" href="#">            	
-              <h1 class="large-heading">OptICA&trade; Launches ISAC</h1>
+              <h1 class="large-heading">OptICA&trade; Launches</h1>
             </a>
-            <h6 class=""><span class="text-orange">I</span>nformation <span class="text-orange">S</span>ecurity <span class="text-orange">A</span>ll-in-one <span class="text-orange">C</span>onsole with Continuous Compliance Technology</h6>
-            <h3 class="">{{ .content | markdownify }}</h3>
+            <h6 class="">Information Security All-in-one Console with Continuous Compliance Technology</h6>
+            <h3 class="banner-text">{{ .content | markdownify }}</h3>
             <div class="multi-button-wrap mt-4">              
               <a href="{{ $.Site.BaseURL }}{{ .url1 }}"><button class="dark-btn btn-medium ms-3">Read More</button></a>
               <button type="button" class="dark-btn btn-medium request-demo" data-option="Request a Demo">Request Demo</button>
@@ -51,12 +51,12 @@
     <h1 class="text-center text-uppercase">{{ .title | markdownify }}</h1>
     <div class="row mt-5 g-4">
       <div class="col-lg-6 col-md-6 col-sm-12">
-        <h3>5 Reasons why you will love ISAC</h3>
+        <h3>5 Reasons why you will love OptICA</h3>
         <div class="mt-3">
         	{{range .list}}
         		<div class="list-wrap">
 	            <img src="images/small-arrow.png" class="img-fluid">
-	            <h5>{{ .listItem }} </h5>
+	            <h5 class="reason">{{ .listItem }} </h5>
 	          </div>
           {{end}}         
         </div>
@@ -92,7 +92,7 @@
       </div>
       <div class="row g-3 mt-5 pt-4 pb-4">
       	{{ range .securityItem }}
-        <div class="col-lg-4 col-md-4 col-sm-12">        	
+        <div class="col-lg-6 col-md-6 col-sm-12">        	
       		<div class="expert-warp">            
             <h3>{{ .title | markdownify }}</h3>
             <p>{{ .content | markdownify }}</p>
@@ -146,10 +146,10 @@
             <p class="text-white">Company test address 1234, lorem ispum dollar</p>
             <p class="text-white"><span><i class="fa fa-phone text-white"></i></span>: 1234-5678-900</p>
             <div class="social-icons" style="display:flex; flex-direction:row; align-items: center;">
-              <a href="#"><span><i class="fa fa-facebook text-white me-2" style="font-size:32px"></i></span></a>
-              <a href="#"><span><i class="fa fa-twitter text-white me-2" style="font-size:32px"></i></span></a>
-              <a href="#"><span><i class="fa fa-youtube text-white me-2" style="font-size:32px"></i></span></a>
-              <a href="#"><span><i class="fa fa-linkedin text-white me-2" style="font-size:32px"></i></span></a>
+              <a class="disabled"><span><i class="fa fa-facebook text-white me-2" style="font-size:32px"></i></span></a>
+              <a class="disabled"><span><i class="fa fa-twitter text-white me-2" style="font-size:32px"></i></span></a>
+              <a class="disabled"><span><i class="fa fa-youtube text-white me-2" style="font-size:32px"></i></span></a>
+              <a class="disabled"><span><i class="fa fa-linkedin text-white me-2" style="font-size:32px"></i></span></a>
             </div>
           </div>
         </div>
@@ -165,19 +165,19 @@
         <form id="homeContactForm" class="contact-form">          
           <div class="row">
             <div class="col-lg-6 col-md-12 mb-3">
-              <input type="text" name="client_name" class="contact-text-field" placeholder="Name" >
+              <input type="text" name="Client Name" class="contact-text-field" placeholder="Name" >
             </div>
             <div class="col-lg-6 col-md-12 mb-3">
-              <input type="text" name="company" class="contact-text-field" placeholder="Company" >
+              <input type="text" name="Company" class="contact-text-field" placeholder="Company" >
             </div>
             <div class="col-lg-6 col-md-12 mb-3 " >
-              <input type="email" name="email_id" class="contact-text-field" placeholder="Email" >
+              <input type="email" name="Email" class="contact-text-field" placeholder="Email" >
             </div>
             <div class="col-lg-6 col-md-12 mb-3">
-              <input type="text" name="phone_no" class="contact-text-field" placeholder="Phone" >
+              <input type="text" name="Phone No" class="contact-text-field" placeholder="Phone" >
             </div>
             <div class="col-lg-12 col-md-12 mb-3 ">
-              <select id="yourPurpose">
+              <select id="yourPurpose" name="Client Purpose">
                   <option value="">Purpose</option>
                   <option value="Request a Demo">Request a Demo</option>
                   <option value="Request Meeting">Request Meeting</option>
@@ -186,7 +186,7 @@
               </select>     
             </div>           
             <div class="col-lg-12 col-md-12 mb-3">
-              <textarea name="desc" class="contact-text-field" placeholder="Message"></textarea>
+              <textarea name="Client Description" class="contact-text-field" placeholder="Message"></textarea>
             </div>
           </div>
           <div class="row">
