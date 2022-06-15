@@ -1,5 +1,5 @@
 ---
-title: "ISAC User Training"
+title: "OptICA User Training"
 date: 2021-10-05
 draft: false
 image: "images/blog-sec-img.png"
@@ -11,4 +11,4 @@ link: "#"
 type: "service"
 ---
 
-We offer training on how to setup and use ISAC for the various roles of the Customer’s Cybersecurity team.  
+We offer training on how to setup and use OptICA for the various roles of the Customer’s Cybersecurity team.  

@@ -35,12 +35,12 @@ cyberSecurity:
   securityItem:
     # security item loop
     - title : "CCRI Auditor"      
-      content : "ISAC has achieved “First Ever” 100% score on the first audit pass"
+      content : "OptICA has achieved “First Ever” 100% score on the first audit pass"
       link: "#"
       year: "…. May 2021"
     # security item loop
     - title : "Fort Knox ISSM and Cyber Security Division Chief"      
-      content : "ISAC provides the most comprehensive and single pane of glass view of the enterprise’s total cybersecurity posture that I have ever seen from any SEAM tool"      
+      content : "OptICA provides the most comprehensive and single pane of glass view of the enterprise’s total cybersecurity posture that I have ever seen from any SEAM tool"      
       year: "…. Sept 2021"
     
 

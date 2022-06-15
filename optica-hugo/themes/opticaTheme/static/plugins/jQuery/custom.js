@@ -214,6 +214,7 @@ jQuery(function($) {
               $("#"+modalId).modal('toggle');
             }
           }
+          
           $("#"+formID).trigger("reset");
         }else{
           alert("Your message is not sent")
